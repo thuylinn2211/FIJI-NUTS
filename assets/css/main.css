@@ -10,10 +10,9 @@ html{
 }
 
 
-ul li{
+.header > ul > li{
     float: left;
     border-right: solid;
-    
     border-width: 1px;
     width: calc(100% / 12);
     text-align: center;
@@ -24,3 +23,8 @@ li:hover{
     color: #000;
     background-color: #ccc;
 }
+
+
+
+
+/* Footer */
