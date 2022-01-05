@@ -9,11 +9,8 @@ html{
     width: 100%;
 }
 
-
 ul li{
-    float: left;
     border-right: solid;
-    
     border-width: 1px;
     width: calc(100% / 12);
     text-align: center;
