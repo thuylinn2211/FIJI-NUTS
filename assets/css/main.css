@@ -1,5 +1,24 @@
+<<<<<<< HEAD
+=======
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    height: 1000px;
+    width: 100%;
+}
+
+<<<<<<< HEAD:assets/css/style.css
+ul li{
+=======
+
+>>>>>>> 678ece313ff23df2c370be3557618aa4687691f9
 .header > ul > li{
     float: left;
+>>>>>>> 8c6361b65fb3b38adbcb1627b1d75ed9354becae:assets/css/main.css
     border-right: solid;
     border-width: 1px;
     width: calc(100% / 12);
