@@ -9,13 +9,11 @@ html{
     width: 100%;
 }
 
-<<<<<<< HEAD:assets/css/style.css
 ul li{
-=======
+}
 
 .header > ul > li{
     float: left;
->>>>>>> 8c6361b65fb3b38adbcb1627b1d75ed9354becae:assets/css/main.css
     border-right: solid;
     border-width: 1px;
     width: calc(100% / 12);
