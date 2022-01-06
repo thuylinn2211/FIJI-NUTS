@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-=======
+
 *{
     padding: 0;
     margin: 0;
@@ -11,14 +10,11 @@ html{
     width: 100%;
 }
 
-<<<<<<< HEAD:assets/css/style.css
 ul li{
-=======
 
->>>>>>> 678ece313ff23df2c370be3557618aa4687691f9
+}
 .header > ul > li{
     float: left;
->>>>>>> 8c6361b65fb3b38adbcb1627b1d75ed9354becae:assets/css/main.css
     border-right: solid;
     border-width: 1px;
     width: calc(100% / 12);
@@ -28,7 +24,7 @@ ul li{
 
 li:hover{
     color: #000;
-    background-color: #ccc;
+    /* background-color: #ccc; */
 }
 
 
@@ -49,8 +45,8 @@ li:hover{
 
 .social_link {
     display: block;
-    width: 40px;
-    height: 40px;
+    width: 36px;
+    height: 36px;
     border: 2px solid var(--main-color);
     border-radius: 50%;
     background-color: var(--main-color);
@@ -74,7 +70,6 @@ li:hover{
 
 .footer_middle {
     background-color: var(--footer-color);
-    /* padding: 50px; */
     padding: 0 calc(100%/12);
 }
 
@@ -87,9 +82,8 @@ li:hover{
     margin: 15px 0;
 }
 
-.footer_middle span,
 .footer_middle-link,
-.footer_middle-sign-up > span {
+.footer_middle-sign-up {
     color: var(--black-color);
     font-size: 1.4rem;
     display: block;
@@ -106,7 +100,8 @@ li:hover{
 }
 
 .footer_middle-sign-up {
-    padding: 15px 30px;
+    
+    /* padding: 15px; */
 }
 
 
@@ -142,4 +137,21 @@ li:hover{
     color: var(--white-color);
     background-color: var(--main-color);
     cursor: pointer;
+}
+
+.footer_bottom {
+    text-align: center;
+    padding: 30px 10px;
+}
+
+.footer_bottom > a {
+    color: var(--text-color);
+    font-size: 1.1rem;
+    display: inline-block;
+    padding: 5px 10px;
+    letter-spacing: 1.4px;
+}
+
+.footer_bottom > a:hover {
+    color: var(--white-color);
 }

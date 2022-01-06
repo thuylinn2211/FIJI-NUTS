@@ -6,7 +6,7 @@
 }
 
 .grid.wide {
-    max-width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -50,9 +50,6 @@
         padding-left: 8px;
         padding-right: 8px;
     }
-    .m-0 {
-        display: none;
-    }
     .m-4,
     .m-12 {
         display: block;
@@ -94,9 +91,9 @@
 }
 
 /* > PC low resolution */
-@media (min-width: 100%) and (max-width: 100%) {
+@media (min-width: 1024px) and (max-width: 1239px) {
     .wide {
-        width: 100%;
+        width: 984px;
     }
     .wide .row {
         margin-left: -10px;
@@ -110,8 +107,8 @@
         display: block;
     }
     .wide .l-2 {
-        flex: 0 0 46.66667%;
-        max-width: 46.66667%;
+        flex: 0 0 16.66667%;
+        max-width: 16.66667%;
     }
     .wide .l-4 {
         flex: 0 0 33.33333%;
