@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <thanhviens>
+    <thanhvien>
+        <hoten>Phạm Thị Thùy Linh</hoten>
+        <chucvu>Nhóm trưởng</chucvu>
+        <mssv>K194111610</mssv>
+    </thanhvien>
+    <thanhvien>
+        <hoten>Nguyễn Thị Tiền An</hoten>
+        <chucvu>Thành viên</chucvu>
+        <mssv>K194111595</mssv>
+    </thanhvien>
+    <thanhvien>
+        <hoten>Nguyễn Thị Nguyên Nhi</hoten>
+        <chucvu>Thành viên</chucvu>
+        <mssv>K194111619</mssv>
+    </thanhvien>
+    <thanhvien>
+        <hoten>Đỗ Vũ Thanh Phương</hoten>
+        <chucvu>Thành viên</chucvu>
+        <mssv>K194111622</mssv>
+    </thanhvien>
+    <thanhvien>
+        <hoten>Nguyễn Thị Phương Thảo</hoten>
+        <chucvu>Thành viên</chucvu>
+        <mssv>K194111628</mssv>
+    </thanhvien>
+</thanhviens> 
