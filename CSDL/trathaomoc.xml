@@ -3,110 +3,108 @@
     <trathaomoc>
         <name>Trà Bụp Giấm</name>
         <pic>../assets/image/tra_bupgiam.jpg</pic>
-        <price>135.000 đ</price>
+        <price>110.000 đ</price>
         <detail>
-        Hạt bí xanh rang chín FIJI NUTS, hạt bí xanh tách vỏ Ấn Độ sấy giòn nguyên vị
+        Trà Hoa Atiso Đỏ (bụp giấm) Sấy Khô Nguyên Bông
 
         Thông tin sản phẩm:
-        - Trọng lượng: Gói 500gr
-        - Xuất xứ: Nhập khẩu Ấn Độ
-        - Hạn sử dụng: 6 tháng kể từ ngày sản xuất (in trên bao bì)
-        - Phân phối bởi công ty TNHH Hạt dinh dưỡng Tây Nguyên
+        - Trọng lượng: Hộp 100g
+        - Xuất xứ: Việt Nam 
+        - Hạn sử dụng: 12 tháng kể từ ngày sản xuất (in trên bao bì)
         
-        Đặc điểm nổi bật của sản phẩm:
-        - Nguồn nguyên liệu nhập khẩu chính ngạch.
-        - Quy trình sản xuất đạt chuẩn VSATTP.
-        - Hạt bí xanh không có chất bảo quản, an toàn cho sức khỏe.
-        - Hạt rang theo quy trình, công nghệ hiện đại, hạt đạt độ ẩm vừa phải, giòn thơm ngon.
-        - Bảo quản lạnh kỹ lưỡng, chống nấm mốc.
+        Hướng dẫn sử dụng:
+        - Pha 3g hoa atiso với nước sôi để tráng trà lọc bụi bẩn và đánh thức trà.
+        - Sau đó cho hoa vào 200ml nước sôi ở khoảng 90 độ C vào hãm trong 15 phút.
+        - Thêm đường phèn hoặc mật ong, tuỳ theo sở thích vào 200ml nước sôi để nguội.
+        - Trộn 2 nước lại và dùng, có thể thêm đá hoặc ướp lạnh
         </detail>
     </trathaomoc>
 
     <hatdinhduong>
-        <name>Hạt Dẻ Cười</name>
-        <pic>../assets/image/hat_decuoi.jpg</pic>
+        <name>Trà Đậu Biếc</name>
+        <pic>../assets/image/tra_daubiec.jpg</pic>
         <price>220.000 đ</price>
         <detail>
-        Hạt dẻ cười FIJI NUTS, hạt dẻ cười rang muối không tẩy trắng giàu dinh dưỡng
+        Trà hoa đậu biếc FIJI NUTS sấy khô nguyên bông
 
         Thông tin sản phẩm:
-        - Trọng lượng: Gói 500gr
+        - Trọng lượng: Gói 50g
         - Xuất xứ: Việt Nam
-        - Hạn sử dụng: 6 tháng kể từ ngày sản xuất (in trên bao bì)
+        - Hạn sử dụng: 12 tháng kể từ ngày sản xuất (in trên bao bì)
         - Phân phối bởi công ty TNHH Hạt dinh dưỡng Tây Nguyên
 
-        Đặc điểm nổi bật của sản phẩm:
-        - Hạt được rang muối, rất giòn, ăn rất thơm và ngọt bùi.
-        - Không tẩy trắng, an toàn cho sức khỏe.
-        - Được đóng gói hút chân không cẩn thận.
-        - Ăn trực tiếp hoặc sử dụng trong các món ăn, sữa hạt,...
-        - Đầy đủ giấy tờ nhập khẩu, đạt tiêu chuẩn VSATTP.
-        </detail>
-    </hatdinhduong>
+        Hướng dẫn sử dụng:
+            Bước 1:  Hoa đậu biếc khô cho vào túi vải lọc trà cùng với 4 lít nước sôi cho vào bình ủ và đậy kín nắp khoảng 15 – 20 phút.
 
-    <hatdinhduong>
-        <name>Hạnh Nhân Rang Mộc</name>
-        <pic>../assets/image/hat_hanhnhan.jpg</pic>
-        <price>165.000 đ</price>
+            Bước 2: Lấy bã trà hoa đậu biếc ra để lọc và cho thêm nước sôi vào cho đủ 4L.
+
+            Bước 3: Cho nước trà hoa đậu biếc hòa cùng 80ml nước cốt tắc và 800ml nước đường Hàn Quốc, 1/4 muỗng muối khuấy đều.
+
+            Bước 4: Cho nước trà vào các chai ướp lạnh trong ngăn mát tủ lạnh khoảng 12 tiếng để dùng.
+
+        </detail>
+    </trathaomoc>
+
+    <trathaomoc>
+        <name>Trà Hoa Cúc Vàng</name>
+        <pic>../assets/image/tra_hoacucvang.jpg</pic>
+        <price>93.000 đ</price>
         <detail>
-        Hạnh nhân rang mộc FIJI NUTS, hạt hạnh nhân Mỹ vỏ mỏng, hạnh nhân mật ong
+        Trà hoa cúc vàng sấy khô FIJI NUTS
 
         Thông tin sản phẩm:
-        - Trọng lượng: Gói 500gr
-        - Xuất xứ: Nhập khẩu Mỹ
-        - Hạn sử dụng: 6 tháng kể từ ngày sản xuất (in trên bao bì)
-        - Phân phối bởi công ty TNHH Hạt dinh dưỡng Tây Nguyên
+        - Trọng lượng: Hộp 50g
+        - Xuất xứ: Việt Nam 
+        - Hạn sử dụng: 12 tháng kể từ ngày sản xuất (in trên bao bì)
 
-        Đặc điểm nổi bật của sản phẩm:
-        - Nguồn nguyên liệu nhập khẩu sạch.
-        - Quy trình sản xuất đạt chuẩn VSATTP. 
-        - Không có chất bảo quản, an toàn cho sức khỏe.
-        - Kỹ thuật rang hạnh nhân theo công nghệ cao cho ra hạt chất lượng,đạt độ ẩm tiêu chuẩn giữ được vị hạt thơm, giòn nguyên bản.
-        - Bảo quản lạnh kỹ lưỡng trong môi trường chân không, chống nấm mốc.
+
+        Hướng dẫn cách pha trà hoa cúc vàng sấy lạnh
+
+        - Cho 4-5 bông cúc khô vào ấm trà, cho thêm nước sôi trên 100 độ vào. Ngâm trong 2 phút sau đó đổ nước 1 đi.
+
+        - Lọc trà để bỏ bã hoa cúc và giữ lại nước trà.
+
+        - Tuỳ theo người dùng có thể cho thêm mật ong hoặc đường phèn, cho nước sôi vào sau 2 phút là có thể thưởng thức.
         </detail>
-    </hatdinhduong>
+    </trathaomoc>
 
-    <hatdinhduong>
-        <name>Hạt Macca Tây Nguyên Nứt Vỏ</name>
-        <pic>../assets/image/hat_macca.jpg</pic>
-        <price>125.000 đ</price>
+    <trathaomoc>
+        <name>Trà Hoa Nhài</name>
+        <pic>../assets/image/tra_hoanhai.jpg</pic>
+        <price>139.000 đ</price>
         <detail>
-        Hạt macca nứt vỏ FIJI NUTS, hạt mắc ca Tây Nguyên đã rang sấy tốt cho bà bầu
+        Trà hoa nhài khô nguyên bông FIJI NUTS
 
-        Tông tin sản phẩm:
-        - Trọng lượng: Gói 500gr hút chân không hoặc hũ nhựa 450gr
-        - Xuất xứ: Lâm Đồng, Việt Nam
-        - Hạn sử dụng: 6 tháng kể từ ngày sản xuất (in trên bao bì)
-        - Phân phối bởi công ty TNHH Hạt dinh dưỡng Tây Nguyên
+        Thông tin sản phẩm:
+        - Trọng lượng: Hộp 500g 
+        - Xuất xứ: Việt Nam
+        - Hạn sử dụng: 12 tháng kể từ ngày sản xuất (in trên bao bì)
+
        
-        Đặc điểm nổi bật của sản phẩm:
-        - Nguồn nguyên liệu 100% hạt macca sạch, nguyên liệu từ vùng đất Tây Nguyên màu mỡ.
-        - Quy trình sản xuất đạt chuẩn VSATTP. 
-        - Không có chất bảo quản, an toàn cho sức khỏe.
-        - Kỹ thuật sấy nứt theo công nghệ cao cho đầu ra hạt macca chất lượng, đạt độ ẩm tiêu chuẩn, dễ tách vỏ hạt.
-        - Hạt macca được xử lý bảo quản lạnh kỹ lưỡng trong môi trường chân không, chống nấm mốc.
+        Hướng dẫn sử dụng:
+        Bước 1: Cho 5 bông hoa (khoảng 5gram) vào ấm trà. Sau đó cho một ít nước sôi vào ấm và tráng trà. Tráng trà nghĩa là bạn cho một chút nước sôi vào ấm đã có sẵn trà, đợi 30 giây cho trà nở ra và đổ bỏ nước trà đó đi. Bước này có công dụng kích thích trà và làm sạch trà.
+        Bước 2: Sử dụng đế đun đèn cầy để uống trà hoa. Cho ấm trà đã tráng lên chân đế đun đã thắp nến. Rót 250ml nước ấm vào ấm trà và đợi từ 5-7 phút. Nếu các bạn không sử dụng chân đế đun, thì sẽ rót nước sôi ở nhiệt độ 90-100oC vào ấm trà và cũng đợi từ 5-7 phút.
+        Bước 3: Hết thời gian, bạn sử dụng đồ lọc trà chiết nước trà ra bình, khi uống thì các bạn rót lại sang tách. Với những loại bình thủy tinh có sẵn đồ lọc thì không cần phải lọc lại.
+        Bước 4: Khi dùng hết trà thì các bạn lại tiếp tục lặp lại bước 2 để dùng tiếp. Trà có thể dùng lại được 2 – 3 lần.
         </detail>
-    </hatdinhduong>
+    </trathaomoc>
 
-    <hatdinhduong>
-        <name>Hạt Óc Chó Nhân Vàng</name>
-        <pic>../assets/image/hat_occho.jpg</pic>
-        <price>165.000 đ</price>
+    <trathaomoc>
+        <name>Trà Tâm Seb</name>
+        <pic>../assets/image/tra_tamsen.jpg</pic>
+        <price>146.000 đ</price>
         <detail>
-        Nhân óc chó vàng FIJI NUTS, hạt óc chó tách vỏ Chile tốt cho bà bầu, cho bé
+        Trà tâm sen sấy khô FIJI NUTS
 
         Thông tin sản phẩm:
-        - Trọng lượng: Gói/ hũ nhựa 400gr hút chân không hoặc hũ nhựa 200gr
-        - Xuất xứ: Nhập khẩu Chile
-        - Hạn sử dụng: 6 tháng kể từ ngày sản xuất (in trên bao bì)
-        - Phân phối bởi công ty TNHH Hạt dinh dưỡng Tây Nguyên
+        - Trọng lượng: Hộp 300g
+        - Xuất xứ: Việt Nam 
+        - Hạn sử dụng: 12 tháng kể từ ngày sản xuất (in trên bao bì)
+
         
-        Đặc điểm nổi bật của sản phẩm:
-        - Nguồn nguyên liệu hạt óc chó nhập khẩu, hạt vụ mới.
-        - Quy trình đóng gói tách vỏ hạt, đóng gói tại Việt Nam đạt chuẩn VSATTP.
-        - Hạt óc chó không có chất bảo quản, không chất tẩy trắng, không hun trùng, không tẩm ướp, an toàn cho sức khỏe.
-        - Quy trình chế biến đảm bảo theo Tiêu chuẩn vệ sinh An toàn thực phẩm.
-        - Bảo quản lạnh kỹ lưỡng trong môi trường chân không, chống nấm mốc.
+        Hướng dẫn sử dụng:
+        - Pha 200ml nước sôi với 2 – 3g tâm sen khô trong khoảng 10 phút 
+        - Trà tâm sen khô giúp dễ ngủ và ngủ ngon giấc được dùng nhiều lần trong ngày, đặc biệt vào buổi tối sau ăn tầm 1 - 2 tiếng.
         </detail>
-    </hatdinhduong>
+    </trathaomoc>
 </TRATHAOMOC>
