@@ -19,10 +19,11 @@
                     alert('Bạn nhập thiếu thông tin. Vui lòng kiểm tra lại')
                 }
                 else {
-                    window.open('')
+                    window.open('xacthuc.html')
                 }
             }
         </script>
+
 </head>
 
 <body>
@@ -36,31 +37,27 @@
         <div class="noi-dung">
             <div class="form">
                 <div style="text-align: center;">
-                    <h2 >Đăng Nhập</h2>
-                    <h4 style="margin: 10px;">Nếu bạn đã có tài khoản, đăng nhập tại đây</h4>
+                    <h2 >TẠO TÀI KHOẢN</h2>
+                    <h4 style="margin-bottom: 10px;">Nếu bạn chưa có tài khoản, vui lòng đăng ký tại đây</h4>
                 </div>
                
                 <form action="">
                     <div class="input-form">
-                        <input type="text" id="txtemail" name="" placeholder="Email/Số điện thoại/Tên đăng nhập" required id="">
+                        <input type="text" id="txtemail" name="" placeholder="Tên Người Dùng" required id="">
                     </div>
                     <div class="input-form">
-                        <input type="password" id="pwd" placeholder="Mật khẩu" required id="">
-                    </div>
-                    <div class="nho-dang-nhap">
-                        <label><input type="checkbox" name=""> Nhớ Đăng Nhập</label>
+                        <input type="text" id="pwd" name="" placeholder="Số Điện Thoại" required id="">
                     </div>
                     <div class="input-form">
-                        <input type="submit" value="Đăng Nhập" onclick="checkTT()">
+                        <input type="submit" value="Tiếp Tục" onclick="checkTT()">
                     </div>
                     <div class="input-form">
                         <ul>
-                            <li>Bạn Chưa Có Tài Khoản? <a href="dangky.html">Đăng Ký</a></li>
-                            <li><a href="quenmatkhau1.html">Quên mật khẩu?</a></li>
+                            <li>Bạn Đã Có Tài Khoản? <a href="DangNhap.html">Đăng Nhập</a></li>
                         </ul>
                     </div>
                 </form>
-                <h3>Đăng Nhập Bằng Mạng Xã Hội</h3>
+                <h3>Đăng Ký Bằng Mạng Xã Hội</h3>
                 <ul class="icon-dang-nhap">
                     <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
                     <li><i class="fa fa-google" aria-hidden="true"></i></li>
