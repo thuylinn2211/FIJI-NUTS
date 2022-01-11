@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <title>Giới thiệu - Liên hệ</title>
   <style>
     .tb1, tr, td, th {
         padding-top: 10px;
@@ -15,7 +16,7 @@
     }
   </style>
   <script>
-                    var xhttp = new XMLHttpRequest();
+            var xhttp = new XMLHttpRequest();
             xhttp.onreadystatechange = function () {
                 if (this.readyState == 4 && this.status == 200) {
                     myFunction(this);
@@ -41,7 +42,7 @@
                     "</td></tr>";
                 }
                 document.getElementById("thongtinthanhvien").innerHTML = table;
-                showpic.innerHTML = '<img src="' + pic + '"/>';
+
             }
         </script>
 </head>
@@ -81,14 +82,13 @@
             <td></td>
         </tr>
         </table>
-        <table style="width:100%" id="thongtinthanhvien">
-            
-        </table>
+        <table style="width:100%" id="thongtinthanhvien"></table>
     </div>
+    <div w3-include-html="Footer.html"></div>
+    <script>
+        w3.includeHTML();
+    </script>
 </section>
-<div w3-include-html="Footer.html"></div>
-<script>
-    w3.includeHTML();
-</script>
+
 </body>
 </html>
