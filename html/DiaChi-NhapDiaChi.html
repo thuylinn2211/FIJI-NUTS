@@ -28,9 +28,13 @@
                 alert('Bạn nhập thiếu thông tin. Vui lòng kiểm tra lại')
             }
             else {
-                
+                window.open('PhuongThucThanhToan.html')
             }
+            
         }
+        function backtocart(){
+                    window.open('GioHang.html')
+                }
       
     </script>
     </head>
@@ -38,7 +42,7 @@
         <h1>FIJI NUTS</h1>
         <p>Giỏ hàng > Thông tin giao hàng > Phương thức thanh toán</p>
         <h2>Thông tin giao hàng </h2>
-        <p><img src="" alt="Hình đại diện" >       Phạm Thị Thùy Linh (linhph1210@gmail.com)</p>
+        <p><img src="../assets/image/avt.jpeg" alt="Hình đại diện" height="50px" width="50px" >       Phạm Thị Thùy Linh (linhph1210@gmail.com)</p>
                 <form id="myform">
                     <table>
                         <tr>
@@ -141,8 +145,15 @@
                             <td>
                                 <select name="quanhuyen" id="stlquanhuyen" style="padding: 8px 10px;width: 424px;">
                                     <option value="Chọn Quận/Huyện">Chọn Quận/Huyện</option>
-                                    <option></option>
-                                    <option></option>
+                                    , Tịnh Biên, Tri Tôn, Châu Phú, , Thoại Sơn, Chợ Mới, Phú Tân
+                                    <option>An Phú</option>
+                                    <option> Tịnh Biên</option>
+                                    <option> Tri Tôn</option>
+                                    <option> Châu Phú</option>
+                                    <option> Châu Thành</option>
+                                    <option> Thoại Sơn</option>
+                                    <option> Chợ Mới</option>
+                                    <option> Phú Tân</option>
                                 </select>
                             </td>
                         </tr>
@@ -151,14 +162,14 @@
                             <td>
                                 <select name="phuongxa" id="sltphuongxa" style="padding: 8px 10px;width: 424px;">
                                     <option value="Chọn Phường/Xã">Chọn Phường/Xã</option>
-                                    <option></option>
-                                    <option></option>
+                                    <option>Phú Tân</option>
+                                    <option>Phú Tân</option>
                                 </select>
                             </td>
                         </tr>
                         <tr>
                             <td height="100px">
-                                <button style="padding: 8px 10px;">Quay lại giỏ hàng</button>
+                                <button style="padding: 8px 10px;" onclick="backtocart()">Quay lại giỏ hàng</button>
                             </td>
                             <td>
                                 <button style="padding: 8px 10px;background-color: #7B8F5B;color: white;" onclick="PhuongThucThanhToan()">PHƯƠNG THỨC THANH TOÁN</button>
