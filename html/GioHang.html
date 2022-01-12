@@ -1,64 +1,198 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8"/>
-        <title>Giỏ hàng</title>
-        
-    </head>
-    <body style="padding: 10px;">
-        <p>TRANG CHỦ / GIỎ HÀNG</p>
-        <section class="cart">
-            <form action="">
-                <table style="width: 100%;">
-                    <thead>
-                    <tr style="font-weight: bold;">
-                        <td>Tên sản phẩm </td>
-                        <td>Số lượng </td>
-                        <td>Giá tiền</td>
-                        <td></td>
-                    </tr>                          
-                </thead>
-                <tbody>
-                    <tr>
-                        <td style="display: flex;align-items: center;"><img style="width:70px" src="../assets/image/bot_cantay.jpg" alt="" >Bột Cần Tây Sấy Lạnh Behena</td>
-                        <td><input style="width:30px;outline: none;" type="number" value="1" min="0"></td>
-                        <td><p><span>129.000</span><sup>đ</sup></p></td>
-                        <td style="cursor:pointer ;">Xóa</td>
-                    </tr> <hr width="40%"/>
-                    <tr>
-                        <td style="display: flex;align-items: center;"><img style="width:70px" src="../assets/image/hat_macca.jpg" alt="" >Hạt Macca Nứt Vỏ</td>
-                        <td><input style="width:30px;outline: none;" type="number" value="1" min="0"></td>
-                        <td><p><span>125.000</span><sup>đ</sup></p></td>
-                        <td style="cursor:pointer ;">Xóa</td>
-                    </tr>
-                    <tr>
-                        <td style="display: flex;align-items: center;"><img style="width:70px" src="../assets/image/bot_caixoan.jpg" alt="" >Bột Cải Xoăn Kale Behena</td>
-                        <td><input style="width:30px;outline: none;" type="number" value="1" min="0"></td>
-                        <td><p><span>135.000</span><sup>đ</sup></p></td>
-                        <td style="cursor:pointer ;">Xóa</td>
-                    </tr>
-                    <tr>
-                        <td style="display: flex;align-items: center;"><img style="width:70px" src="../assets/image/hat_occho.jpg" alt="" >Hạt Óc chó Fiji</td>
-                        <td><input style="width:30px;outline: none;" type="number" value="1" min="0"></td>
-                        <td><p><span>265.000</span><sup>đ</sup></p></td>
-                        <td style="cursor:pointer ;">Xóa</td>
-                    </tr>
-                </tbody>
-                </table>
-                <div style="text-align: right;" class="price-total">
-                    <p style="font-weight: bold;">Tổng cộng:<span>320.000</span><sup>đ</sup></p>
-                </div>
-                <div style="text-align: right;">
-                    <button style="padding: 8px 10px;background-color: #7B8F5B;color: white;width: 20%;">THANH TOÁN</button>
-                </div>
-                <div style="text-align: left;">
-                    <p>Ghi chú</p>
-                    <textarea rows="5" cols="40" id="noidung" value="Nội dung" name="noidung" placeholder="Nhập nội dung..."></textarea>
-                </div>
-            </form>
+<!doctype html>
+<html class="no-js" lang="vi" >
+	<head>
+		<meta name="google-site-verification" content="TKYCM4BEYNJPjbA82rTlcY79ZzQPy9JJvBLixx_pDdM" />
+		<link rel="shortcut icon" href="//theme.hstatic.net/200000313173/1000694342/14/favicon.png?v=127" type="image/png" />
+		<meta charset="utf-8" />
+		<title>Giỏ hàng của bạn - Hạt Dinh Dưỡng Fiji Nuts</title>
+		<meta name="robots" content="index,follow" />
+		<meta name="revisit-after" content="1 day" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="HandheldFriendly" content="true">
+		<meta content='width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=0' name='viewport' />
+		
+		<script>
+		var formatMoney = '{{amount}}₫';
+		</script>
 
-        </section>
-        
+		<link rel="stylesheet" href="../assets/fonts/themify-icons/themify-icons.css">
 
-    </body>
+<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="../css/giohang.css">
+<!-- Latest compiled and minified JavaScript -->
+	<link rel="stylesheet" href="../css/javascriptBG.css">
+<body >
+	<section id="page_content" class="">
+		<div id="pageContainer" class="clearfix">
+			<div class="wrap-breadcrumb">
+				<div class="clearfix container">
+					<div class="row main-header">							
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pd5  ">
+							<ol class="breadcrumb breadcrumb-arrows">
+								<li><a href="/" target="_self">Trang chủ</a></li>
+								<li class="active"><span>Giỏ hàng</span></li>	
+							</ol>
+						</div>
+					</div>
+				</div>
+			</div>
+			<section id="content" class="clearfix container">
+				<div class="row">
+					<div id="cart" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<!-- Begin empty cart -->
+						<div class="row" >
+							<div id="layout-page" class="col-md-12 col-sm-12 col-xs-12">
+								<span class="header-page clearfix">
+									<h1>Giỏ hàng</h1>
+								</span>
+								<form action="/cart" method="post" id="cartformpage">
+									<table>
+										<thead>
+											<tr>
+												<th class="image">&nbsp;</th>
+												<th class="item">Tên sản phẩm</th>
+												<th class="qty">Số lượng</th>
+												<th class="price">Giá tiền</th>
+												<th class="remove">&nbsp;</th>
+											</tr>
+										</thead>
+										<tbody>	
+											<tr>
+												<td class="image">
+													<div class="product_image">
+														<a href="/products/hanh-nhan-rang-moc">
+															<img src=" //product.hstatic.net/200000313173/product/hanh_nhan_500g_77fc22da15a74729a5a52e0b96c43f8d_small.jpg  " alt="Hạnh Nhân Rang Mộc" />
+														</a>
+													</div>
+												</td>
+												<td class="item">
+													<a href="/products/hanh-nhan-rang-moc">
+														<strong>Hạnh Nhân Rang Mộc</strong>
+														
+														<span class="variant_title">Hũ 500gr</span>
+														
+													</a>
+												</td>
+												<td class="qty">
+													<input type="number" size="4" name="updates[]" min="1" id="updates_1073634083" value="1" onfocus="this.select();" class="tc item-quantity" />
+												</td>
+												<td class="price">195,000₫</td>
+												<td class="remove">
+													<a href="/cart/change?line=1&quantity=0" class="cart">Xóa</a>
+												</td>
+											</tr>
+											
+											<tr>
+												<td class="image">
+													<div class="product_image">
+														<a href="/products/bot-can-tay-say-lanh-behena">
+															<img src=" //product.hstatic.net/200000313173/product/bot-can-tay_837bf891816e4ddfa1c5b77067992c86_small.png  " alt="Bột Cần Tây" />
+
+														</a>
+													</div>
+												</td>
+												<td class="item">
+													<a href="/products/bot-can-tay-say-lanh-behena">
+														<strong>Bột Cần Tây</strong>
+														
+													</a>
+												</td>
+												<td class="qty">
+													<input type="number" size="4" name="updates[]" min="1" id="updates_1080699302" value="1" onfocus="this.select();" class="tc item-quantity" />
+												</td>
+												<td class="price">129,000₫</td>
+												<td class="remove">
+													<a href="/cart/change?line=2&quantity=0" class="cart">Xóa</a>
+												</td>
+											</tr>
+											
+											<tr>
+												<td class="image">
+													<div class="product_image">
+														<a href="/products/bot-rau-diep-ca-behena">
+															<img src=" //product.hstatic.net/200000313173/product/bot-diep-ca_5d6b3fe7500749369006d5696b0ee080_small.png  " alt="Bột Rau Diếp Cá" />
+
+														</a>
+													</div>
+												</td>
+												<td class="item">
+													<a href="/products/bot-rau-diep-ca-behena">
+														<strong>Bột Rau Diếp Cá</strong>
+														
+													</a>
+												</td>
+												<td class="qty">
+													<input type="number" size="4" name="updates[]" min="1" id="updates_1080651026" value="1" onfocus="this.select();" class="tc item-quantity" />
+												</td>
+												<td class="price">99,000₫</td>
+												<td class="remove">
+													<a href="/cart/change?line=3&quantity=0" class="cart">Xóa</a>
+												</td>
+											</tr>
+											
+											<tr>
+												<td class="image">
+													<div class="product_image">
+														<a href="/products/dau-say-deo-tanu-nuts">
+															<img src=" //product.hstatic.net/200000313173/product/dau_say_tanu_1_f20ad2bfc6aa4f99a1cc8c399bdfd305_small.jpg  " alt="Dâu Tây Sấy Dẻo" />
+
+														</a>
+													</div>
+												</td>
+												<td class="item">
+													<a href="/products/dau-say-deo-tanu-nuts">
+														<strong>Dâu Tây Sấy Dẻo</strong>
+														
+													</a>
+												</td>
+												<td class="qty">
+													<input type="number" size="4" name="updates[]" min="1" id="updates_1080637930" value="1" onfocus="this.select();" class="tc item-quantity" />
+												</td>
+												<td class="price">185,000₫</td>
+												<td class="remove">
+													<a href="/cart/change?line=4&quantity=0" class="cart">Xóa</a>
+												</td>
+											</tr>
+											
+											<tr class="summary">
+												<td class="image">&nbsp;</td>
+												<td>&nbsp;</td>
+												<td class="text-center"><b>Tổng cộng:</b></td>
+												<td class="price">
+													<span class="total">
+														<strong>608,000₫</strong>
+													</span>
+												</td>
+												<td>&nbsp;</td>
+											</tr>
+										</tbody>
+									</table>
+									<div class="row">
+										<div class="col-md-6 col-sm-6 col-xs-12 inner-left inner-right">
+											<div class="checkout-buttons clearfix">
+												<label for="note">Ghi chú </label>
+												<textarea id="note" name="note" rows="8" cols="50"></textarea>
+											</div>
+										</div>
+										<div class="col-md-6 col-sm-6 col-xs-12 cart-buttons inner-right inner-left">
+											<div class="buttons clearfix">
+												<button type="submit" id="checkout" class="button-default" name="checkout" value="" >Thanh toán</button>
+											</div>
+										</div>
+										<div class="col-md-12 col-sm-12  col-xs-12 continue-shop">
+											<b><a  href="/collections/all">
+												<i class="ti-arrow-left"></i> Tiếp tục mua hàng</a></b>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+						<!-- End cart -->
+					</div>
+				</div>
+			</section>
+		</div>
+	</section>
+</body>
 </html>
