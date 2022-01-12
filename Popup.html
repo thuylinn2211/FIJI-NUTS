@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hạt dinh dưỡng FijiNuts</title>
+    <style>
+        body {
+            background: #6cb1ff;
+            min-height: 100vh;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: none;
+        }
+        .contentBox {
+            position: relative;
+            width: 600px;
+            height: 400px;
+            background: #fff;
+            border-radius: 20px;
+            display: flex;
+            box-shadow: 0 5px 15px grey;
+        }
+        .imgBox {
+            position: relative;
+            width: 300px;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .imgBox ::before {
+            content: '';
+            position: absolute;
+            width: 250px;
+            height: 250px;
+            background: #e7ffe0;
+            border-radius: 50%;
+        }
+        .imgBox img {
+            position: relative;
+            max-width: 250px;
+            z-index: 1;
+        }
+        .content {
+            position: relative;
+            width: 300px;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .content h2 {
+            color: #333;
+            line-height:1em;
+            font-weight: 300;
+            font-size: 2em;
+        }
+        .content h1 {
+            font-size: 4em;
+            color: #ff4d54;
+            line-height: 1em;
+        }
+        .content h1 span {
+            color: #333;
+            font-size: 0.75em;
+            text-transform: uppercase;
+        }
+        .content p {
+            font-weight: 300;
+            font-family: serif;
+        }
+        .content a {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #ff4d54;
+            color: #fff;
+            margin-top: 15px;
+            text-decoration: none;
+            border-radius: 10px;
+        }
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 40px;
+            height: 40px;
+            background: #f3f3f3 url(assets/image/close.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            cursor: pointer;
+            border-radius: 50%;
+            z-index: 10;
+        }
+
+        /*responsive*/
+
+        @media (max-width: 767px) {
+            .contentBox {
+                width: 300px;
+                height: auto;
+                flex-direction: column;
+            }
+            .imgBox {
+                height: 300px;
+                transform: translateY(10px);
+            }
+            .imgBox ::before {
+                background: #fff;
+            }
+            .content {
+                height: auto;
+                text-align: center;
+                padding: 20px;
+                padding-top: 0;
+            }
+            .close {
+                top: -50px;
+                right: -10px;
+                background: #fff url(assets/image/close.png);
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="popup">
+        <div class="contentBox">
+            <div class="close"></div>
+            <div class="imgBox">
+                <img src="assets/image/gift.png" alt="">
+            </div>
+            <div class="content">
+                <div>
+                    <h2>Special Offer</h2>
+                    <h1>80% <span>OFF</span></h1>
+                    <p>ƯU ĐÃI CUỐI NĂM - MUA KÈM DEAL SỐC</p>
+                    <a href="#">GET THE DEAL</a>
+                </div>    
+            </div>
+        </div>
+    </div>
+
+    <!--Automatic show popup after 2 seconds of page load-->
+    <script>
+        const popup = document.querySelector('.popup');
+        const close = document.querySelector('.close');
+
+        window.onload = function(){
+            setTimeout(function(){
+                popup.style.display = "block"
+            }, 2000 ) //add some time delay to show popup 
+        }
+
+        close.addEventListener('click', () => {
+            popup.style.display = "none"
+        })
+    </script>
+</body>
+</html>
