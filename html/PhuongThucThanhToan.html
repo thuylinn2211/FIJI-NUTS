@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <style>
+            body{
+                padding: 5px;
+            }
+        </style>
+        <script type="text/javascript">
+            function QuayLaiGH() {
+                    window.open('GioHang.html')
+                }
+        </script>  
+    </head>
+    <body>
+        <h1>FIJI NUTS</h1>
+        <p>Giỏ hàng > Thông tin giao hàng > Phương thức thanh toán</p>
+        <h2>Phương thức vận chuyển </h2>
+        <div style="border: 1px solid #7B8F5B;padding: 12px 10px; width: 500px;">
+            <input type="radio" id="ghtn" value="ghtn"/>
+            <label for="ghtn" >Giao hàng tận nơi&emsp;&emsp;30,000đ</label>     
+        </div>
+        <h2 style="padding-top: 20px;">Phương thức thanh toán</h2>
+        <div style="border: 1px solid #7B8F5B;padding: 12px 10px; width: 500px;">
+            <input type="radio" id="cod" value="cod"/>
+            <label for="cod" >Thanh toán khi giao hàng (COD)</label>     
+        </div>
+        <div style="border: 1px solid #7B8F5B;padding: 12px 10px; width: 500px;">
+            <input type="radio" id="ck" value="ck"/>
+            <label for="cod" >Chuyển khoản qua ngân hàng</label>     
+        </div>
+        <div style="padding-top: 20px;" >
+        <button style="padding: 8px 10px;" onclick="QuayLaiGH()">Quay lại giỏ hàng</button>
+        <button style="padding: 8px 10px;background-color: #7B8F5B;color:white;margin-left: 225px;">HOÀN TẤT ĐƠN HÀNG</button>
+        </div>
+    </body>
+</html>

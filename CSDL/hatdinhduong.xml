@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<HATDINHDUONG>
+    <hatdinhduong>
+        <name>Hạt Bí Xanh</name>
+        <pic>../assets/image/hat_bixanh.jpg</pic>
+        <price>135.000 đ</price>
+        <detail>
+        Hạt bí xanh rang chín FIJI NUTS, hạt bí xanh tách vỏ Ấn Độ sấy giòn nguyên vị
+
+        Thông tin sản phẩm:
+        - Trọng lượng: Gói 500gr
+        - Xuất xứ: Nhập khẩu Ấn Độ
+        - Hạn sử dụng: 6 tháng kể từ ngày sản xuất (in trên bao bì)
+        - Phân phối bởi công ty TNHH Hạt dinh dưỡng Tây Nguyên
+        
+        Đặc điểm nổi bật của sản phẩm:
+        - Nguồn nguyên liệu nhập khẩu chính ngạch.
+        - Quy trình sản xuất đạt chuẩn VSATTP.
+        - Hạt bí xanh không có chất bảo quản, an toàn cho sức khỏe.
+        - Hạt rang theo quy trình, công nghệ hiện đại, hạt đạt độ ẩm vừa phải, giòn thơm ngon.
+        - Bảo quản lạnh kỹ lưỡng, chống nấm mốc.
+        </detail>
+    </hatdinhduong>
+
+    <hatdinhduong>
+        <name>Hạt Dẻ Cười</name>
+        <pic>../assets/image/hat_decuoi.jpg</pic>
+        <price>220.000 đ</price>
+        <detail>
+        Hạt dẻ cười FIJI NUTS, hạt dẻ cười rang muối không tẩy trắng giàu dinh dưỡng
+
+        Thông tin sản phẩm:
+        - Trọng lượng: Gói 500gr
+        - Xuất xứ: Việt Nam
+        - Hạn sử dụng: 6 tháng kể từ ngày sản xuất (in trên bao bì)
+        - Phân phối bởi công ty TNHH Hạt dinh dưỡng Tây Nguyên
+
+        Đặc điểm nổi bật của sản phẩm:
+        - Hạt được rang muối, rất giòn, ăn rất thơm và ngọt bùi.
+        - Không tẩy trắng, an toàn cho sức khỏe.
+        - Được đóng gói hút chân không cẩn thận.
+        - Ăn trực tiếp hoặc sử dụng trong các món ăn, sữa hạt,...
+        - Đầy đủ giấy tờ nhập khẩu, đạt tiêu chuẩn VSATTP.
+        </detail>
+    </hatdinhduong>
+
+    <hatdinhduong>
+        <name>Hạnh Nhân Rang Mộc</name>
+        <pic>../assets/image/hat_hanhnhan.jpg</pic>
+        <price>165.000 đ</price>
+        <detail>
+        Hạnh nhân rang mộc FIJI NUTS, hạt hạnh nhân Mỹ vỏ mỏng, hạnh nhân mật ong
+
+        Thông tin sản phẩm:
+        - Trọng lượng: Gói 500gr
+        - Xuất xứ: Nhập khẩu Mỹ
+        - Hạn sử dụng: 6 tháng kể từ ngày sản xuất (in trên bao bì)
+        - Phân phối bởi công ty TNHH Hạt dinh dưỡng Tây Nguyên
+
+        Đặc điểm nổi bật của sản phẩm:
+        - Nguồn nguyên liệu nhập khẩu sạch.
+        - Quy trình sản xuất đạt chuẩn VSATTP. 
+        - Không có chất bảo quản, an toàn cho sức khỏe.
+        - Kỹ thuật rang hạnh nhân theo công nghệ cao cho ra hạt chất lượng,đạt độ ẩm tiêu chuẩn giữ được vị hạt thơm, giòn nguyên bản.
+        - Bảo quản lạnh kỹ lưỡng trong môi trường chân không, chống nấm mốc.
+        </detail>
+    </hatdinhduong>
+
+    <hatdinhduong>
+        <name>Hạnh Điều Rang Muối</name>
+        <pic>../assets/image/hat_dieu/jpg</pic>
+        <price>115.000 đ</price>
+        <detail>
+        Hạt điều rang muối nguyên hạt FIJI NUTS, hạt điều rang muối Bình Phước thơm ngon
+
+        📍 Thông tin sản phẩm:
+        - Trọng lượng: Gói 500gr hút chân không hoặc hũ 500gr
+        - Xuất xứ: Bình Phước
+        - Hạn sử dụng: 6 tháng kể từ ngày sản xuất (in trên bao bì)
+        - Phân phối bởi công ty TNHH Hạt dinh dưỡng Tây Nguyên
+
+        📍 Đặc điểm nổi bật của sản phẩm:
+        - Nguồn nguyên liệu điều Bình Phước sạch.
+        - Hạt điều rang muối được rang củi thủ công với muối (muối chỉ chiếm tỉ lệ 1% nên không bị mặn đắng), bóc vỏ sẵn.
+        - Quy trình sản xuất đạt chuẩn VSATTP.
+        - Không có chất bảo quản, an toàn cho sức khỏe.
+        - Kỹ thuật rang theo công nghệ cao cho ra hạt chất lượng,đạt độ ẩm tiêu chuẩn giữ được vị hạt thơm ngon.
+        - Bảo quản lạnh kỹ lưỡng trong môi trường chân không, chống nấm mốc.
+        </detail>
+    </hatdinhduong>
+
+    <hatdinhduong>
+        <name>Hạt Macca Tây Nguyên Nứt Vỏ</name>
+        <pic>../assets/image/hat_macca.jpg</pic>
+        <price>125.000 đ</price>
+        <detail>
+        Hạt macca nứt vỏ FIJI NUTS, hạt mắc ca Tây Nguyên đã rang sấy tốt cho bà bầu
+
+        Tông tin sản phẩm:
+        - Trọng lượng: Gói 500gr hút chân không hoặc hũ nhựa 450gr
+        - Xuất xứ: Lâm Đồng, Việt Nam
+        - Hạn sử dụng: 6 tháng kể từ ngày sản xuất (in trên bao bì)
+        - Phân phối bởi công ty TNHH Hạt dinh dưỡng Tây Nguyên
+       
+        Đặc điểm nổi bật của sản phẩm:
+        - Nguồn nguyên liệu 100% hạt macca sạch, nguyên liệu từ vùng đất Tây Nguyên màu mỡ.
+        - Quy trình sản xuất đạt chuẩn VSATTP. 
+        - Không có chất bảo quản, an toàn cho sức khỏe.
+        - Kỹ thuật sấy nứt theo công nghệ cao cho đầu ra hạt macca chất lượng, đạt độ ẩm tiêu chuẩn, dễ tách vỏ hạt.
+        - Hạt macca được xử lý bảo quản lạnh kỹ lưỡng trong môi trường chân không, chống nấm mốc.
+        </detail>
+    </hatdinhduong>
+
+    <hatdinhduong>
+        <name>Hạt Óc Chó Nhân Vàng</name>
+        <pic>../assets/image/hat_occho.jpg</pic>
+        <price>165.000 đ</price>
+        <detail>
+        Nhân óc chó vàng FIJI NUTS, hạt óc chó tách vỏ Chile tốt cho bà bầu, cho bé
+
+        Thông tin sản phẩm:
+        - Trọng lượng: Gói/ hũ nhựa 400gr hút chân không hoặc hũ nhựa 200gr
+        - Xuất xứ: Nhập khẩu Chile
+        - Hạn sử dụng: 6 tháng kể từ ngày sản xuất (in trên bao bì)
+        - Phân phối bởi công ty TNHH Hạt dinh dưỡng Tây Nguyên
+        
+        Đặc điểm nổi bật của sản phẩm:
+        - Nguồn nguyên liệu hạt óc chó nhập khẩu, hạt vụ mới.
+        - Quy trình đóng gói tách vỏ hạt, đóng gói tại Việt Nam đạt chuẩn VSATTP.
+        - Hạt óc chó không có chất bảo quản, không chất tẩy trắng, không hun trùng, không tẩm ướp, an toàn cho sức khỏe.
+        - Quy trình chế biến đảm bảo theo Tiêu chuẩn vệ sinh An toàn thực phẩm.
+        - Bảo quản lạnh kỹ lưỡng trong môi trường chân không, chống nấm mốc.
+        </detail>
+    </hatdinhduong>
+
+</HATDINHDUONG>

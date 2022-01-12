@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://www.w3schools.com/lib/w3.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <title>Giới thiệu - Liên hệ</title>
+  <style>
+    .tb1, tr, td, th {
+        padding-top: 10px;
+        padding-bottom: 20px;
+        padding-left: 10px;
+        padding-right: 30px;
+    }
+  </style>
+  <script>
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    myFunction(this);
+                }
+            };
+            xhttp.open("GET", "../CSDL/member.xml", true);
+            xhttp.send();
+
+            function myFunction(xml) {
+
+                var i;
+                var xmlDoc = xml.responseXML;
+                var table = "<tr><th colspan='5'>GIỚI THIỆU THÀNH VIÊN NHÓM 7</th></tr>";
+
+                var x = xmlDoc.getElementsByTagName("thanhvien");
+                for (i = 0; i < x.length; i++) {
+                    table += "<tr><th>" +
+                    x[i].getElementsByTagName("hoten")[0].childNodes[0].nodeValue +
+                    "</th><td>" +
+                    x[i].getElementsByTagName("chucvu")[0].childNodes[0].nodeValue +
+                    "<td/><td>" +
+                    x[i].getElementsByTagName("mssv")[0].childNodes[0].nodeValue +
+                    "</td></tr>";
+                }
+                document.getElementById("thongtinthanhvien").innerHTML = table;
+
+            }
+        </script>
+</head>
+<body>
+<section>
+    <div class="container">              
+        <ol class="breadcrumb">
+          <li><a href="#">TRANG CHỦ</a></li>
+          <li><a href="#">GIỚI THIỆU</a></li>
+          <li><a href="#">LIÊN HỆ</a></li>    
+        </ol>
+        <table id="tb1" style="width:100%">
+        <tr>
+            <th><h2>GIỚI THIỆU</h2></th>
+            <th><h2>LIÊN HỆ</h2></th>
+        </tr>
+        <tr>
+            <td rowspan="5">FijiNuts tự hào là thương hiệu  Đậu - Hạt dinh dưỡng hàng đầu Việt Nam. <br/> <br/>
+                FijiNuts là đơn vị sản xuất, phân phối các dòng sản phẩm cao cấp cho sức khỏe hàng đầu như Hạt Dinh Dưỡng, Hoa quả sấy, Trà thảo mộc, Bột rau củ, Bánh ngũ cốc,... Tất cả các sản phẩm này đều được sản xuất theo quy trình đảm bảo vệ sinh an toàn thực phẩm và đầy đủ dưỡng chất thiết yếu cho những ai đang trong giai đoạn ăn kiêng hoặc eat clean. Các sản phẩm đến từ FijiNuts mang đến cho bạn những món ăn cân bằng dưỡng chất và kiểm soát cân nặng một cách vô cùng hiệu quả.
+                <br/> <br/>
+                FijiNuts luôn luôn cam kết mang đến cho khách hàng dịch vụ – sản phẩm chất lượng tốt nhất. 
+                <br/> <br/>
+                FijiNuts - GỬI SỨC KHỎE ĐẾN HÀNG TRIỆU GIA ĐÌNH VIỆT!
+            </td> 
+        </tr>
+        <tr>
+            <td><strong>CÔNG TY TNHH FIJINUTS</strong>
+                <br/>
+                <strong>Địa chỉ: </strong>Linh Xuân, TP.Thủ Đức
+                <br/>
+                <strong>Email: </strong>fijinuts@gmail.com
+                <br/>
+                <strong>Fanpage: </strong>www.facebook.com/fijinuts
+                <br/>
+                <strong>Hotline: </strong>01233589625
+            </td>
+            <td></td>
+        </tr>
+        </table>
+        <table style="width:100%" id="thongtinthanhvien"></table>
+    </div>
+    <div w3-include-html="Footer.html"></div>
+    <script>
+        w3.includeHTML();
+    </script>
+</section>
+
+</body>
+</html>
