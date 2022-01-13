@@ -25,14 +25,24 @@
             function CheckMaGiamGia(){
                 var col1=document.getElementById('col1');
                 var col3=document.getElementById('col3');
+                var tongcong=document.getElementById('tongcong');
+
                 if (document.getElementById('mgg').value="FIJINUT"){
                     alert('Áp mã giảm giá thành công. Bạn được giảm 30,000đ')
                     col1.innerHTML='Mã giảm giá'
-                    col3.innerHTML=' 30,000đ'
+                    col3.innerHTML=' -30,000đ'
+                    tongcong.innerHTML='654,000 đ'
                 }
                 else {
                     alert('Mã giảm giá không hợp lệ')
                 }
+            }
+            function TamTinh(){
+                document.getElementById("price1").innerHTML=price1;
+                document.getElementById("price2").innerHTML=price2;
+                document.getElementById("price3").innerHTML=price3;
+                return total=Math.round(price1+price2+price3);
+                
             }
         </script>  
     </head>
@@ -42,7 +52,7 @@
         <p>Giỏ hàng > Thông tin giao hàng > Phương thức thanh toán</p>
         <h2>Phương thức vận chuyển </h2>
         <div style="border: 1px solid #7B8F5B;padding: 12px 10px; width: 500px;">
-            <input type="radio" id="ghtn" value="ghtn" autofocus/>
+            <input type="radio" id="ghtn" value="ghtn" checked/>
             <label for="ghtn" >Giao hàng tận nơi&emsp;&emsp;30,000đ</label>     
         </div>
         <h2 style="padding-top: 20px;">Phương thức thanh toán</h2>
@@ -71,7 +81,7 @@
                     <td>
     
                     </td>
-                    <td>
+                    <td id="price1">
                         129,000 đ 
                     </td>
                 </tr>
@@ -85,7 +95,7 @@
                     <td>
     
                     </td>
-                    <td>
+                    <td id="price2">
                         135,000 đ 
                     </td>
                 </tr>
@@ -99,7 +109,7 @@
                     <td>
     
                     </td>
-                    <td>
+                    <td id="price3">
                         110,000 đ 
                     </td>
                     
@@ -138,10 +148,11 @@
                 </tr> 
                 <tr>
                     <td style="font-weight: bold;">Tổng cộng:</td>
+                    <td colspan="2"></td>
+                    <td id="tongcong"></td>
                 </tr>
                 
             </table>
-            
             
          </div>
     </body>
