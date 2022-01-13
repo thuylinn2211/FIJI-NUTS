@@ -1,38 +1,159 @@
 <!DOCTYPE html>
 <html>
     <head>
-
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
             body{
                 padding: 5px;
+                background-color: #f8ffe9;
             }
         </style>
         <script type="text/javascript">
             function QuayLaiGH() {
-                    window.open('GioHang.html')
+                    location.assign('GioHang.html')
                 }
+            function HoanTatDonHang(){
+                if(document.getElementById('cod').checked){
+                    location.assign('HoanThanhDonHang.html')
+                }
+                else if(document.getElementById('ck').checked){
+                    location.assign('ChonNganHang.html')
+                }
+            }
+            function CheckMaGiamGia(){
+                var col1=document.getElementById('col1');
+                var col3=document.getElementById('col3');
+                var tongcong=document.getElementById('tongcong');
+
+                if (document.getElementById('mgg').value="FIJINUT"){
+                    alert('Áp mã giảm giá thành công. Bạn được giảm 30,000đ')
+                    col1.innerHTML='Mã giảm giá'
+                    col3.innerHTML=' -30,000đ'
+                    tongcong.innerHTML='654,000 đ'
+                }
+                else {
+                    alert('Mã giảm giá không hợp lệ')
+                }
+            }
+            function TamTinh(){
+                document.getElementById("price1").innerHTML=price1;
+                document.getElementById("price2").innerHTML=price2;
+                document.getElementById("price3").innerHTML=price3;
+                return total=Math.round(price1+price2+price3);
+                
+            }
         </script>  
     </head>
     <body>
+        <div style="float: left;">
         <h1>FIJI NUTS</h1>
         <p>Giỏ hàng > Thông tin giao hàng > Phương thức thanh toán</p>
         <h2>Phương thức vận chuyển </h2>
         <div style="border: 1px solid #7B8F5B;padding: 12px 10px; width: 500px;">
-            <input type="radio" id="ghtn" value="ghtn"/>
+            <input type="radio" id="ghtn" value="ghtn" checked/>
             <label for="ghtn" >Giao hàng tận nơi&emsp;&emsp;30,000đ</label>     
         </div>
         <h2 style="padding-top: 20px;">Phương thức thanh toán</h2>
         <div style="border: 1px solid #7B8F5B;padding: 12px 10px; width: 500px;">
-            <input type="radio" id="cod" value="cod"/>
+            <input type="radio" id="cod" value="cod" name="PTTT"/>
             <label for="cod" >Thanh toán khi giao hàng (COD)</label>     
         </div>
         <div style="border: 1px solid #7B8F5B;padding: 12px 10px; width: 500px;">
-            <input type="radio" id="ck" value="ck"/>
+            <input type="radio" id="ck" value="ck" name="PTTT"/>
             <label for="cod" >Chuyển khoản qua ngân hàng</label>     
         </div>
         <div style="padding-top: 20px;" >
         <button style="padding: 8px 10px;" onclick="QuayLaiGH()">Quay lại giỏ hàng</button>
-        <button style="padding: 8px 10px;background-color: #7B8F5B;color:white;margin-left: 225px;">HOÀN TẤT ĐƠN HÀNG</button>
+        <button style="padding: 8px 10px;background-color: #7B8F5B;color:white;margin-left: 225px;" onclick="HoanTatDonHang()">HOÀN TẤT ĐƠN HÀNG</button>
         </div>
+    </div>
+        <div style="width: 40%;float: right;padding-top: 80px;padding-right: 10px;height: 100%;">
+            <table >
+                <tr>
+                    <td>
+                        <img src="../assets/image/bot_cantay.jpg" height="80px" width="80px"/>
+                    </td>
+                    <td>
+                        Bột Cần Tây Sấy Lạnh    
+                    </td>
+                    <td>
+    
+                    </td>
+                    <td id="price1">
+                        129,000 đ 
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="../assets/image/bot_caixoan.jpg" height="80px" width="80px"/>
+                    </td>
+                    <td>
+                        Bột Cải Xoăn
+                    </td>
+                    <td>
+    
+                    </td>
+                    <td id="price2">
+                        135,000 đ 
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="../assets/image/traicaysay_nho.jpg" height="80px" width="80px"/>
+                    </td>
+                    <td>
+                        Nho Khô Chilli  
+                    </td>
+                    <td>
+    
+                    </td>
+                    <td id="price3">
+                        110,000 đ 
+                    </td>
+                    
+                </tr>
+                
+                <tr>
+                    <td>
+    
+                    </td>
+                    <td colspan="2" height="100px">
+                        <input type="text" placeholder="Nhập Mã giảm giá" id="mgg"  style="padding: 8px 10px;"/>
+                    </td>
+                    <td>
+                    <div>
+                        <button style="color:white; background-color: #7B8F5B;padding: 8px 10px;" onclick="CheckMaGiamGia()" >
+                        SỬ DỤNG
+                        </button>
+                    </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Tạm tính</td>
+                    <td colspan="2"></td>
+                    
+                    <td>654,000 đ</td>
+                </tr>
+                <tr>
+                    <td>Phí vận chuyển</td>
+                    <td colspan="2"></td>
+                    <td> 30,000 đ</td>
+                </tr>
+                <tr >
+                    <td id="col1"></td>
+                    <td colspan="2"></td>
+                    <td id="col3"></td>
+                </tr> 
+                <tr>
+                    <td style="font-weight: bold;">Tổng cộng:</td>
+                    <td colspan="2"></td>
+                    <td id="tongcong"></td>
+                </tr>
+                
+            </table>
+            
+         </div>
     </body>
 </html>
