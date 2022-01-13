@@ -1,0 +1,157 @@
+body {
+    margin: 80px 0 0 0;
+}
+* {
+    box-sizing: border-box;
+}
+
+.head{
+    text-align: center;
+    margin-bottom: 30px;
+}
+    /* Tạo hai cột không bằng nhau, float cạnh nhau */
+/* Cột trái */
+.leftcolumn { 
+    float: left;
+    width: 30%;
+    padding-left: calc(100%/12);
+    padding-right: 15px;
+}
+.line{
+    width: 20%;
+    float: left;
+    height: 3px;
+    background-color: #D69854;
+}
+
+.ds >ul{
+    margin-top: 55px;
+    width: 100%;
+}
+
+#time {
+    display: inline-block; 
+    
+}
+#day{
+    display: inline-block;
+    margin-left: 30px;
+}
+
+a{
+    color: #000;
+}
+a:hover{
+    color: #AC8C69;
+}
+a {
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.25s ease;
+    -webkit-transition: all 0.2s ease;
+}
+  
+  /* Cột phải */
+.rightcolumn {
+    float: left;
+    width: 70%;
+    padding-left: 1%;
+    padding-right: calc(100%/12);
+}
+
+.table-khung{
+    border: 1px solid black;
+    margin-top: 20px;
+}
+table {
+    width: 100%;
+    font-size: 18px;
+}
+.sanpham{
+    width: 40%;
+}
+th{
+    height: 50px;
+    padding: 10px;
+}
+tr.row-head th {
+    border-bottom:1pt solid black;
+    text-align: center;
+}
+tr.row-item td{
+    border-bottom: 1pt solid black;
+}
+tr.row-end td{
+    text-align: right;
+    height: 45px;
+}
+td{
+    height: 40px;
+    padding: 10px;
+}
+.dongia, .soluong ,.thanhtien td{
+    width: 20%;
+    text-align: center;
+}
+.dongia,.thanhtien, .soluong td{
+    text-align: right;
+}
+
+/* address */
+
+#address{
+    margin-top: 5%;
+    margin-bottom: 30%;
+}
+
+.left, .right{
+    display: inline-block;
+    width: 46%;
+}
+.left{
+    margin-right: 7%;
+}
+.local{
+    float: left;
+    border: 1px solid black;
+}
+
+tr.color td{
+    background-color: #A0B79B;
+}
+
+tr.address-item td{
+    background-color: #E9EDE5;
+}
+
+/* Clear float khác sau các cột */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
