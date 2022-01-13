@@ -6,7 +6,15 @@
         <title>Chọn ngân hàng</title>
         <script type="text/javascript">
             function continuePTTT(){
-                    window.open('HoanThanhDonHang.html');
+                var sothe= document.getElementById('nhapsothe');
+                var phathanh=document.getElementById('thangnamphathanh');
+                var chuthe=document.getElementById('temchuthe');
+                if (sothe.value==""){
+                    alert("Vui lòng nhập số thẻ")
+                }
+                else{
+                    location.assign('HoanThanhDonHang.html');
+                }
                 }
         </script>
     </head>
@@ -32,7 +40,7 @@
                        </tr>
                        <tr>
                            <div style="margin-left: 20px;">
-                            <input type="text" placeholder="Nhập số thẻ" style="padding: 8px 10px;width: 80%;"/>
+                            <input type="text" placeholder="Nhập số thẻ" style="padding: 8px 10px;width: 80%;" id="nhapsothe"/>
                            </div>
                            
                        </tr>
@@ -43,7 +51,7 @@
                         </tr>
                        <tr>
                            <div style="margin-left: 20px;">
-                            <input type="text" style="padding: 8px 10px;width: 80%;" />
+                            <input type="date" style="padding: 8px 10px;width: 80%;" placeholder="MM/dd/yyyy" id="thangnamphathanh"/>
                            </div>
                        </tr>
                        <tr>
@@ -54,7 +62,7 @@
                        </tr>
                        <tr>
                            <div style="margin-left: 20px;">
-                               <input type="text" placeholder="NGUYEN VAN A" style="padding: 8px 10px;width: 80%;" />
+                               <input type="text" placeholder="NGUYEN VAN A" style="padding: 8px 10px;width: 80%;" id="tenchuthe" />
                            </div>
                        </tr>
                        <tr>
@@ -67,7 +75,7 @@
                        <tr>
                            <div style="padding-left: 20px;">
                             <a href="../html/HuongDan.html" style="padding-right: 30px;">Hướng dẫn</a>
-                            <button style="padding: 8px 10px;background-color: #7B8F5B;color: white;width: 30%;" onclick="continuePTTT()">Thanh toán</button>
+                            <input type="button" onclick="continuePTTT()" style="padding: 8px 10px;background-color: #7B8F5B;color: white;width: 30%;" value="Thanh toán"/>
                            </div>
                        </tr>
                    </table>

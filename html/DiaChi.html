@@ -6,10 +6,12 @@
         <script type="text/javascript">
         
         function QuayLaiGH() {
-                    window.open('GioHang.html')
+                    location.assign('GioHang.html')
                 }
         function PhuongThucThanhToan(){
-            window.open('PhuongThucThanhToan.html')
+
+                location.assign('PhuongThucThanhToan.html')
+            
         }
     </script>
     </head>
@@ -122,7 +124,7 @@
                             <td>
                                 <select name="quanhuyen" id="stlquanhuyen" style="padding: 8px 10px;width: 424px;">
                                     <option value="Chọn Quận/Huyện">Chọn Quận/Huyện</option>
-                                    , Tịnh Biên, Tri Tôn, Châu Phú, , Thoại Sơn, Chợ Mới, Phú Tân
+                                    
                                     <option>An Phú</option>
                                     <option> Tịnh Biên</option>
                                     <option> Tri Tôn</option>
@@ -147,11 +149,11 @@
                         <tr>
                             <td height="100px" width="50px">
                                 <div>
-                                <button style="padding: 8px 10px;" onclick="QuayLaiGH()">Quay lại giỏ hàng</button>
+                                    <input type="button" onclick="QuayLaiGH()" style="padding: 8px 10px;" value="Quay lại giỏ hàng"/>
                                 </div>
                             </td>
                             <td>
-                                <button style="padding: 8px 10px;background-color: #7B8F5B;color: white;margin-left: 0%;" onclick="PhuongThucThanhToan()">Phương thức thanh toán</button>
+                                <input type="button" style="padding: 8px 10px;background-color: #7B8F5B;color: white;margin-left: 0%;" onclick="PhuongThucThanhToan()" value="Phương thức thanh toán"/>
                             </td>
                         </tr>
 
@@ -204,21 +206,7 @@
                 
             </tr>
             
-            <tr>
-                <td>
-
-                </td>
-                <td colspan="2" height="100px">
-                    <input type="text" placeholder="Nhập Mã giảm giá"  style="padding: 8px 10px;"/>
-                </td>
-                <td>
-                    <button style="color:white; background-color: #7B8F5B;padding: 8px 10px;" >
-                    SỬ DỤNG
-                    </button>
-                    
-                </td>
-            </tr>
-            <tr>
+            <tr style="height: 50px;font-weight: bold;">
                 <td>Tạm tính</td>
                 <td colspan="2"></td>
                 
@@ -230,6 +218,7 @@
                 <td>30,000 đ</td>
             </tr>
         </table>
+        
      </div>
      </div>
     </body>
