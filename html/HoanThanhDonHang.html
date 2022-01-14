@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<<<<<<< HEAD
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -37,8 +36,18 @@
             <div class="rightcolumn">
                 <div class="card">
                     <h3>ĐƠN HÀNG: #AHKOKK123</h3>
-                    <div id="time">Đặt lúc: 12:57 P.M</div>
-                    <div id="day">12/01/2022</div>
+                    
+                    <div>Đặt lúc: </div>
+                    <p id="datetime"></p>
+                <script>
+                var today = new Date();
+                var date = today.getDate() + '-' + (today.getMonth() + 1) + '-' + today.getFullYear();
+                var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+                var dateTime = date + ' ' + time;
+                document.getElementById("datetime").innerHTML = dateTime;
+                </script>
+                    
+                    
                     <table class="table-khung">
                         <tr class="row-head">
                             <th class="sanpham">Sản phẩm</th>
@@ -113,75 +122,4 @@
     </div>
     
 </body>
-=======
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Hoàn thành đơn hàng</title>
-        <style>
-            *{
-                font-family: 'Roboto', sans-serif;
-            }
-        </style>
-
-    </head>
-    <body>
-        <div style="width:20%;float: left;padding-left: 20px;">
-            <p style="margin-top: 20%;" ><a href="#" style="color: darkgreen;">TÀI KHOẢN</a></p> 
-            <ul style="list-style-type: square;">
-                <li>Thông tin tài khoản</li>
-                <li>Danh sách địa chỉ</li>
-            </ul>
-            <p><a href="index.html"  style="color: darkgreen;">Quay lại trang chủ</a></p>
-        </div>
-        <div style="float: right;width:70%;margin-left: 10px;" >
-            <h3 style="text-align: center;">ĐƠN HÀNG</h3>
-            <h4>ĐƠN HÀNG: #AHKOKK123</h4>
-            <h4>Đặt lúc:</h4>
-            <p id="datetime"></p>
-            <script>
-                var today = new Date();
-                var date = today.getDate() + '-' + (today.getMonth() + 1) + '-' + today.getFullYear();
-                var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-                var dateTime = date + ' ' + time;
-                document.getElementById("datetime").innerHTML = dateTime;
-            </script>
-            <div style="height: 100%;">
-            <table style="width: 100%;">
-                    <thead>
-                    <tr style="font-weight: bold;">
-                        <td>Tên sản phẩm </td>
-                        <td>Số lượng </td>
-                        <td>Giá tiền</td>
-                    </tr>                          
-                </thead>
-                <tbody>
-                    <tr>
-                        <td style="display: flex;align-items: center;"><img style="width:70px" src="../assets/image/bot_cantay.jpg" alt="" >Bột Cần Tây Sấy Lạnh</td>
-                        <td>1</td>
-                        <td><p><span>129,000</span><sup>đ</sup></p></td>
-                    </tr>
-                    <tr>
-                        <td style="display: flex;align-items: center;"><img style="width:70px" src="../assets/image/bot_caixoan.jpg" alt="" >Bột Cải Xoăn</td>
-                        <td>1</td>
-                        <td><p><span>135,000</span><sup>đ</sup></p></td>
-                    </tr>
-                    <tr>
-                        <td style="display: flex;align-items: center;"><img style="width:70px" src="../assets/image/traicaysay_nho.jpg" alt="" >Nho Khô Chilli</td>
-                        <td>1</td>
-                        <td><p><span>135,000</span><sup>đ</sup></p></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td style="font-weight: bold;">Tổng cộng: 654,000 đ</td>
-                    </tr>
-                </tbody>
-                </table>
-            </div>
-        </div>
-    </body>
->>>>>>> aef404141ae6152873e9211f7b5d88bbe72476ff
-</html>
+<html/>

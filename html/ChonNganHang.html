@@ -6,22 +6,24 @@
         <title>Chọn ngân hàng</title>
         <script type="text/javascript">
             function continuePTTT(){
-                var sothe= document.getElementById('nhapsothe');
-                var phathanh=document.getElementById('thangnamphathanh');
-                var chuthe=document.getElementById('temchuthe');
-                if (sothe.value==""){
-                    alert("Vui lòng nhập số thẻ")
+                if(document.getElementById('nhapsothe').value==""||document.getElementById('thangnamphathanh').value==""||document.getElementById('tenchuthe').value==""){
+                alert("Bạn nhập thiếu thông tin. Vui lòng kiểm tra lại")
+            }
+            else {
+                location.assign('HoanThanhDonHang.html')
                 }
-                else{
-                    location.assign('HoanThanhDonHang.html');
-                }
-                }
+            }
         </script>
+        <style>
+            *{
+                font-family: sans-serif;
+            }
+        </style>
     </head>
     <body>
-        <h1>FIJI NUTS</h1>
+        <h1 style="padding-left: 10px;color: #677a48;font-family:Arial, Helvetica, sans-serif;">FIJI NUTS</h1>
         
-        <table style="width: 100%;padding: 10px;" >
+        <table style="padding: 10px;" >
             <td width="60%">
                <form style="border: 1px solid gray;">
                    <table width="80%" style="padding: 8px 10px;">
@@ -88,7 +90,7 @@
                 <h3>FIJI NUTS SHOP</h3>
                 <p>Mã đơn hàng</p>
                 <h3>#XDJKAA123</h3>
-                <p>Số tiền thanh toán 684,000 VNĐ</p>
+                <p>Số tiền thanh toán 654,000 VNĐ</p>
             </div>
             </td>
         </table>
