@@ -2,17 +2,28 @@
 <html>
     <head>
         <meta charset="utf-8"/>
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>Chọn ngân hàng</title>
         <script type="text/javascript">
             function continuePTTT(){
-                    window.open('HoanThanhDonHang.html')
+                if(document.getElementById('nhapsothe').value==""||document.getElementById('thangnamphathanh').value==""||document.getElementById('tenchuthe').value==""){
+                alert("Bạn nhập thiếu thông tin. Vui lòng kiểm tra lại")
+            }
+            else {
+                location.assign('HoanThanhDonHang.html')
                 }
+            }
         </script>
+        <style>
+            *{
+                font-family: sans-serif;
+            }
+        </style>
     </head>
     <body>
-        <h1>FIJI NUTS</h1>
+        <h1 style="padding-left: 10px;color: #677a48;font-family:Arial, Helvetica, sans-serif;">FIJI NUTS</h1>
         
-        <table style="width: 100%;padding: 10px;" >
+        <table style="padding: 10px;" >
             <td width="60%">
                <form style="border: 1px solid gray;">
                    <table width="80%" style="padding: 8px 10px;">
@@ -31,7 +42,7 @@
                        </tr>
                        <tr>
                            <div style="margin-left: 20px;">
-                            <input type="text" placeholder="Nhập số thẻ" style="padding: 8px 10px;width: 80%;"/>
+                            <input type="text" placeholder="Nhập số thẻ" style="padding: 8px 10px;width: 80%;" id="nhapsothe"/>
                            </div>
                            
                        </tr>
@@ -42,7 +53,7 @@
                         </tr>
                        <tr>
                            <div style="margin-left: 20px;">
-                            <input type="text" style="padding: 8px 10px;width: 80%;" />
+                            <input type="date" style="padding: 8px 10px;width: 80%;" placeholder="MM/dd/yyyy" id="thangnamphathanh"/>
                            </div>
                        </tr>
                        <tr>
@@ -53,7 +64,7 @@
                        </tr>
                        <tr>
                            <div style="margin-left: 20px;">
-                               <input type="text" placeholder="NGUYEN VAN A" style="padding: 8px 10px;width: 80%;" />
+                               <input type="text" placeholder="NGUYEN VAN A" style="padding: 8px 10px;width: 80%;" id="tenchuthe" />
                            </div>
                        </tr>
                        <tr>
@@ -66,7 +77,7 @@
                        <tr>
                            <div style="padding-left: 20px;">
                             <a href="../html/HuongDan.html" style="padding-right: 30px;">Hướng dẫn</a>
-                            <button style="padding: 8px 10px;background-color: #7B8F5B;color: white;width: 30%;" onclick="continuePTTT()">Thanh toán</button>
+                            <input type="button" onclick="continuePTTT()" style="padding: 8px 10px;background-color: #7B8F5B;color: white;width: 30%;" value="Thanh toán"/>
                            </div>
                        </tr>
                    </table>
@@ -79,7 +90,7 @@
                 <h3>FIJI NUTS SHOP</h3>
                 <p>Mã đơn hàng</p>
                 <h3>#XDJKAA123</h3>
-                <p>Số tiền thanh toán 684,000 VNĐ</p>
+                <p>Số tiền thanh toán 654,000 VNĐ</p>
             </div>
             </td>
         </table>
