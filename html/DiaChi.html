@@ -17,16 +17,15 @@
             else {
                 location.assign('PhuongThucThanhToan.html')
             }
-
         }
     </script>
     </head>
-    <body style="background-color: #fafff0;">
+    <body style="background-color: #fafff0;" class="body">
         <div>
         <div class="col1" style="width: 50%;float: left;padding-left: 15px;">
         <h1 style="color: #7B8F5B;">FIJI NUTS</h1>
         <ul id="menu" style="padding-left: 5px;">
-            <li><a href="GioHang.html">Giỏ hàng ></a></li>
+            <li ><a class="giohang" href="GioHang.html" >Giỏ hàng ></a></li>
             <li style="font-weight: bold;">Thông tin giao hàng ></li>
             <li>Phương thức thanh toán</li>
             </ul>
@@ -160,7 +159,7 @@
                                 </div>
                             </td>
                             <td>
-                                <input type="button" style="padding: 8px 10px;background-color: #7B8F5B;color: white;margin-left: 0%;" onclick="PhuongThucThanhToan()" value="Phương thức thanh toán"/>
+                                <input type="button" class="btnphthanhtoan" onclick="PhuongThucThanhToan()" value="Phương thức thanh toán"/>
                             </td>
                         </tr>
 

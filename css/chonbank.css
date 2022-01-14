@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family:Arial, Helvetica, sans-serif;
+  
+}
+h1{
+    margin: 5% calc(100%/12);
+}
+
+.table{
+    margin: 5% calc(100%/12);
+}
+
+.dk p{
+    background-color: bisque;
+    width: 80%;
+    margin: 4% 0 4% 4% ;
+}
+.huongdan{
+    display: inline-block;
+    margin-left: 20px;
+    height: 30px;
+    color: #444;
+}
+.huongdan:hover{
+    color: black;
+}
+.thanhtoan{
+    display: inline-block;
+    height: 30px;
+    background-color: #7B8F5B;
+    color: white;
+    width: 30%;
+    float: right;
+    border: none;
+    margin-right: 20px;
+}
+.thanhtoan:hover{
+    background-color: rgb(21, 58, 13);
+}

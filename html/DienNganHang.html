@@ -5,23 +5,26 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Điền ngân hàng</title>
+        <link rel="stylesheet" href="../css/diennganhang.css">
         <style>
             *{
                 font-family: 'Roboto', sans-serif;
             }
         </style>
+        
         <script type="text/javascript"> 
         
+        
         function QuayLaiH(){
-            window.open('PhuongThucThanhToan.html')
+            window.open('../html/PhuongThucThanhToan.html')
         }
         </script>
     </head>
     <body>
         <h1>FIJI NUTS</h1>
-        <table style="width: 100%;padding: 10px;" >
-            <td width="60%">
-                <h2 style="background-color: rgb(230, 230, 230);width: 85%;">Thẻ ATM / Tài khoản ngân hàng</h2>
+        <table class="table"  >
+            <td class="left">
+                <h2>Thẻ ATM / Tài khoản ngân hàng</h2>
                 <img src="../assets/image/icon_search.png" alt="search" width="15px"/>
                 <input type="text" placeholder="Tìm kiếm ngân hàng"/> <br/>
                 <table>
@@ -30,18 +33,16 @@
                 <img src="../assets/image/nganhang.png" width="85%" height="40%" style="padding-top: 20px;" /> <br/>
                 
             </td>
-            <td width="40%" style="border:1px solid green;background-color: rgb(240, 238, 238);">
-            <div style="text-align: center;">
+            <td class="right">
                 <h2>Thông tin đơn hàng</h2>
-                <p>Đơn vị chấp nhận thanh toán</p>
-                <h3>FIJI NUTS SHOP</h3>
-                <p>Mã đơn hàng</p>
-                <h3>#XDJKAA123</h3>
-                <p>Số tiền thanh toán 684,000 VNĐ</p>
-            </div>
+                    <p>Đơn vị chấp nhận thanh toán</p>
+                    <h3>FIJI NUTS SHOP</h3>
+                    <p>Mã đơn hàng</p>
+                    <h3>#XDJKAA123</h3>
+                    <p>Số tiền thanh toán 684,000 VNĐ</p>
             </td>
         </table>
-        <button style="padding: 8px 10px;border: none;" onclick="QuaylaiH()">Hủy giao dịch</button>
+        <button onclick="QuaylaiH()">Hủy giao dịch</button>
         
                     
     </body>

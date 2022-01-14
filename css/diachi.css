@@ -2,6 +2,11 @@
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
+html{
+    top: 0;
+    left: 0;
+    width: 100%;
+}
 
 
     ul#menu li {
@@ -15,3 +20,25 @@
     ul#menu li a:hover {
     color: orange;
     }
+
+.body{
+    margin: 5% calc(100%/12);
+}
+
+.giohang {
+    color: #000;
+}
+.giohang:hover{
+    color: #D69854;
+}
+
+.btnphthanhtoan{
+    padding: 8px 10px;
+    background-color: #7B8F5B;
+    color: white;
+    margin-left: 0%;
+    border: none;
+}
+.btnphthanhtoan:hover{
+    background-color: rgb(21, 58, 13);
+}
