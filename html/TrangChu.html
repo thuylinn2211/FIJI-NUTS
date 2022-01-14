@@ -51,14 +51,20 @@
             var formatMoney = '{{amount}}₫';
         </script>
 
-        <link rel="stylesheet" href="//hstatic.net/0/0/global/design/css/bootstrap.3.3.1.css">
-        <link href='//hstatic.net/0/0/global/design/plugins/font-awesome/4.6.3/css/font-awesome.min.css' rel='stylesheet' type='text/css'  media='all'  />
-        <link href='//theme.hstatic.net/200000313173/1000694342/14/styles.css?v=127' rel='stylesheet' type='text/css'  media='all'  />
+        <link rel="stylesheet" href="../css/trangchu.css">
+        <link href='../css/javascriptBG.css' rel='stylesheet' type='text/css'  media='all'  />
+        <script src="https://www.w3schools.com/lib/w3.js"></script>
+
+        
 	</head>
 
 	<body>
-        <div w3-include-html="Header.html"></div>
-	
+
+	<div w3-include-html="header2.html"></div>
+        <script>
+            w3.includeHTML();
+        </script>
+
 	    <section id="page_content" class="">
             <div id="pageContainer" class="clearfix">					
                 <!-- Begin slider -->
@@ -1137,11 +1143,11 @@
                 </div>
             </div>
 	    </section>
+        
 
         <div w3-include-html="Footer.html"></div>
         <script>
             w3.includeHTML();
         </script>
-
     </body>
 </html>
