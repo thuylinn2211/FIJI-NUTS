@@ -2,13 +2,49 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
 }
 html{
     font-family:Arial, Helvetica, sans-serif;
-  
+    width: 100%;
 }
 body{
-    margin: calc(100%/12);
-    padding: 5px;
     background-color: #f8ffe9;
+}
+.left{
+    padding: calc(100%/12) 0 calc(100%/12) calc(100%/12);
+    display: inline-block;
+    width: 60%;
+}
+
+.left-item{
+    border: 1px solid #7B8F5B;
+    padding: 12px 10px;
+    width: 75%;
+}
+
+.item{
+    margin-top: 20px;
+}
+.btn1{
+    padding: 8px 10px;
+}
+.btn:hover{
+    background-color: blueviolet;
+}
+.btn2{
+    padding: 8px 10px;
+    background-color: #7B8F5B;
+    color:white;
+    float: right;
+    margin-right: 25%;
+}
+.btn2:hover{
+    background-color: rgb(21, 58, 13);
+}
+
+.right{
+    padding: calc(100%/12) calc(100%/12) calc(100%/12) 0;
+    display: inline-block;
+    width: 30%;
 }

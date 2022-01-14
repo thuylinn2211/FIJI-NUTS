@@ -43,29 +43,29 @@
         <link rel="stylesheet" href="../css/phththanhtoan.css">
     </head>
     <body>
-        <div style="float: left;">
-        <h1>FIJI NUTS</h1>
-        <p>Giỏ hàng > Thông tin giao hàng > Phương thức thanh toán</p>
-        <h2>Phương thức vận chuyển </h2>
-        <div style="border: 1px solid #7B8F5B;padding: 12px 10px; width: 500px;">
-            <input type="radio" id="ghtn" value="ghtn" checked/>
-            <label for="ghtn" >Giao hàng tận nơi&emsp;&emsp;30,000đ</label>     
+        <div class="left">
+            <h1>FIJI NUTS</h1>
+            <p class="item">Giỏ hàng > Thông tin giao hàng > Phương thức thanh toán</p>
+            <h2 class="item">Phương thức vận chuyển </h2>
+            <div class="left-item item">
+                <input type="radio" id="ghtn" value="ghtn" checked/>
+                <label for="ghtn" >Giao hàng tận nơi&emsp;&emsp;30,000đ</label>     
+            </div>
+            <h2 class="item">Phương thức thanh toán</h2>
+            <div class="left-item">
+                <input type="radio" id="cod" value="cod" name="PTTT"/>
+                <label for="cod" >Thanh toán khi giao hàng (COD)</label>     
+            </div>
+            <div class="left-item">
+                <input type="radio" id="ck" value="ck" name="PTTT"/>
+                <label for="cod" >Chuyển khoản qua ngân hàng</label>     
+            </div>
+            <div class="item" >
+                <button class="btn1" onclick="QuayLaiGH()">Quay lại giỏ hàng</button>
+                <button class="btn2" onclick="HoanTatDonHang()">HOÀN TẤT ĐƠN HÀNG</button>
+            </div>
         </div>
-        <h2 style="padding-top: 20px;">Phương thức thanh toán</h2>
-        <div style="border: 1px solid #7B8F5B;padding: 12px 10px; width: 500px;">
-            <input type="radio" id="cod" value="cod" name="PTTT"/>
-            <label for="cod" >Thanh toán khi giao hàng (COD)</label>     
-        </div>
-        <div style="border: 1px solid #7B8F5B;padding: 12px 10px; width: 500px;">
-            <input type="radio" id="ck" value="ck" name="PTTT"/>
-            <label for="cod" >Chuyển khoản qua ngân hàng</label>     
-        </div>
-        <div style="padding-top: 20px;" >
-        <button style="padding: 8px 10px;" onclick="QuayLaiGH()">Quay lại giỏ hàng</button>
-        <button style="padding: 8px 10px;background-color: #7B8F5B;color:white;margin-left: 225px;" onclick="HoanTatDonHang()">HOÀN TẤT ĐƠN HÀNG</button>
-        </div>
-    </div>
-        <div style="width: 40%;float: right;padding-top: 80px;padding-right: 10px;height: 100%;">
+        <div class="right">
             <table >
                 <tr>
                     <td>
@@ -75,7 +75,7 @@
                         Bột Cần Tây Sấy Lạnh    
                     </td>
                     <td>
-    
+                        
                     </td>
                     <td id="price1">
                         129,000 đ 
@@ -87,10 +87,9 @@
                     </td>
                     <td>
                         Bột Cải Xoăn
-                    </td>
-                    <td>
-    
-                    </td>
+                </td>
+                <td>
+                </td>
                     <td id="price2">
                         135,000 đ 
                     </td>
@@ -103,7 +102,7 @@
                         Nho Khô Chilli  
                     </td>
                     <td>
-    
+
                     </td>
                     <td id="price3">
                         110,000 đ 
@@ -113,7 +112,7 @@
                 
                 <tr>
                     <td>
-    
+
                     </td>
                     <td colspan="2" height="100px">
                         <input type="text" placeholder="Nhập Mã giảm giá" id="mgg"  style="padding: 8px 10px;"/>
@@ -149,7 +148,6 @@
                 </tr>
                 
             </table>
-            
-         </div>
+        </div>
     </body>
 </html>
