@@ -44,6 +44,134 @@
                 margin-left: auto;
                 margin-right: auto;
             }
+
+            /*PopUp*/
+            body {
+            background: #6cb1ff;
+            min-height: 100vh;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: none;
+        }
+        .contentBox {
+            position: relative;
+            width: 600px;
+            height: 400px;
+            background: #fff;
+            border-radius: 20px;
+            display: flex;
+            box-shadow: 0 5px 15px grey;
+        }
+        .imgBox {
+            position: relative;
+            width: 300px;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .imgBox ::before {
+            content: '';
+            position: absolute;
+            width: 250px;
+            height: 250px;
+            background: #e7ffe0;
+            border-radius: 50%;
+        }
+        .imgBox img {
+            position: relative;
+            max-width: 250px;
+            z-index: 1;
+        }
+        .content {
+            position: relative;
+            width: 300px;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .content h2 {
+            color: #333;
+            line-height:1em;
+            font-weight: 300;
+            font-size: 2em;
+        }
+        .content h1 {
+            font-size: 4em;
+            color: #ff4d54;
+            line-height: 1em;
+        }
+        .content h1 span {
+            color: #333;
+            font-size: 0.75em;
+            text-transform: uppercase;
+        }
+        .content p {
+            font-weight: 300;
+            font-family: serif;
+        }
+        .content a {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #ff4d54;
+            color: #fff;
+            margin-top: 15px;
+            text-decoration: none;
+            border-radius: 10px;
+        }
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 40px;
+            height: 40px;
+            background: #f3f3f3 url(assets/image/close.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            cursor: pointer;
+            border-radius: 50%;
+            z-index: 10;
+        }
+
+        /*responsive*/
+
+        @media (max-width: 767px) {
+            .contentBox {
+                width: 300px;
+                height: auto;
+                flex-direction: column;
+            }
+            .imgBox {
+                height: 300px;
+                transform: translateY(10px);
+            }
+            .imgBox ::before {
+                background: #fff;
+            }
+            .content {
+                height: auto;
+                text-align: center;
+                padding: 20px;
+                padding-top: 0;
+            }
+            .close {
+                top: -50px;
+                right: -10px;
+                background: #fff url(assets/image/close.png);
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+        }
             
         </style>		
 
@@ -51,11 +179,19 @@
             var formatMoney = '{{amount}}₫';
         </script>
 
+<<<<<<< HEAD
         <link rel="stylesheet" href="../css/trangchu.css">
         <link href='../css/javascriptBG.css' rel='stylesheet' type='text/css'  media='all'  />
         <script src="https://www.w3schools.com/lib/w3.js"></script>
 
         
+=======
+        <script src="https://www.w3schools.com/lib/w3.js"></script>
+
+        <link rel="stylesheet" href="//hstatic.net/0/0/global/design/css/bootstrap.3.3.1.css">
+        <link href='//hstatic.net/0/0/global/design/plugins/font-awesome/4.6.3/css/font-awesome.min.css' rel='stylesheet' type='text/css'  media='all'  />
+        <link href='//theme.hstatic.net/200000313173/1000694342/14/styles.css?v=127' rel='stylesheet' type='text/css'  media='all'  />
+>>>>>>> f61481098be8631e88e6dd027f9b884651b27fff
 	</head>
 
 	<body>
@@ -153,7 +289,7 @@
                                                 </div>
                                                 <a href="/products/banh-hanh-nhan" title="Bánh Ngói Hạnh Nhân">
                                                     <img class="first-image  has-img" alt="Bánh ngói hạnh nhân" src="../assets/image/banh-ngoi-hanh-nhan-2.jpg"  />							
-                                                    <img  class ="second-image" src="../assets/image/banh-ngoi-hanh-nhan-1.png"  alt="banh ngoi hanh nhan" />			
+                                                    <img  class ="second-image" src="../assets/image/banh-ngoi-hanh-nhan-3.jpeg"  alt="banh ngoi hanh nhan" />			
                                                 </a>
                                                 <div class="actionss">
                                                     <div class="btn-cart-products">
@@ -166,9 +302,7 @@
                                                             <span><i class="fa fa-clone"> </i></span>
                                                         </a>
                                                     </div>
-                                                    <div class="btn-quickview-products">
-                                                        <a href="javascript:void(0);" class="quickview" data-handle="/products/banh-hanh-nhan"><i class="fa fa-eye"></i></a>
-                                                    </div>
+                                                    
                                                 </div>
                                             </div>
 
@@ -201,9 +335,6 @@
                                                             <span><i class="fa fa-clone"> </i></span>
                                                         </a>
                                                     </div>
-                                                    <div class="btn-quickview-products">
-                                                        <a href="javascript:void(0);" class="quickview" data-handle="/products/hanh-nhan-rang-moc"><i class="fa fa-eye"></i></a>
-                                                    </div>
                                                 </div>
                                         	</div>
 
@@ -223,7 +354,7 @@
                                             <div class="product-img image-resize view view-third">
                                                 <a href="/products/hat-dieu-vo-lua-tanu" title="Hạt Điều Vỏ Lụa">
                                                     <img class="first-image  has-img" alt="hat dieu rang" src="../assets/image/hat_dieu1.jpg"  />							
-                                                    <img  class ="second-image" src="../assets/image/hat_dieu3.png"  alt="hat dieu rang " />
+                                                    <img  class ="second-image" src="../assets/image/hat-dieu-vo-lua.jpg"  alt="hat dieu rang " />
                                                 </a>
                                                 <div class="actionss">
                                                     <div class="btn-cart-products">
@@ -235,9 +366,6 @@
                                                         <a href="/products/hat-dieu-vo-lua-tanu" class="view-detail" > 
                                                             <span><i class="fa fa-clone"> </i></span>
                                                         </a>
-                                                    </div>
-                                                    <div class="btn-quickview-products">
-                                                        <a href="javascript:void(0);" class="quickview" data-handle="/products/hat-dieu-vo-lua-tanu"><i class="fa fa-eye"></i></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -271,9 +399,6 @@
                                                             <span><i class="fa fa-clone"> </i></span>
                                                         </a>
                                                     </div>
-                                                    <div class="btn-quickview-products">
-                                                        <a href="javascript:void(0);" class="quickview" data-handle="/products/hat-macca-nut-vo-tanu-nuts"><i class="fa fa-eye"></i></a>
-                                                    </div>
                                                 </div>
                                             </div>
 
@@ -306,9 +431,6 @@
                                                             <span><i class="fa fa-clone"> </i></span>
                                                         </a>
                                                     </div>
-                                                    <div class="btn-quickview-products">
-                                                        <a href="javascript:void(0);" class="quickview" data-handle="/products/mix-3-hat-tanu"><i class="fa fa-eye"></i></a>
-                                                    </div>
                                                 </div>
 	                                        </div>
 
@@ -328,7 +450,7 @@
                                             <div class="product-img image-resize view view-third">
                                                 <a href="/products/mix-5-hat-tanu" title="Mix 5 Loại Hạt">
                                                     <img class="first-image  has-img" alt="mix nuts 5 hat" src="../assets/image/mix5hat1.jpg"  />							
-                                                    <img  class ="second-image" src="../assets/image/mix5hat2.jpg"  alt="mix nuts 5 hat " />
+                                                    <img  class ="second-image" src="../assets/image/mix5hat3.jpg"  alt="mix nuts 5 hat " />
                                                 </a>
                                                 <div class="actionss">
                                                     <div class="btn-cart-products">
@@ -340,9 +462,6 @@
                                                         <a href="/products/mix-5-hat-tanu" class="view-detail" > 
                                                             <span><i class="fa fa-clone"> </i></span>
                                                         </a>
-                                                    </div>
-                                                    <div class="btn-quickview-products">
-                                                        <a href="javascript:void(0);" class="quickview" data-handle="/products/mix-5-hat-tanu"><i class="fa fa-eye"></i></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -376,9 +495,6 @@
                                                             <span><i class="fa fa-clone"> </i></span>
                                                         </a>
                                                     </div>
-                                                    <div class="btn-quickview-products">
-                                                        <a href="javascript:void(0);" class="quickview" data-handle="/products/mixfruits-4-qua-mong-tanu"><i class="fa fa-eye"></i></a>
-                                                    </div>
                                                 </div>
                                             </div>
 
@@ -410,9 +526,6 @@
                                                         <a href="/products/nhan-hat-macca-tay-nguyen" class="view-detail" > 
                                                             <span><i class="fa fa-clone"> </i></span>
                                                         </a>
-                                                    </div>
-                                                    <div class="btn-quickview-products">
-                                                        <a href="javascript:void(0);" class="quickview" data-handle="/products/nhan-hat-macca-tay-nguyen"><i class="fa fa-eye"></i></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -467,9 +580,6 @@
                                                             <span><i class="fa fa-clone"> </i></span>
                                                         </a>
                                                     </div>
-                                                    <div class="btn-quickview-products">
-                                                        <a href="javascript:void(0);" class="quickview" data-handle="/products/hanh-nhan-rang-bo"><i class="fa fa-eye"></i></a>
-                                                    </div>
                                                 </div>
                                             </div>
 
@@ -501,9 +611,6 @@
                                                         <a href="/products/hanh-nhan-rang-moc" class="view-detail" > 
                                                             <span><i class="fa fa-clone"> </i></span>
                                                         </a>
-                                                    </div>
-                                                    <div class="btn-quickview-products">
-                                                        <a href="javascript:void(0);" class="quickview" data-handle="/products/hanh-nhan-rang-moc"><i class="fa fa-eye"></i></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -537,9 +644,6 @@
                                                             <span><i class="fa fa-clone"> </i></span>
                                                         </a>
                                                     </div>
-                                                    <div class="btn-quickview-products">
-                                                        <a href="javascript:void(0);" class="quickview" data-handle="/products/hat-bi-xanh-rang-tanu"><i class="fa fa-eye"></i></a>
-                                                    </div>
                                                 </div>
                                             </div>
 
@@ -571,9 +675,6 @@
                                                         <a href="/products/hat-de-cuoi-tanu" class="view-detail" > 
                                                             <span><i class="fa fa-clone"> </i></span>
                                                         </a>
-                                                    </div>
-                                                    <div class="btn-quickview-products">
-                                                        <a href="javascript:void(0);" class="quickview" data-handle="/products/hat-de-cuoi-tanu"><i class="fa fa-eye"></i></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -607,9 +708,6 @@
                                                             <span><i class="fa fa-clone"> </i></span>
                                                         </a>
                                                     </div>
-                                                    <div class="btn-quickview-products">
-                                                        <a href="javascript:void(0);" class="quickview" data-handle="/products/hat-dieu-vo-lua-tanu"><i class="fa fa-eye"></i></a>
-                                                    </div>
                                                 </div>
                                             </div>
 
@@ -629,7 +727,7 @@
                                             <div class="product-img image-resize view view-third">
                                                 <a href="/products/hat-dieu-vang-tach-vo-tanu" title="Hạt Điều Rang Tách Vỏ Lụa">
                                                     <img class="first-image  has-img" alt="dieu tach vo lua" src="../assets/image/hat_dieu.jpg"  />
-                                                    <img  class ="second-image" src="../assets/image/hat_dieu_rang.jpg"  alt="dieu tach vo lua " />			
+                                                    <img  class ="second-image" src="../assets/image/hat-dieu-vo-lua.jpg"  alt="dieu tach vo lua " />			
                                                 </a>
                                                 <div class="actionss">
                                                     <div class="btn-cart-products">
@@ -641,9 +739,6 @@
                                                         <a href="/products/hat-dieu-vang-tach-vo-tanu" class="view-detail" > 
                                                             <span><i class="fa fa-clone"> </i></span>
                                                         </a>
-                                                    </div>
-                                                    <div class="btn-quickview-products">
-                                                        <a href="javascript:void(0);" class="quickview" data-handle="/products/hat-dieu-vang-tach-vo-tanu"><i class="fa fa-eye"></i></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -678,9 +773,6 @@
                                                             <span><i class="fa fa-clone"> </i></span>
                                                         </a>
                                                     </div>
-                                                    <div class="btn-quickview-products">
-                                                        <a href="javascript:void(0);" class="quickview" data-handle="/products/hat-macca-nut-vo-tanu-nuts"><i class="fa fa-eye"></i></a>
-                                                    </div>
                                                 </div>
                                             </div>
 
@@ -712,9 +804,6 @@
                                                         <a href="/products/nhan-oc-cho-do-tanu" class="view-detail" > 
                                                             <span><i class="fa fa-clone"> </i></span>
                                                         </a>
-                                                    </div>
-                                                    <div class="btn-quickview-products">
-                                                        <a href="javascript:void(0);" class="quickview" data-handle="/products/nhan-oc-cho-do-tanu"><i class="fa fa-eye"></i></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -768,9 +857,6 @@
                                                             <span><i class="fa fa-clone"> </i></span>
                                                         </a>
                                                     </div>
-                                                    <div class="btn-quickview-products">
-                                                        <a href="javascript:void(0);" class="quickview" data-handle="/products/nam-viet-quat-say-deo"><i class="fa fa-eye"></i></a>
-                                                    </div>
                                                 </div>
                                             </div>
 
@@ -802,9 +888,6 @@
                                                         <a href="/products/day-say-deo" class="view-detail" > 
                                                             <span><i class="fa fa-clone"> </i></span>
                                                         </a>
-                                                    </div>
-                                                    <div class="btn-quickview-products">
-                                                        <a href="javascript:void(0);" class="quickview" data-handle="/products/dau-say-deo"><i class="fa fa-eye"></i></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -838,9 +921,6 @@
                                                             <span><i class="fa fa-clone"> </i></span>
                                                         </a>
                                                     </div>
-                                                    <div class="btn-quickview-products">
-                                                        <a href="javascript:void(0);" class="quickview" data-handle="/products/xoai-say-deo"><i class="fa fa-eye"></i></a>
-                                                    </div>
                                                 </div>
                                             </div>
 
@@ -872,9 +952,6 @@
                                                         <a href="/products/chuoi-say-deo" class="view-detail" > 
                                                             <span><i class="fa fa-clone"> </i></span>
                                                         </a>
-                                                    </div>
-                                                    <div class="btn-quickview-products">
-                                                        <a href="javascript:void(0);" class="quickview" data-handle="/products/chuoi-say-deo"><i class="fa fa-eye"></i></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -908,9 +985,6 @@
                                                             <span><i class="fa fa-clone"> </i></span>
                                                         </a>
                                                     </div>
-                                                    <div class="btn-quickview-products">
-                                                        <a href="javascript:void(0);" class="quickview" data-handle="/products/mo-say-deo"><i class="fa fa-eye"></i></a>
-                                                    </div>
                                                 </div>
                                             </div>
 
@@ -942,9 +1016,6 @@
                                                         <a href="/products/nho-kho" class="view-detail" > 
                                                             <span><i class="fa fa-clone"> </i></span>
                                                         </a>
-                                                    </div>
-                                                    <div class="btn-quickview-products">
-                                                        <a href="javascript:void(0);" class="quickview" data-handle="/products/nho-kho"><i class="fa fa-eye"></i></a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -979,9 +1050,6 @@
                                                             <span><i class="fa fa-clone"> </i></span>
                                                         </a>
                                                     </div>
-                                                    <div class="btn-quickview-products">
-                                                        <a href="javascript:void(0);" class="quickview" data-handle="/products/hong-treo-gio"><i class="fa fa-eye"></i></a>
-                                                    </div>
                                                 </div>
                                             </div>
 
@@ -1013,9 +1081,6 @@
                                                         <a href="/products/cha-la" class="view-detail" > 
                                                             <span><i class="fa fa-clone"> </i></span>
                                                         </a>
-                                                    </div>
-                                                    <div class="btn-quickview-products">
-                                                        <a href="javascript:void(0);" class="quickview" data-handle="/products/cha-la><i class="fa fa-eye"></i></a>
                                                     </div>
                                                 </div>
                                             </div>
