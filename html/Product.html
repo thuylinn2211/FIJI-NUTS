@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>index</title>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
 </head>
 <style>
@@ -137,63 +138,10 @@
         <!-- detail -->
         <div class="container mt-3" id="detail"></div>
 
-        <!-- footer -->
-        <div class="container-fluid">
-            <div class="row bg-light p-3 mt-3">
-                <div class="col-3">
-                    <h6>GIỚI THIỆU</h6>
-                    <p>
-                        Với đội ngũ nhân sự nhân viên tư vấn ...Với đội ngũ nhân sự nhân viên tư vấn ...Với đội ngũ nhân sự nhân viên tư vấn ...Với đội ngũ nhân sự nhân viên tư vấn ...Với đội ngũ nhân sự nhân viên tư vấn ...Với đội ngũ nhân sự nhân viên tư vấn ...Với đội ngũ
-                        nhân sự nhân viên tư vấn ...
-                    </p>
-                    <p>Trường ĐH: ....</p>
-                    <p>Email: ...</p>
-                    <p>Phone: ...</p>
-                </div>
-                <div class="col-3">
-                    <ul style="list-style: none">
-                        <h6>LIÊN KẾT</h6>
-                        <li>Trang chủ</li>
-                        <li>Sản phẩm</li>
-                        <li>Blog</li>
-                        <li>Giới thiệu</li>
-                    </ul>
-                </div>
-                <div class="col-3">
-                    <h6>ĐỂ LẠI THÔNG TIN TƯ VẤN</h6>
-                    <div class="input-group" style="width: 70%">
-                        <input type="text" class="form-control" placeholder="Nhập thông tin của bạn" aria-label="Recipient's username" aria-describedby="button-addon2" />
-                        <div class="input-group-append">
-                            <button class="btn" type="button" id="button-addon2">
-                  <img
-                    src="../assets/image/send.png"
-                    style="width: 15px"
-                    alt=""
-                  />
-                </button>
-                        </div>
-                    </div>
-                    <p style="width: 70%">
-                        Hãy nhập email của bạn vào đây để được tư vấn và nhận thông tin ưu đãi
-                    </p>
-                    <ul style="list-style: none; float: left">
-                        <li style="float: left">
-                            <img src="../assets/image/shopee.png" class="ml-2" style="width: 50px; border-radius: 50%" alt="" />
-                        </li>
-                        <li style="float: left">
-                            <img src="../assets/image/lazada.png" class="ml-2" style="width: 50px; border-radius: 50%" alt="" />
-                        </li>
-                        <li style="float: left">
-                            <img src="../assets/image/tiki.png" class="ml-2" style="width: 50px; border-radius: 50%" alt="" />
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-3">
-                    <h6>FOLLOW CHÚNG TÔI TRÊN PANPAGE</h6>
-                    <img src="../assets/image/fanpage.png" style="width: 80%" alt="" />
-                </div>
-            </div>
-        </div>
+        <div w3-include-html="Footer.html"></div>
+        <script>
+            w3.includeHTML();
+        </script>
     </div>
 </body>
 
