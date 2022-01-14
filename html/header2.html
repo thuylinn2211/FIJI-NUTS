@@ -4,8 +4,94 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Header</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../assets/fonts/themify-icons/themify-icons.css">
+    <style>
+        #nav .sub-menu {
+            display: none; 
+            position: absolute;
+            top: 100%;
+            left: 0;
+            min-width: 160px;
+            background-color: #fff;
+        }
+        #nav{
+            display: inline-block;
+        }
+        #nav, .sub-menu{
+            list-style-type: none;
+        }
+
+        #nav > li {
+        display: inline-block;
+        }
+
+        #nav li {
+
+        position: relative;
+        }
+
+        #nav > li > a {
+        color: #6abd54;
+        /* viết in hoa thẻ header c1 */
+        text-transform: uppercase ;
+        }
+
+        #nav li a{
+        text-decoration: none;
+        line-height: 46px;
+        padding: 0 24px;
+        display: block;
+        }
+
+        /* di chuột vào sẽ hiện lên subnav */
+        #nav li:hover .sub-menu{
+        display: block;
+        }
+
+        /* di chuột vào sẽ hiện lên subnav */
+        #nav li:hover .sub-menu{
+            display: block;
+        }
+
+        /* di chuột hiện màu lên */
+        #nav .sub-menu li:hover a,
+        #nav > li:hover > a {
+            color: #000;
+            background-color: #ccc;
+        }
+
+
+
+        #nav .sub-menu {
+            /* ẩn sub nav */
+            display: none; 
+            position: absolute;
+            /* fix cứng vị trí subnav thay vì để nó tự set như mặc định */
+            top: 100%;
+            left: 0;
+
+            min-width: 160px;
+            background-color: #fff;
+            /* bóng đổ */
+            box-shadow: 0 0 10px rgba(0, 0,0,0.3);
+
+        }
+
+        #nav .sub-menu a{
+            color: black;
+            padding: 0 12px;
+            
+            /* padding subnav nhỏ hơn header */
+
+        }
+
+        #nav .nav-arrow-down{
+            font-size: 13px;
+        }
+    </style>
+
 </head>
 <body>
     <!-- header -->
@@ -16,16 +102,23 @@
                     <div class="col-4">
                         <img src="../assets/image/Logo.png" style="width: 40%" alt="logo" />
                     </div>
+
                     <div class="col-8">
                         <div class="row mt-4">
                             <div class="col-12">
                                 <div class="row ml-5">
                                     <div class="col-4"></div>
                                     <div class="col-4">
-                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Tìm kiếm" />
+                                        <input type="text" class="timkiem" id="timkiem" value="Tìm kiếm"/>
                                     </div>
 
                                     <div class="col-4">
+                                        <a href="../html/GioHang.html">
+                                            <img src="../assets/image/cart2.png" alt="giohang" style="width: 34px"/>
+                                        </a>
+                                        <a href="../html/DangNhap.html">
+                                            <img src="../assets/image/user.png" alt="user" style="width: 34px"/>
+                                        </a>
                                         <button class="btn">
                       <img
                         
@@ -44,35 +137,34 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 mt-4">
-                                <ul style="list-style: none; float: left">
-                                    <li style="
-                      float: left;
-                      text-transform: uppercase;
-                      font-weight: bold;
-                    " class="ml-5">
-                                        Trang chủ
+
+                            <div class="container col-12 mt-4">
+                                <ul id="nav" style="list-style: none; float: left">
+                                    <li style="float: left; text-transform: uppercase; font-weight: bold;" class="ml-5">
+                                        <a href="../html/TrangChu.html">Trang chủ</a>
                                     </li>
-                                    <li style="
-                      float: left;
-                      text-transform: uppercase;
-                      font-weight: bold;
-                    " class="ml-5">
-                                        Sản phẩm
+                                    <li style="float: left; text-transform: uppercase; font-weight: bold;" class="ml-5">
+                                        <a href="#">Sản phẩm
+                                            <i class="nav-arrow-down ti-angle-down" ></i>
+                                        </a>
+                                        <ul class="sub-menu">
+                                            <li id="botraucu" class="botraucu"><a href="../html/Product.html">Bột rau củ</a></li>
+                                            <li id="hatdinhduong" class="hatdinhduong"><a href="../html/Product.html">Hạt dinh dưỡng</a></li>
+                                            <li id="hoaquasaydeo" class="hoaquasaydeo"><a href="../html/Product.html">Hoa quả sấy dẻo</a></li>
+                                            <li id="trathaomoc" class="trathaomoc"><a href="../html/Product.html">Trà thảo mộc</a></li>
+                                        </ul>
                                     </li>
-                                    <li style="
-                      float: left;
-                      text-transform: uppercase;
-                      font-weight: bold;
-                    " class="ml-5">
-                                        Blog
+                                    <li style="float: left; text-transform: uppercase; font-weight: bold;" class="ml-5">
+                                        <a href="../html/Blog1.html">Blog</a>
                                     </li>
-                                    <li style="
-                      float: left;
-                      text-transform: uppercase;
-                      font-weight: bold;
-                    " class="ml-5">
-                                        Giới thiệu
+                                    <li style="float: left;text-transform: uppercase;font-weight: bold;" class="ml-5">
+                                        <a href="#">Giới thiệu
+                                            <i class="nav-arrow-down ti-angle-down" ></i>
+                                        </a>
+                                        <ul class="sub-menu">
+                                            <li id="lienhe" class="lienhe"><a href="../html/GioiThieu_LienHe.html">Liên hệ</a></li>
+                                            <li id="chinhsach" class="chinhsach"><a href="../html/GioiThieu_ChinhSach.html">Chính sách</a></li> 
+                                        </ul>
                                     </li>
                                 </ul>
                             </div>
