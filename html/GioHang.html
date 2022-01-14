@@ -12,7 +12,10 @@
 		<meta name="HandheldFriendly" content="true">
 		<meta content='width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=0' name='viewport' />
 		
-		<script>
+		<script type="text/javascript">
+			function diachi() {
+                    location.assign('DiaChi.html')
+                }
 		var formatMoney = '{{amount}}₫';
 		</script>
 
@@ -177,7 +180,7 @@
 										</div>
 										<div class="col-md-6 col-sm-6 col-xs-12 cart-buttons inner-right inner-left">
 											<div class="buttons clearfix">
-												<button type="submit" id="checkout" class="button-default" name="checkout" value="" >Thanh toán</button>
+												<input type="button" id="checkout" class="button-default" onclick="diachi()" value="Thanh toán" />
 											</div>
 										</div>
 										<div class="col-md-12 col-sm-12  col-xs-12 continue-shop">
