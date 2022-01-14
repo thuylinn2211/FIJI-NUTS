@@ -19,7 +19,8 @@ html{
     display: inline-block;
 }
 
-li:hover{
+
+.header > ul > li:hover{
     color: #000;
     /* background-color: #ccc; */
 }
