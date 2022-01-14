@@ -15,6 +15,7 @@ body{
     padding: calc(100%/12) 0 calc(100%/12) calc(100%/12);
     display: inline-block;
     width: 60%;
+    float: left;
 }
 
 .left-item{
@@ -28,23 +29,49 @@ body{
 }
 .btn1{
     padding: 8px 10px;
+    float: left;
 }
-.btn:hover{
-    background-color: blueviolet;
+.btn1:hover{
+    background-color: #D69854;
 }
 .btn2{
     padding: 8px 10px;
     background-color: #7B8F5B;
     color:white;
-    float: right;
     margin-right: 25%;
+    float: right;
 }
 .btn2:hover{
     background-color: rgb(21, 58, 13);
+}
+.btn11{
+    padding: 8px 10px;
+    float: left;
+}
+
+.btn22{
+    padding: 8px 10px;
+    background-color: #7B8F5B;
+    color:white;
+}
+.btn22:hover{
+    background-color: rgb(21, 58, 13);
+}
+#price1 td{
+    float: right;
+}
+#price2 td{
+    float: right;
+}
+#price3 td{
+    float: right;
 }
 
 .right{
     padding: calc(100%/12) calc(100%/12) calc(100%/12) 0;
     display: inline-block;
-    width: 30%;
+    width: 40%;
+}
+table{
+    width: 100%;
 }
