@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html style="font-family: Arial, Helvetica, sans-serif;" lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+</head>
+<style>
+    #category:hover {
+        color: #d69854;
+    }
+</style>
+
+<body>
+    <div class="container-fluid">
+        <!-- header -->
+        <div class="row">
+            <div class="col-12" style="background-color: #e4e3c8">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="../assets/image/Logo.png" style="width: 40%" alt="logo" />
+                        </div>
+                        <div class="col-8">
+                            <div class="row mt-4">
+                                <div class="col-12">
+                                    <div class="row ml-5">
+                                        <div class="col-4"></div>
+                                        <div class="col-4">
+                                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Tìm kiếm" />
+                                        </div>
+
+                                        <div class="col-4">
+                                            <button class="btn">
+                          <img
+                            src="../assets/image/icon-green-shopee.png"
+                            alt="giohang"
+                            style="width: 15px"
+                          />
+                        </button>
+                                            <button class="btn">
+                          <img
+                            src="../assets/image/user.png"
+                            alt="giohang"
+                            style="width: 15px"
+                          />
+                        </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 mt-4">
+                                    <ul style="list-style: none; float: left">
+                                        <li style="
+                          float: left;
+                          text-transform: uppercase;
+                          font-weight: bold;
+                        " class="ml-5">
+                                            Trang chủ
+                                        </li>
+                                        <li style="
+                          float: left;
+                          text-transform: uppercase;
+                          font-weight: bold;
+                        " class="ml-5">
+                                            Sản phẩm
+                                        </li>
+                                        <li style="
+                          float: left;
+                          text-transform: uppercase;
+                          font-weight: bold;
+                        " class="ml-5">
+                                            Blog
+                                        </li>
+                                        <li style="
+                          float: left;
+                          text-transform: uppercase;
+                          font-weight: bold;
+                        " class="ml-5">
+                                            Giới thiệu
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- left -->
+
+        <!-- index -->
+        <div class="container-fluid" id="index">
+            <div class="row mt-2">
+                <div class="col-12">
+                    <h4 style="text-align: center; text-transform: uppercase" id="title"></h4>
+                    <hr />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <ul style="list-style: none">
+                        <li style="text-transform: uppercase; font-weight: bold">
+                            Danh mục
+                        </li>
+                        <hr />
+                        <li style="text-transform: uppercase" onclick="category('all')" id="category">
+                            Tất cả các sản phẩm
+                        </li>
+                        <hr />
+                        <li style="text-transform: uppercase" onclick="category('botraucu')" id="category">
+                            Bột rau củ
+                        </li>
+                        <hr />
+                        <li style="text-transform: uppercase" onclick="category('dinhduong')" id="category">
+                            Hạt dinh dưỡng
+                        </li>
+                        <hr />
+                        <li style="text-transform: uppercase" onclick="category('quaxay')" id="category">
+                            Hoa quả sấy
+                        </li>
+                        <hr />
+                        <li style="text-transform: uppercase" onclick="category('thaomoc')" id="category">
+                            Trà thảo mộc
+                        </li>
+                        <hr />
+                    </ul>
+                </div>
+                <div class="col-9">
+                    <div class="row" id="product" style="width: 100%"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- detail -->
+        <div class="container mt-3" id="detail"></div>
+
+        <!-- footer -->
+        <div class="container-fluid">
+            <div class="row bg-light p-3 mt-3">
+                <div class="col-3">
+                    <h6>GIỚI THIỆU</h6>
+                    <p>
+                        Với đội ngũ nhân sự nhân viên tư vấn ...Với đội ngũ nhân sự nhân viên tư vấn ...Với đội ngũ nhân sự nhân viên tư vấn ...Với đội ngũ nhân sự nhân viên tư vấn ...Với đội ngũ nhân sự nhân viên tư vấn ...Với đội ngũ nhân sự nhân viên tư vấn ...Với đội ngũ
+                        nhân sự nhân viên tư vấn ...
+                    </p>
+                    <p>Trường ĐH: ....</p>
+                    <p>Email: ...</p>
+                    <p>Phone: ...</p>
+                </div>
+                <div class="col-3">
+                    <ul style="list-style: none">
+                        <h6>LIÊN KẾT</h6>
+                        <li>Trang chủ</li>
+                        <li>Sản phẩm</li>
+                        <li>Blog</li>
+                        <li>Giới thiệu</li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <h6>ĐỂ LẠI THÔNG TIN TƯ VẤN</h6>
+                    <div class="input-group" style="width: 70%">
+                        <input type="text" class="form-control" placeholder="Nhập thông tin của bạn" aria-label="Recipient's username" aria-describedby="button-addon2" />
+                        <div class="input-group-append">
+                            <button class="btn" type="button" id="button-addon2">
+                  <img
+                    src="../assets/image/send.png"
+                    style="width: 15px"
+                    alt=""
+                  />
+                </button>
+                        </div>
+                    </div>
+                    <p style="width: 70%">
+                        Hãy nhập email của bạn vào đây để được tư vấn và nhận thông tin ưu đãi
+                    </p>
+                    <ul style="list-style: none; float: left">
+                        <li style="float: left">
+                            <img src="../assets/image/shopee.png" class="ml-2" style="width: 50px; border-radius: 50%" alt="" />
+                        </li>
+                        <li style="float: left">
+                            <img src="../assets/image/lazada.png" class="ml-2" style="width: 50px; border-radius: 50%" alt="" />
+                        </li>
+                        <li style="float: left">
+                            <img src="../assets/image/tiki.png" class="ml-2" style="width: 50px; border-radius: 50%" alt="" />
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <h6>FOLLOW CHÚNG TÔI TRÊN PANPAGE</h6>
+                    <img src="../assets/image/fanpage.png" style="width: 80%" alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script>
+    $("#detail").hide();
+
+    $("#title").text("Tất cả sản phẩm");
+    fetch("./../CSDL/tatca.json")
+        .then((response) => response.json())
+        .then((json) => render(json["BOTRAUCU"]["botraucu"]));
+
+    function category(category) {
+        if (category == "all") {
+            $("#title").text("Tất cả sản phẩm");
+            fetch("./../CSDL/tatca.json")
+                .then((response) => response.json())
+                .then((json) => render(json["BOTRAUCU"]["botraucu"]));
+        }
+        if (category == "dinhduong") {
+            $("#title").text("Hạt dinh dưỡng");
+            fetch("./../CSDL/hatdinhduong.json")
+                .then((response) => response.json())
+                .then((json) => render(json["HATDINHDUONG"]["hatdinhduong"]));
+        }
+        if (category == "quaxay") {
+            $("#title").text("Hoa quả sấy");
+            fetch("./../CSDL/hoaquasay.json")
+                .then((response) => response.json())
+                .then((json) => render(json["HOAQUASAY"]["hoaquasay"]));
+        }
+        if (category == "thaomoc") {
+            $("#title").text("Trà thảo mộc");
+            fetch("./../CSDL/trathaomoc.json")
+                .then((response) => response.json())
+                .then((json) => render(json["TRATHAOMOC"]["trathaomoc"]));
+        }
+        if (category == "botraucu") {
+            $("#title").text("Bột Rau Củ");
+            fetch("./../CSDL/botraucu.json")
+                .then((response) => response.json())
+                .then((json) => render(json));
+        }
+    }
+
+    function render(data) {
+        let str = "";
+        data.forEach((element) => {
+            str += `
+            <div class="card col-3 ml-3 mt-2" onclick="detail('${element["name"]}')" >
+                            <img class="card-img-top" src="${element["pic"]}" alt="Card image cap" style="width:100%" />
+                            <div class="card-body">
+                                <h5 class="card-title" style="text-align:center; color:#D69854">${element["name"]}</h5>
+                                <h4 style="text-align:center; color:#7B8F5B">${element["price"]} </h4>
+                            </div>
+                        </div>
+            `;
+        });
+        $("#product").html(str);
+    }
+
+    function detail(name) {
+        $("#index").hide();
+        $("#detail").show();
+        console.log(name);
+        fetch("./../CSDL/tatca.json")
+            .then((response) => response.json())
+            .then((json) => {
+                json["BOTRAUCU"]["botraucu"].forEach((element) => {
+                    if (element["name"] == name) {
+                        let str = `
+                        <div class="row">
+                <div class="col-5">
+                    <img src="${element["pic"]}" style="width: 70%; height: 400px" alt="" />
+                    
+                </div>
+                <div class="col-7 mt-5">
+                    <h6 class="mt-4" style="color: rgb(212, 154, 46); font-size:32px">${element["name"]}</h6>
+                    <h4 class="mt-4" style="color: rgb(35, 129, 35)">${element["price"]}</h4>
+                    <hr />
+                    <h6 class="mt-4">
+                        <label style="color: rgb(35, 129, 35)">Số lượng: </label>
+                        <input size:"20" id="quantity-quickview" name="quantity" type="number" min="1" value="1">
+                    </h6>
+                    <button style="
+                border-radius: 2px;
+                background-color: #AC8C69;
+                border: none;
+                text-transform: uppercase;
+                color: white;
+                padding: 20px;
+              
+                width: 40%;
+                font-size: 22px
+              ">
+              Thêm giỏ hàng
+            </button>
+                    <button   style="
+                border-radius: 2px;
+                background-color: #AC8C69;
+                border: none;
+                text-transform: uppercase;
+                color: white;
+                padding: 20px;
+                width: 40%;
+                margin-left: 5%;
+                font-size: 22px
+              ">
+              Mua ngay
+            </button>
+                </div>
+            </div>
+            <div class="row mt-5" />
+                <h6 style="font-width:bold">MÔ TẢ SẢN PHẨM</h6>
+                <div class="col-12" ><p style="font-size:16px;">${element["detail"]}</p> </div>
+            
+            </div>
+                        
+                        
+                        `;
+                        $("#detail").append(str);
+                    }
+                });
+            });
+    }
+</script>
+
+</html>
