@@ -65,7 +65,6 @@ html{
 
 .footer_middle {
     background-color: var(--footer-color);
-    padding: 0 calc(100%/12);
 }
 
 .footer_middle-logo {
