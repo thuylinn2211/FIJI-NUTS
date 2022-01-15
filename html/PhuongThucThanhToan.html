@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Phương Thức Thanh Toán</title>
+        <link rel="shortcut icon" href="../assets/image/Logo.png" type="image/png" />
         <script type="text/javascript">
             function QuayLaiGH() {
                     location.assign('GioHang.html')
@@ -26,7 +27,7 @@
                     alert('Áp mã giảm giá thành công. Bạn được giảm 30,000đ')
                     col1.innerHTML='Mã giảm giá'
                     col3.innerHTML=' -30,000đ'
-                    tongcong.innerHTML='654,000 đ'
+                    tongcong.innerHTML='608,000 đ'
                 }
                 else {
                     alert('Mã giảm giá không hợp lệ')
@@ -36,7 +37,8 @@
                 document.getElementById("price1").innerHTML=price1;
                 document.getElementById("price2").innerHTML=price2;
                 document.getElementById("price3").innerHTML=price3;
-                return total=Math.round(price1+price2+price3);
+                document.getElementById("price4").innerHTML=price4;
+                return total=Math.round(price1+price2+price3+price4);
                 
             }
         </script>  
@@ -69,36 +71,47 @@
             <table >
                 <tr>
                     <td>
+                        <img src="../assets/image/hat_hanhnhanrangmoc1.jpg" height="80px" width="80px"/>
+                    </td>
+                    <td >
+                        Hạnh Nhân Rang Mộc  
+                    </td>
+                    <td id="price1" colspan="2">
+                        195,000 đ 
+                    </td>
+                </tr>
+                <tr>
+                    <td>
                         <img src="../assets/image/bot_cantay.jpg" height="80px" width="80px"/>
                     </td>
                     <td >
-                        Bột Cần Tây Sấy Lạnh    
+                        Bột Cần Tây   
                     </td>
-                    <td id="price1" colspan="2">
+                    <td id="price2" colspan="2">
                         129,000 đ 
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <img src="../assets/image/bot_caixoan.jpg" height="80px" width="80px"/>
+                        <img src="../assets/image/bot_diepca.jpg" height="80px" width="80px"/>
                     </td>
                     <td>
-                        Bột Cải Xoăn
+                        Bột Rau Diếp Cá
                     </td>
                     
-                    <td id="price2" colspan="2">
-                        135,000 đ 
+                    <td id="price3" colspan="2">
+                        99,000 đ 
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <img src="../assets/image/traicaysay_nho.jpg" height="80px" width="80px"/>
+                        <img src="../assets/image/traicaysay_dau.jpg" height="80px" width="80px"/>
                     </td>
                     <td >
-                        Nho Khô Chilli  
+                        Dâu Tây Sấy Dẻo
                     </td>
-                    <td id="price3" colspan="2">
-                        110,000 đ 
+                    <td id="price4" colspan="2">
+                        185,000 đ 
                     </td>
                 </tr>
                 
@@ -116,7 +129,7 @@
                     <td>Tạm tính</td>
                     <td colspan="2"></td>
                     
-                    <td>654,000 đ</td>
+                    <td>608,000 đ</td>
                 </tr>
                 <tr>
                     <td>Phí vận chuyển</td>
@@ -131,7 +144,7 @@
                 <tr>
                     <td style="font-weight: bold;">Tổng cộng:</td>
                     <td colspan="2"></td>
-                    <td id="tongcong">684,000 đ</td>
+                    <td id="tongcong">638,000 đ</td>
                 </tr>
                 
             </table>
