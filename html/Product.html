@@ -23,6 +23,7 @@
             }
     var formatMoney = '{{amount}}₫';
     </script>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
 </head>
 <style>
     #category:hover {
@@ -91,6 +92,10 @@
         <div class="container mt-3" id="detail"></div>
 
     </div>
+    <div w3-include-html="Footer.html"></div>
+	<script>
+		w3.includeHTML();
+	</script>
 </body>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -176,7 +181,7 @@
                         <label style="color: rgb(35, 129, 35)">Số lượng: </label>
                         <input size:"20" id="quantity-quickview" name="quantity" type="number" min="1" value="1">
                     </h6>
-                    <button onclick="window.location.href='./../html/Giohang.html'" style="
+                    <input style="
                 border-radius: 2px;
                 background-color: #AC8C69;
                 border: none;
@@ -184,11 +189,8 @@
                 color: white;
                 padding: 20px;
                 width: 40%;
-                font-size: 22px
-              ">
-              Thêm giỏ hàng
-            </button>
-                    <button onclick="window.location.href='./../html/Diachi.html'" style="
+                font-size: 22px" type="button" id="checkout" class="button-default" onclick="giohang()" value="Thêm giỏ hàng" />
+                    <input onclick="mua()" style="
                 border-radius: 2px;
                 background-color: #AC8C69;
                 border: none;
