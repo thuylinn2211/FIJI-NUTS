@@ -41,7 +41,7 @@
         w3.includeHTML();
     </script>
 
-    <div id="page_content">
+    <div id="page_content" style="margin-top: 170px;">
         <div id="pageContainer" class="clearfix">
             <!-- Begin slider -->
             <div id="carouselindicators" class="carousel slide" data-ride="carousel" data-interval="3000">
@@ -361,9 +361,7 @@
             <div class="col-md-3 col-sm-6 col-xs-6 pro-loop">
                                 <div class="product-block product-resize">
                                     <div class="product-img image-resize view view-third">
-                                        <div class="product-sale">
-                                            <span><label class="sale-lb">- </label> 4%</span>
-                                        </div>
+                                        
                                         <a onclick="detail('${element["name"]}')" title="${element["name"]}">
                                             <img class="first-image  has-img" alt="Bánh ngói hạnh nhân"
                                                 src="${element["pic1"]}" />
@@ -391,8 +389,7 @@
                                                 title="${element["name"]} </a></h3>
                                         <div class="pro-prices">
                                             <p class="pro-price">${element["price"]}</p>
-                                            <p class="pro-price-del text-left"><del
-                                                    class="compare-price">${element["price"]}</del></p>
+                                           
                                         </div>
                                     </div>
                                 </div>
@@ -423,9 +420,7 @@
                                         <div class="col-lg-7 col-md-7 col-sm-6">
                                             <h4 class="box-title mt-5">Chi tiết sản phẩm</h4>
                                             <p>${element["detail"]}</p>
-                                            <h2 class="mt-5">
-                                                ${element["price"]}<small class="text-success">(Giảm 4%)</small>
-                                            </h2>
+                                            
                                             <a class="btn btn-light btn-rounded mr-1" data-toggle="tooltip" title="" data-original-title="Thêm vào giỏ hàng">
                                                 <i class="fa fa-shopping-cart" href="./html/GioHang" style="background-color: #7B8F5B"></i>
                                             </a>
