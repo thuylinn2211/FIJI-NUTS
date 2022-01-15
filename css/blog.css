@@ -11,7 +11,9 @@
 body {
     margin: 0
 }
-
+.section{
+    margin-top: 170px;
+}
 article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary {
     display: block
 }
