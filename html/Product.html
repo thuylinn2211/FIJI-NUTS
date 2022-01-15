@@ -15,7 +15,10 @@
     </script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
     <script type="text/javascript">
-        function diachi() {
+        function giohang() {
+                location.assign('GioHang.html')
+            }
+            function mua() {
                 location.assign('DiaChi.html')
             }
     var formatMoney = '{{amount}}₫';
@@ -254,10 +257,9 @@
                 text-transform: uppercase;
                 color: white;
                 padding: 20px;
-                
                 width: 40%;
-                font-size: 22px type="button" id="checkout" class="button-default" onclick="diachi()" value="Thêm giỏ hàng" />
-                    <button onclick="mua" style="
+                font-size: 22px" type="button" id="checkout" class="button-default" onclick="giohang()" value="Thêm giỏ hàng" />
+                    <input onclick="mua()" style="
                 border-radius: 2px;
                 background-color: #AC8C69;
                 border: none;
@@ -267,9 +269,7 @@
                 width: 40%;
                 margin-left: 5%;
                 font-size: 22px;
-              ">
-              Mua ngay
-            </button>
+              " type="button" id="checkout" value="Mua ngay"/>
                 </div>
             </div>
             <div class="row mt-5" />
