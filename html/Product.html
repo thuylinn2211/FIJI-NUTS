@@ -8,11 +8,7 @@
     <title>Sản phẩm</title>
     <link rel="shortcut icon" href="../assets/image/Logo.png" type="image/png" />
     <script src="https://www.w3schools.com/lib/w3.js"></script>
-    <script type="text/javascript">
-        function mua(){
-            window.open('Giohang.html')
-        }
-    </script>
+  
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
     <script type="text/javascript">
         function giohang() {
@@ -42,6 +38,10 @@
 </style>
 
 <body>
+<<<<<<< HEAD
+=======
+    <embed type="text/html" height="100%" width="100%" src="header2.html">
+>>>>>>> 40c6940bef86ba375ecab006375f5ee366bfcd4e
     
     <div class="container-fluid">
         
@@ -103,6 +103,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script>
+   
     $("#detail").hide();
 
     $("#title").text("Tất cả sản phẩm");
@@ -178,7 +179,7 @@
                     <h6 class="mt-4" style="color: rgb(212, 154, 46); font-size:32px">${element["name"]}</h6>
                     <h4 class="mt-4" style="color: rgb(35, 129, 35)">${element["price"]}</h4>
                     <hr />
-                    <h6 class="mt-4">
+                    <h6 style="margin-bottom:5px" class="mt-4">
                         <label style="color: rgb(35, 129, 35)">Số lượng: </label>
                         <input size:"20" id="quantity-quickview" name="quantity" type="number" min="1" value="1">
                     </h6>
@@ -200,8 +201,9 @@
                 padding: 20px;
                 width: 40%;
                 margin-left: 5%;
-                font-size: 22px;
+                font-size: 22px;"
               " type="button" id="checkout" value="Mua ngay"/>
+              
                 </div>
             </div>
             <div class="row mt-5" />
@@ -218,5 +220,6 @@
             });
     }
 </script>
+
 
 </html>
