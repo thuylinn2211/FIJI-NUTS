@@ -19,14 +19,11 @@
     <link rel="stylesheet" href="/css/trangchu.css">
     <link href='/css/javascriptBG.css' rel='stylesheet' type='text/css' media='all' />
     <script src="https://www.w3schools.com/lib/w3.js"></script>
-
-    <script src="https://www.w3schools.com/lib/w3.js"></script>
-
+    <link rel="stylesheet" href="./css/gioithieu.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
-    <link href='//hstatic.net/0/0/global/design/plugins/font-awesome/4.6.3/css/font-awesome.min.css' rel='stylesheet'
-        type='text/css' media='all' />
-    <link href='//theme.hstatic.net/200000313173/1000694342/14/styles.css?v=127' rel='stylesheet' type='text/css'
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+
+    <link href='./css/javascriptBG.css' rel='stylesheet' type='text/css'
         media='all' />
 </head>
 
@@ -499,32 +496,26 @@
                 <label style="color: rgb(35, 129, 35)">Số lượng: </label>
                 <input size:"20" id="quantity-quickview" name="quantity" type="number" min="1" value="1">
             </h6>
-            <button style="
-        border-radius: 2px;
-        background-color: #AC8C69;
-        border: none;
-        text-transform: uppercase;
-        color: white;
-        padding: 20px;
-        
-        width: 40%;
-        font-size: 22px
-      ">
-      Thêm giỏ hàng
-    </button>
-            <button onclick="mua" style="
-        border-radius: 2px;
-        background-color: #AC8C69;
-        border: none;
-        text-transform: uppercase;
-        color: white;
-        padding: 20px;
-        width: 40%;
-        margin-left: 5%;
-        font-size: 22px;
-      ">
-      Mua ngay
-    </button>
+            <input style="
+                border-radius: 2px;
+                background-color: #AC8C69;
+                border: none;
+                text-transform: uppercase;
+                color: white;
+                padding: 20px;
+                width: 40%;
+                font-size: 22px" type="button" id="checkout" class="button-default" onclick="giohang()" value="Thêm giỏ hàng" />
+                    <input onclick="mua()" style="
+                border-radius: 2px;
+                background-color: #AC8C69;
+                border: none;
+                text-transform: uppercase;
+                color: white;
+                padding: 20px;
+                width: 40%;
+                margin-left: 5%;
+                font-size: 22px;
+              " type="button" id="checkout" value="Mua ngay"/>
         </div>
     </div>
     <div class="row mt-5" />
