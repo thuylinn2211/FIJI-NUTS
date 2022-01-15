@@ -1,0 +1,153 @@
+{
+    "TatCaSanPham": {
+        "SanPham": [{
+                "name": "Bánh Ngói Hạnh Nhân",
+                "pic1": "/assets/image/banh-ngoi-hanh-nhan-2.jpg",
+                "pic2": "/assets/image/banh-ngoi-hanh-nhan-3.jpeg",
+                "price": "135.000 đ",
+                "detail": "THÔNG TIN SẢN PHẨM: <br>            Thành phần : 100% nguyên chất <br>            Khối lượng tịnh : 50g <br> <br>            Công dụng : <br>            - Bổ sung dưỡng chất cho cơ thể <br> <br>            Cách dùng : <br>            - Là loại bột có chứa hàm lượng dinh dưỡng rất lớn được sử dụng thay thế cho lá cải xoăn tươi. <br>            - Pha 3 - 5g ( tương đương 1 đến 2 thìa cafe ) bột với khoảng 200ml nước tinh khiết dùng uống trực tiếp <br>            - Kết hợp với các loại trái cây, rau xanh và đường sữa để làm sinh tố <br>            - Kết hợp với cháo cho bé ăn dặm, làm sốt, nước súp hoặc kết hợp với các nguyên liệu khác theo ý muốn. <br> <br>            Bảo quản : Tránh để bột cải xoăn ở nơi có ánh sáng, nơi có nhiệt độ và độ ẩm cao. Đóng kín bao bì sau khi sử dụng và bảo quản ở ngăn mát tủ lạnh."
+            },
+            {
+                "name": "Hạnh Nhân Rang Mộc",
+                "pic1": "../assets/image/hat_hanhnhanrangmoc1.jpg",
+                "pic2": "../assets/image/hat_hanhnhanrangmoc2.jpg",
+                "price": "195,000₫",
+                "detail": "THÔNG TIN SẢN PHẨM: <br>            - Trọng lượng: Gói 500gr hút chân không hoặc hũ 500gr <br>       - Xuất xứ: Bình Phước <br>            - Hạn sử dụng: 6 tháng kể từ ngày sản xuất (in trên bao bì) <br>            - Phân phối bởi công ty TNHH Hạt dinh dưỡng Tây Nguyên <br> <br>          Đặc điểm nổi bật của sản phẩm: <br>            - Nguồn nguyên liệu điều Bình Phước sạch.<br>            - Hạt điều rang muối được rang củi thủ công với muối (muối chỉ chiếm tỉ lệ 1% nên không bị mặn đắng), bóc vỏ sẵn.<br>            - Quy trình sản xuất đạt chuẩn VSATTP.<br>            - Không có chất bảo quản, an toàn cho sức khỏe.<br>            - Kỹ thuật rang theo công nghệ cao cho ra hạt chất lượng,đạt độ ẩm tiêu chuẩn giữ được vị hạt thơm ngon.<br>            - Bảo quản lạnh kỹ lưỡng trong môi trường chân không, chống nấm mốc."
+            },
+            {
+                "name": "Hạt Điều Vỏ Lụa",
+                "pic1": "../assets/image/hat_dieu1.jpg",
+                "pic2": "../assets/image/hat-dieu-vo-lua.jpg",
+                "price": "150,000₫",
+                "detail": "THÔNG TIN SẢN PHẨM: <br>            - Trọng lượng: Gói 500gr hút chân không hoặc hũ 500gr <br>       - Xuất xứ: Bình Phước <br>            - Hạn sử dụng: 6 tháng kể từ ngày sản xuất (in trên bao bì) <br>            - Phân phối bởi công ty TNHH Hạt dinh dưỡng Tây Nguyên <br> <br>          Đặc điểm nổi bật của sản phẩm: <br>            - Nguồn nguyên liệu điều Bình Phước sạch.<br>            - Hạt điều rang muối được rang củi thủ công với muối (muối chỉ chiếm tỉ lệ 1% nên không bị mặn đắng), bóc vỏ sẵn.<br>            - Quy trình sản xuất đạt chuẩn VSATTP.<br>            - Không có chất bảo quản, an toàn cho sức khỏe.<br>            - Kỹ thuật rang theo công nghệ cao cho ra hạt chất lượng,đạt độ ẩm tiêu chuẩn giữ được vị hạt thơm ngon.<br>            - Bảo quản lạnh kỹ lưỡng trong môi trường chân không, chống nấm mốc."
+            },
+            {
+                "name": "Hạt Macca Nứt Vỏ",
+                "pic1": "/assets/image/hat_macca.jpg",
+                "pic2": "/assets/image/hat_macca2.jpg",
+                "price": "125.000 đ",
+                "detail": "THÔNG TIN SẢN PHẨM: <br>  - Trọng lượng: Gói 500gr hút chân không hoặc hũ nhựa 450gr <br>            - Xuất xứ: Lâm Đồng, Việt Nam <br>            - Hạn sử dụng: 6 tháng kể từ ngày sản xuất (in trên bao bì)<br>            - Phân phối bởi công ty TNHH Hạt dinh dưỡng Tây Nguyên <br> <br>            Đặc điểm nổi bật của sản phẩm:<br>            - Nguồn nguyên liệu 100% hạt macca sạch, nguyên liệu từ vùng đất Tây Nguyên màu mỡ.<br>            - Quy trình sản xuất đạt chuẩn VSATTP. <br>            - Không có chất bảo quản, an toàn cho sức khỏe.<br>            - Kỹ thuật sấy nứt theo công nghệ cao cho đầu ra hạt macca chất lượng, đạt độ ẩm tiêu chuẩn, dễ tách vỏ hạt.<br>            - Hạt macca được xử lý bảo quản lạnh kỹ lưỡng trong môi trường chân không, chống nấm mốc."
+            },
+            {
+                "name": "Hạt Bí Xanh",
+                "pic1": "/assets/image/hat_bixanh.jpg",
+                "pic2": "/assets/image/hat_bixanh3.jpg",
+                "price": "135.000 đ",
+                "detail": "THÔNG TIN SẢN PHẨM: <br>            - Trọng lượng: Gói 500gr hút chân không hoặc hũ 500gr <br>       - Xuất xứ: Bình Phước <br>            - Hạn sử dụng: 6 tháng kể từ ngày sản xuất (in trên bao bì) <br>            - Phân phối bởi công ty TNHH Hạt dinh dưỡng Tây Nguyên <br> <br>          Đặc điểm nổi bật của sản phẩm: <br>            - Nguồn nguyên liệu điều Bình Phước sạch.<br>            - Hạt điều rang muối được rang củi thủ công với muối (muối chỉ chiếm tỉ lệ 1% nên không bị mặn đắng), bóc vỏ sẵn.<br>            - Quy trình sản xuất đạt chuẩn VSATTP.<br>            - Không có chất bảo quản, an toàn cho sức khỏe.<br>            - Kỹ thuật rang theo công nghệ cao cho ra hạt chất lượng,đạt độ ẩm tiêu chuẩn giữ được vị hạt thơm ngon.<br>            - Bảo quản lạnh kỹ lưỡng trong môi trường chân không, chống nấm mốc."
+            },
+            {
+                "name": "Dâu Tây Sấy Dẻo",
+                "pic1": "../assets/image/traicaysay_dau.jpg",
+                "pic2": "../assets/image/traicaysay_dau2.jpg",
+                "price": "185.000 đ",
+                "detail": "Dâu tây sấy dẻo FIJI NUTS <br>        Thông tin sản phẩm: <br>        - Trọng lượng: Hộp 400gr <br>        - Xuất xứ: Đà Lạt, Việt Nam <br>        - Hạn sử dụng: 6 tháng kể từ ngày sản xuất (in trên bao bì)<br><br>               Đặc điểm nổi bật của sản phẩm:<br>        - Dâu tây là đặc sản của xứ sở ngàn thông, ai đã từng một lần đến Đà Lạt mà chưa được tận mắt chiêm ngưỡng và hái những quả dâu chín mọng thì quả là đáng tiếc. <br>       - Dâu tây Đà Lạt nổi tiếng bởi cái ngon, ngọt và đẹp mắt, từng quả đo đỏ ẩn hiện trong tiết trời se lạnh.<br>        - Ăn nhiều dâu tây đà lạt sẽ rất có lợi cho sức khỏe của con người, đặc biệt là chống lão hóa."
+
+            },
+            {
+                "name": "Nho Khô Raisins 3 màu",
+                "pic1": "../assets/image/traicaysay_nho1.jpg",
+                "pic2": "../assets/image/traicaysay_nho2.jpg",
+                "price": "125.000 đ",
+                "detail": "Nho khô Raisins 3 màu FIJI NUTS, nho khô không đường sấy chua ngọt <br><br>        Thông tin sản phẩm:<br>        - Trọng lượng: Hũ nhựa 450gr <br>        - Xuất xứ: Nhập khẩu Chile <br>        - Hạn sử dụng: 6 tháng kể từ ngày sản xuất (in trên bao bì) <br>        - Phân phối bởi công ty TNHH Hạt dinh dưỡng Tây Nguyên <br><br>               Đặc điểm nổi bật của sản phẩm: <br>        - Được sấy khô tự nhiên bằng ánh nắng mặt trời, không tẩm ướp gia vị và có vị ngọt thanh mát, rất dễ ăn (không ngọt sắc). Thích hợp ăn vặt nhưng vẫn đảm bảo sức khoẻ. <br>        - Nguồn nguyên liệu nhập khẩu chính ngạch. <br>        - Nho khô không có chất bảo quản, an toàn cho sức khỏe. <br>        - Bảo quản lạnh kỹ lưỡng, chống nấm mốc."
+            },
+            {
+                "name": "Trà Hoa Nhài",
+                "pic1": "../assets/image/tra_hoanhai.jpg",
+                "pic2": "../assets/image/tra_hoanhai1.jpg",
+                "price": "139.000 đ",
+                "detail": "Trà hoa nhài khô nguyên bông FIJI NUTS <br><br>        Thông tin sản phẩm:<br>        - Trọng lượng: Hộp 500g <br>        - Xuất xứ: Việt Nam <br>        - Hạn sử dụng: 12 tháng kể từ ngày sản xuất (in trên bao bì) <br><br>              Hướng dẫn sử dụng: <br>        Bước 1: Cho 5 bông hoa (khoảng 5gram) vào ấm trà. Sau đó cho một ít nước sôi vào ấm và tráng trà. Tráng trà nghĩa là bạn cho một chút nước sôi vào ấm đã có sẵn trà, đợi 30 giây cho trà nở ra và đổ bỏ nước trà đó đi. Bước này có công dụng kích thích trà và làm sạch trà. <br>        Bước 2: Sử dụng đế đun đèn cầy để uống trà hoa. Cho ấm trà đã tráng lên chân đế đun đã thắp nến. Rót 250ml nước ấm vào ấm trà và đợi từ 5-7 phút. Nếu các bạn không sử dụng chân đế đun, thì sẽ rót nước sôi ở nhiệt độ 90-100oC vào ấm trà và cũng đợi từ 5-7 phút. <br>        Bước 3: Hết thời gian, bạn sử dụng đồ lọc trà chiết nước trà ra bình, khi uống thì các bạn rót lại sang tách. Với những loại bình thủy tinh có sẵn đồ lọc thì không cần phải lọc lại. <br>        Bước 4: Khi dùng hết trà thì các bạn lại tiếp tục lặp lại bước 2 để dùng tiếp. Trà có thể dùng lại được 2 – 3 lần."
+            },
+            {
+                "name": "Bánh Ngói Hạnh Nhân",
+                    "pic1": "/assets/image/banh-ngoi-hanh-nhan-2.jpg",
+                    "pic2": "/assets/image/banh-ngoi-hanh-nhan-3.jpeg",
+                    "price": "135.000 đ",
+                    "detail": "THÔNG TIN SẢN PHẨM: <br>            Thành phần : 100 % nguyên chất <br>            Khối lượng tịnh : 50g <br> <br>            Công dụng : <br>            - Bổ sung dưỡng chất cho cơ thể <br> <br>            Cách dùng : <br>            - Là loại bột có chứa hàm lượng dinh dưỡng rất lớn được sử dụng thay thế cho lá cải xoăn tươi. <br>            - Pha 3 - 5g ( tương đương 1 đến 2 thìa cafe ) bột với khoảng 200ml nước tinh khiết dùng uống trực tiếp <br>            - Kết hợp với các loại trái cây, rau xanh và đường sữa để làm sinh tố <br>            - Kết hợp với cháo cho bé ăn dặm, làm sốt, nước súp hoặc kết hợp với các nguyên liệu khác theo ý muốn. <br> <br>            Bảo quản : Tránh để bột cải xoăn ở nơi có ánh sáng, nơi có nhiệt độ và độ ẩm cao. Đóng kín bao bì sau khi sử dụng và bảo quản ở ngăn mát tủ lạnh."
+            },
+            {
+                "name": "Hạnh Nhân Rang Mộc",
+                    "pic1": "../assets/image/hat_hanhnhanrangmoc1.jpg",
+                    "pic2": "../assets/image/hat_hanhnhanrangmoc2.jpg",
+                    "price": "195,000₫",
+                    "detail": "THÔNG TIN SẢN PHẨM: <br>            - Trọng lượng: Gói 500gr hút chân không hoặc hũ 500gr <br>       - Xuất xứ: Bình Phước <br>            - Hạn sử dụng: 6 tháng kể từ ngày sản xuất (in trên bao bì) <br>            - Phân phối bởi công ty TNHH Hạt dinh dưỡng Tây Nguyên <br> <br>          Đặc điểm nổi bật của sản phẩm: <br>            - Nguồn nguyên liệu điều Bình Phước sạch.<br>            - Hạt điều rang muối được rang củi thủ công với muối (muối chỉ chiếm tỉ lệ 1% nên không bị mặn đắng), bóc vỏ sẵn.<br>            - Quy trình sản xuất đạt chuẩn VSATTP.<br>            - Không có chất bảo quản, an toàn cho sức khỏe.<br>            - Kỹ thuật rang theo công nghệ cao cho ra hạt chất lượng,đạt độ ẩm tiêu chuẩn giữ được vị hạt thơm ngon.<br>            - Bảo quản lạnh kỹ lưỡng trong môi trường chân không, chống nấm mốc." 
+            },
+            {
+                "name": "Hạt Điều Vỏ Lụa",
+                    "pic1": "../assets/image/hat_dieu1.jpg",
+                    "pic2": "../assets/image/hat-dieu-vo-lua.jpg",
+                    "price": "150,000₫",
+                    "detail": "THÔNG TIN SẢN PHẨM: <br>            - Trọng lượng: Gói 500gr hút chân không hoặc hũ 500gr <br>       - Xuất xứ: Bình Phước <br>            - Hạn sử dụng: 6 tháng kể từ ngày sản xuất (in trên bao bì) <br>            - Phân phối bởi công ty TNHH Hạt dinh dưỡng Tây Nguyên <br> <br>          Đặc điểm nổi bật của sản phẩm: <br>            - Nguồn nguyên liệu điều Bình Phước sạch.<br>            - Hạt điều rang muối được rang củi thủ công với muối (muối chỉ chiếm tỉ lệ 1% nên không bị mặn đắng), bóc vỏ sẵn.<br>            - Quy trình sản xuất đạt chuẩn VSATTP.<br>            - Không có chất bảo quản, an toàn cho sức khỏe.<br>            - Kỹ thuật rang theo công nghệ cao cho ra hạt chất lượng,đạt độ ẩm tiêu chuẩn giữ được vị hạt thơm ngon.<br>            - Bảo quản lạnh kỹ lưỡng trong môi trường chân không, chống nấm mốc." 
+            },
+            {
+                "name": "Hạt Macca Nứt Vỏ",
+                "pic1": "/assets/image/hat_macca.jpg",
+                "pic2": "/assets/image/hat_macca2.jpg",
+                "price": "125.000 đ",
+                "detail": "THÔNG TIN SẢN PHẨM: <br>  - Trọng lượng: Gói 500gr hút chân không hoặc hũ nhựa 450gr <br>            - Xuất xứ: Lâm Đồng, Việt Nam <br>            - Hạn sử dụng: 6 tháng kể từ ngày sản xuất (in trên bao bì)<br>            - Phân phối bởi công ty TNHH Hạt dinh dưỡng Tây Nguyên <br> <br>            Đặc điểm nổi bật của sản phẩm:<br>            - Nguồn nguyên liệu 100% hạt macca sạch, nguyên liệu từ vùng đất Tây Nguyên màu mỡ.<br>            - Quy trình sản xuất đạt chuẩn VSATTP. <br>            - Không có chất bảo quản, an toàn cho sức khỏe.<br>            - Kỹ thuật sấy nứt theo công nghệ cao cho đầu ra hạt macca chất lượng, đạt độ ẩm tiêu chuẩn, dễ tách vỏ hạt.<br>            - Hạt macca được xử lý bảo quản lạnh kỹ lưỡng trong môi trường chân không, chống nấm mốc."          
+            },
+            {
+                "name": "Hạt Bí Xanh",
+                "pic1": "/assets/image/hat_bixanh.jpg",
+                "pic2": "/assets/image/hat_bixanh3.jpg",
+                "price": "135.000 đ",
+                "detail": "THÔNG TIN SẢN PHẨM: <br>            - Trọng lượng: Gói 500gr hút chân không hoặc hũ 500gr <br>       - Xuất xứ: Bình Phước <br>            - Hạn sử dụng: 6 tháng kể từ ngày sản xuất (in trên bao bì) <br>            - Phân phối bởi công ty TNHH Hạt dinh dưỡng Tây Nguyên <br> <br>          Đặc điểm nổi bật của sản phẩm: <br>            - Nguồn nguyên liệu điều Bình Phước sạch.<br>            - Hạt điều rang muối được rang củi thủ công với muối (muối chỉ chiếm tỉ lệ 1% nên không bị mặn đắng), bóc vỏ sẵn.<br>            - Quy trình sản xuất đạt chuẩn VSATTP.<br>            - Không có chất bảo quản, an toàn cho sức khỏe.<br>            - Kỹ thuật rang theo công nghệ cao cho ra hạt chất lượng,đạt độ ẩm tiêu chuẩn giữ được vị hạt thơm ngon.<br>            - Bảo quản lạnh kỹ lưỡng trong môi trường chân không, chống nấm mốc." 
+            },
+            {
+                "name": "Hạt Dẻ Cười",
+                "pic1": "../assets/image/hat_decuoi.jpg",
+                "pic2": "../assets/image/hat_decuoi1.jpg",
+                "price": "220.000 đ",
+                "detail": " Hạt dẻ cười FIJI NUTS, hạt dẻ cười rang muối không tẩy trắng giàu dinh dưỡng <br><br>            Thông tin sản phẩm:<br>            - Trọng lượng: Gói 500gr<br>            - Xuất xứ: Việt Nam<br>            - Hạn sử dụng: 6 tháng kể từ ngày sản xuất (in trên bao bì)<br>            - Phân phối bởi công ty TNHH Hạt dinh dưỡng Tây Nguyên<br><br>            Đặc điểm nổi bật của sản phẩm:<br>            - Hạt được rang muối, rất giòn, ăn rất thơm và ngọt bùi.<br>            - Không tẩy trắng, an toàn cho sức khỏe.<br>            - Được đóng gói hút chân không cẩn thận.<br>            - Ăn trực tiếp hoặc sử dụng trong các món ăn, sữa hạt,...<br>            - Đầy đủ giấy tờ nhập khẩu, đạt tiêu chuẩn VSATTP."
+            },
+            {
+                "name": "Hạt Điều Rang Muối",
+                "pic1": "/assets/image/hat_dieu.jpg",
+                "pic2": "/assets/image/hat_dieu1.jpg",
+                "price": "115.000 đ",
+                "detail": "THÔNG TIN SẢN PHẨM: <br>            - Trọng lượng: Gói 500gr hút chân không hoặc hũ 500gr <br>       - Xuất xứ: Bình Phước <br>            - Hạn sử dụng: 6 tháng kể từ ngày sản xuất (in trên bao bì) <br>            - Phân phối bởi công ty TNHH Hạt dinh dưỡng Tây Nguyên <br> <br>          Đặc điểm nổi bật của sản phẩm: <br>            - Nguồn nguyên liệu điều Bình Phước sạch.<br>            - Hạt điều rang muối được rang củi thủ công với muối (muối chỉ chiếm tỉ lệ 1% nên không bị mặn đắng), bóc vỏ sẵn.<br>            - Quy trình sản xuất đạt chuẩn VSATTP.<br>            - Không có chất bảo quản, an toàn cho sức khỏe.<br>            - Kỹ thuật rang theo công nghệ cao cho ra hạt chất lượng,đạt độ ẩm tiêu chuẩn giữ được vị hạt thơm ngon.<br>            - Bảo quản lạnh kỹ lưỡng trong môi trường chân không, chống nấm mốc." 
+            },
+            {
+                "name": "Hạt Óc Chó Nhân Vàng",
+                    "pic1": "/assets/image/hat_occho.jpg",
+                    "pic2": "/assets/image/hat_occho1.jpg",
+                    "price": "165.000 đ",
+                    "detail": "Nhân óc chó vàng FIJI NUTS, hạt óc chó tách vỏ Chile tốt cho bà bầu, cho bé<br><br>            Thông tin sản phẩm:<br>            - Trọng lượng: Gói/ hũ nhựa 400gr hút chân không hoặc hũ nhựa 200gr<br>            - Xuất xứ: Nhập khẩu Chile<br>            - Hạn sử dụng: 6 tháng kể từ ngày sản xuất (in trên bao bì)<br>            - Phân phối bởi công ty TNHH Hạt dinh dưỡng Tây Nguyên <br><br>            Đặc điểm nổi bật của sản phẩm:<br>            - Nguồn nguyên liệu hạt óc chó nhập khẩu, hạt vụ mới.<br>            - Quy trình đóng gói tách vỏ hạt, đóng gói tại Việt Nam đạt chuẩn VSATTP.<br>            - Hạt óc chó không có chất bảo quản, không chất tẩy trắng, không hun trùng, không tẩm ướp, an toàn cho sức khỏe.<br>            - Quy trình chế biến đảm bảo theo Tiêu chuẩn vệ sinh An toàn thực phẩm.<br>            - Bảo quản lạnh kỹ lưỡng trong môi trường chân không, chống nấm mốc."
+            },
+            {
+                "name": "Dâu Tây Sấy Dẻo",
+                "pic1": "../assets/image/traicaysay_dau.jpg",
+                "pic2": "../assets/image/traicaysay_dau2.jpg",
+                "price": "185.000 đ",
+                "detail": "Dâu tây sấy dẻo FIJI NUTS <br>        Thông tin sản phẩm: <br>        - Trọng lượng: Hộp 400gr <br>        - Xuất xứ: Đà Lạt, Việt Nam <br>        - Hạn sử dụng: 6 tháng kể từ ngày sản xuất (in trên bao bì)<br><br>               Đặc điểm nổi bật của sản phẩm:<br>        - Dâu tây là đặc sản của xứ sở ngàn thông, ai đã từng một lần đến Đà Lạt mà chưa được tận mắt chiêm ngưỡng và hái những quả dâu chín mọng thì quả là đáng tiếc. <br>       - Dâu tây Đà Lạt nổi tiếng bởi cái ngon, ngọt và đẹp mắt, từng quả đo đỏ ẩn hiện trong tiết trời se lạnh.<br>        - Ăn nhiều dâu tây đà lạt sẽ rất có lợi cho sức khỏe của con người, đặc biệt là chống lão hóa."
+            },
+            {
+                "name": "Hống Treo Gió Đà Lạt",
+                "pic1": "/assets/image/traicaysay_hong.jpg",
+                "pic2": "/assets/image/traicaysay_hong2.jpg",
+                "price": "225.000 đ",
+                "detail": "Hồng Treo Gió Đà Lạt <br><br>       Thông tin sản phẩm:<br>        - Trọng lượng: Gói 500gr<br>        - Xuất xứ: Việt Nam<br>        - Hạn sử dụng: 6 tháng kể từ ngày sản xuất (in trên bao bì)<br>        - Phân phối bởi công ty TNHH Hạt dinh dưỡng Tây Nguyên<br><br>        Đặc điểm nổi bật của sản phẩm:<br>        - Hồng treo gió được sấy khô tự nhiên bằng ánh nắng mặt trời, không tẩm ướp gia vị và có vị ngọt thanh mát, rất dễ ăn (không ngọt sắc). Thích hợp ăn vặt nhưng vẫn đảm bảo sức khoẻ.<br>        - Nguồn nguyên liệu nhập khẩu chính ngạch.<br>        - Hồng treo gió không có chất bảo quản, an toàn cho sức khỏe.<br>        - Bảo quản lạnh kỹ lưỡng, chống nấm mốc.<br>        - Shop cam kết bán hàng chính hãng. Đổi trả trong vòng 15 ngày nếu phát hiện lỗi từ nhà sản xuất."
+            },
+            {
+                "name": "Mơ Sấy Dẻo Turkey",
+                    "pic1": "/assets/image/traicaysay_mo.jpg",
+                    "pic2": "/assets/image/traicaysay_mo2.jpg",
+                    "price": "185.000 đ",
+                    "detail": "Mơ sấy dẻo không đường FIJI NUTS, mơ sấy dẻo Thổ Nhĩ Kỳ ăn kiêng<br><br>            Thông tin sản phẩm:<br>           - Trọng lượng: Gói 400gr<br>            - Xuất xứ: Nhập khẩu Thổ Nhỉ Kỳ<br>           - Hạn sử dụng: 6 tháng kể từ ngày sản xuất (in trên bao bì)<br>            - Phân phối bởi công ty TNHH Hạt dinh dưỡng Tây Nguyên <br><br>            Đặc điểm nổi bật của sản phẩm:<br>            - Mơ sấy dẻo được sấy khô tự nhiên bằng ánh nắng mặt trời, không tẩm ướp gia vị và có vị ngọt thanh mát, rất dễ ăn (không ngọt sắc). Thích hợp ăn vặt nhưng vẫn đảm bảo sức khoẻ.<br>            - Nguồn nguyên liệu nhập khẩu chính ngạch.<br>           - Không có chất bảo quản, an toàn cho sức khỏe.<br>            - Bảo quản lạnh kỹ lưỡng, chống nấm mốc."
+            },
+            {    
+                "name": "Nho Khô Raisins 3 màu",
+                "pic1": "../assets/image/traicaysay_nho1.jpg",
+                "pic2": "../assets/image/traicaysay_nho2.jpg",
+                "price": "125.000 đ",
+                "detail": "Nho khô Raisins 3 màu FIJI NUTS, nho khô không đường sấy chua ngọt <br><br>        Thông tin sản phẩm:<br>        - Trọng lượng: Hũ nhựa 450gr <br>        - Xuất xứ: Nhập khẩu Chile <br>        - Hạn sử dụng: 6 tháng kể từ ngày sản xuất (in trên bao bì) <br>        - Phân phối bởi công ty TNHH Hạt dinh dưỡng Tây Nguyên <br><br>               Đặc điểm nổi bật của sản phẩm: <br>        - Được sấy khô tự nhiên bằng ánh nắng mặt trời, không tẩm ướp gia vị và có vị ngọt thanh mát, rất dễ ăn (không ngọt sắc). Thích hợp ăn vặt nhưng vẫn đảm bảo sức khoẻ. <br>        - Nguồn nguyên liệu nhập khẩu chính ngạch. <br>        - Nho khô không có chất bảo quản, an toàn cho sức khỏe. <br>        - Bảo quản lạnh kỹ lưỡng, chống nấm mốc."
+            },
+            {
+                "name": "Nam Việt Quất Sấy Dẻo ",
+                    "pic1": "/assets/image/traicaysay_vietquat.jpg",
+                    "pic2": "/assets/image/traicaysay_vietquat2.jpg",
+                    "price": "185.000 đ",
+                    "detail": " Nam việt quất sấy khô FIJI NUTS, nam việt quất không đường ăn kiêng <br><br>            Thông tin sản phẩm:<br>            - Trọng lượng: Hũ nhựa 400gr <br>            - Xuất xứ: Nhập khẩu Mỹ<br>            - Hạn sử dụng: 6 tháng kể từ ngày sản xuất (in trên bao bì)<br>            - Phân phối bởi công ty TNHH Hạt dinh dưỡng Tây Nguyên<br><br>            Đặc điểm nổi bật của sản phẩm:<br>            - Nam việt quất được sấy khô tự nhiên bằng ánh nắng mặt trời, không tẩm ướp gia vị và có vị ngọt thanh mát, rất dễ ăn (không ngọt sắc). Thích hợp ăn vặt nhưng vẫn đảm bảo sức khoẻ.<br>            - Nguồn nguyên liệu nhập khẩu chính ngạch.<br>            - Nam việt quất không có chất bảo quản, an toàn cho sức khỏe.<br>            - Bảo quản việt quất sấy khô lạnh kỹ lưỡng, chống nấm mốc."
+            }
+        ]
+    }
+}

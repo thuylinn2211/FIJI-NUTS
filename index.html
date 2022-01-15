@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="./css/gioithieu.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
-
+    <script src="https://kit.fontawesome.com/48edd0bed5.js" crossorigin="anonymous"></script>
     <link href='./css/javascriptBG.css' rel='stylesheet' type='text/css'
         media='all' />
 </head>
@@ -311,8 +311,6 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
 </script>
 <script>
-    $("#detail").show();
-
     $("#title").text("Tất cả sản phẩm");
     fetch("/CSDL/tatca.json")
         .then((response) => response.json())
@@ -335,7 +333,7 @@
         let str = "";
         data.forEach((element) => {
             str += `
-                <div class="col-md-3 col-sm-6 col-xs-6 pro-loop" onclick="detail('${element["name"]}')">
+            <div class="col-md-3 col-sm-6 col-xs-6 pro-loop">
                                 <div class="product-block product-resize">
                                     <div class="product-img image-resize view view-third">
                                         <div class="product-sale">
@@ -374,137 +372,46 @@
                                     </div>
                                 </div>
                             </div>
+
     `;
         });
         $(phanLoai).html(str);
     }
-
-
-    // function detail(name) {
-    //     $("#page_content").hide();
-    //     $("#detail").show();
-    //     console.log(name);
-    //     fetch("./CSDL/SanPham_TrangChu.json")
-    //         .then((response) => response.json())
-    //         .then((json) => {
-    //             json["SanPhamTrangChu"].forEach((element) => {
-    //                 element.forEach((e)=>{
-    //                     if (e["name"] == name) {
-    //                     let str = `
-    //                     <div class="row">
-    //             <div class="col-5">
-    //                 <img src="${e["pic1"]}" style="width: 70%; height: 400px" alt="" />
-                    
-    //             </div>
-    //             <div class="col-7 mt-5">
-    //                 <h6 class="mt-4" style="color: rgb(212, 154, 46); font-size:32px">${e["name"]}</h6>
-    //                 <h4 class="mt-4" style="color: rgb(35, 129, 35)">${e["price"]}</h4>
-    //                 <hr />
-    //                 <h6 class="mt-4">
-    //                     <label style="color: rgb(35, 129, 35)">Số lượng: </label>
-    //                     <input size:"20" id="quantity-quickview" name="quantity" type="number" min="1" value="1">
-    //                 </h6>
-    //                 <button style="
-    //             border-radius: 2px;
-    //             background-color: #AC8C69;
-    //             border: none;
-    //             text-transform: uppercase;
-    //             color: white;
-    //             padding: 20px;
-                
-    //             width: 40%;
-    //             font-size: 22px
-    //           ">
-    //           Thêm giỏ hàng
-    //         </button>
-    //                 <button onclick="mua" style="
-    //             border-radius: 2px;
-    //             background-color: #AC8C69;
-    //             border: none;
-    //             text-transform: uppercase;
-    //             color: white;
-    //             padding: 20px;
-    //             width: 40%;
-    //             margin-left: 5%;
-    //             font-size: 22px;
-    //           ">
-    //           Mua ngay
-    //         </button>
-    //             </div>
-    //         </div>
-    //         <div class="row mt-5" />
-    //             <h6 style="font-width:bold">MÔ TẢ SẢN PHẨM</h6>
-    //             <div class="col-12" ><p style="font-size:16px;">${e["detail"]}</p> </div>
-            
-    //         </div>
-                        
-                        
-    //                     `;
-    //                     $("#detail").append(str);
-    //                 }
-    //                 })
-                    
-    //             });
-    //         });
-    // }
     function detail(name) {
         $("#page_content").hide();
         $("#detail").show();
         console.log(name);
-        fetch("./CSDL/SanPham_TrangChu.json")
+        fetch("./CSDL/TatCa_SanPham.json")
             .then((response) => response.json())
             .then((json) => {
-                json.forEach((element) => {
-                    element.forEach((sanPham) =>{
-                        if (sanPham["name"] == name) {
+                json["TatCaSanPham"]["SanPham"].forEach((element) => {
+                        if (element["name"] == name) {
                         let str = `
-                <div class="row">
-        <div class="col-5">
-            <img src="${sanPham["pic"]}" style="width: 70%; height: 400px" alt="" />
-            
-        </div>
-        <div class="col-7 mt-5">
-            <h6 class="mt-4" style="color: rgb(212, 154, 46); font-size:32px">${sanPham["name"]}</h6>
-            <h4 class="mt-4" style="color: rgb(35, 129, 35)">${sanPham["price"]}</h4>
-            <hr />
-            <h6 class="mt-4">
-                <label style="color: rgb(35, 129, 35)">Số lượng: </label>
-                <input size:"20" id="quantity-quickview" name="quantity" type="number" min="1" value="1">
-            </h6>
-            <input style="
-                border-radius: 2px;
-                background-color: #AC8C69;
-                border: none;
-                text-transform: uppercase;
-                color: white;
-                padding: 20px;
-                width: 40%;
-                font-size: 22px" type="button" id="checkout" class="button-default" onclick="giohang()" value="Thêm giỏ hàng" />
-                    <input onclick="mua()" style="
-                border-radius: 2px;
-                background-color: #AC8C69;
-                border: none;
-                text-transform: uppercase;
-                color: white;
-                padding: 20px;
-                width: 40%;
-                margin-left: 5%;
-                font-size: 22px;
-              " type="button" id="checkout" value="Mua ngay"/>
-        </div>
-    </div>
-    <div class="row mt-5" />
-        <h6 style="font-width:bold">MÔ TẢ SẢN PHẨM</h6>
-        <div class="col-12" ><p style="font-size:16px;">${sanPham["detail"]}</p> </div>
-    
-    </div>
-                
-                
-                `;
+                        <div class="container" style="margin-bottom: 15px">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h3 class="card-title">${element["name"]}</h3>
+                                    <div class="row">
+                                        <div class="col-lg-5 col-md-5 col-sm-6">
+                                            <div class="white-box text-center"><img src="${element["pic1"]}" class="img-responsive"></div>
+                                        </div>
+                                        <div class="col-lg-7 col-md-7 col-sm-6">
+                                            <h4 class="box-title mt-5">Chi tiết sản phẩm</h4>
+                                            <p>${element["detail"]}</p>
+                                            <h2 class="mt-5">
+                                                ${element["price"]}<small class="text-success">(Giảm 4%)</small>
+                                            </h2>
+                                            <button class="btn btn-dark btn-rounded mr-1" data-toggle="tooltip" title="" data-original-title="Thêm vào giỏ hàng">
+                                                <i class="fa fa-shopping-cart"></i>
+                                            </button>
+                                            <button class="btn btn-primary btn-rounded">Mua ngay</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>`;
                         $("#detail").append(str);
                     }
-                    })
-                    
                 });
             });
     }
