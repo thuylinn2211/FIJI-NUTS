@@ -51,19 +51,6 @@ a {
     background-color: var(--white-color);
 }
 
-.obj-animate {
-    position: absolute;
-    z-index: 0;
-    top: 0;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    animation: obj-ani-1 45s infinite ease-out;
-}
-
-.obj-animate--green {
-    background-color: #A0B79B;;
-}
 
 @keyframes obj-ani-1 {
     0% {
