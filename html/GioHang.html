@@ -2,6 +2,7 @@
 <html class="no-js" lang="vi" >
 	<head>
 		<meta name="google-site-verification" content="TKYCM4BEYNJPjbA82rTlcY79ZzQPy9JJvBLixx_pDdM" />
+		<link rel="shortcut icon" href="//theme.hstatic.net/200000313173/1000694342/14/favicon.png?v=127" type="image/png" />
 		<meta charset="utf-8" />
 		<title>Giỏ hàng của bạn - Hạt Dinh Dưỡng Fiji Nuts</title>
 		<meta name="robots" content="index,follow" />
@@ -11,7 +12,10 @@
 		<meta name="HandheldFriendly" content="true">
 		<meta content='width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=0' name='viewport' />
 		
-		<script>
+		<script type="text/javascript">
+			function diachi() {
+                    location.assign('DiaChi.html')
+                }
 		var formatMoney = '{{amount}}₫';
 		</script>
 
@@ -21,12 +25,6 @@
 		<link rel="stylesheet" href="../css/giohang.css">
 <!-- Latest compiled and minified JavaScript -->
 	<link rel="stylesheet" href="../css/javascriptBG.css">
-
-	<script type="text/javascript">
-		function mua(){
-			window.open('GioHang.html')
-		}
-	</script>
 <body >
 	<section id="page_content" class="">
 		<div id="pageContainer" class="clearfix">
@@ -66,13 +64,13 @@
 											<tr>
 												<td class="image">
 													<div class="product_image">
-														<a href="">
-															<img src="../assets/image/hat_hanhnhanrangmoc1.jpg " alt="Hạnh Nhân Rang Mộc" />
+														<a href="/products/hanh-nhan-rang-moc">
+															<img src=" //product.hstatic.net/200000313173/product/hanh_nhan_500g_77fc22da15a74729a5a52e0b96c43f8d_small.jpg  " alt="Hạnh Nhân Rang Mộc" />
 														</a>
 													</div>
 												</td>
 												<td class="item">
-													<a href="">
+													<a href="/products/hanh-nhan-rang-moc">
 														<strong>Hạnh Nhân Rang Mộc</strong>
 														
 														<span class="variant_title">Hũ 500gr</span>
@@ -84,21 +82,21 @@
 												</td>
 												<td class="price">195,000₫</td>
 												<td class="remove">
-													<a href="" class="cart">Xóa</a>
+													<a href="/cart/change?line=1&quantity=0" class="cart">Xóa</a>
 												</td>
 											</tr>
 											
 											<tr>
 												<td class="image">
 													<div class="product_image">
-														<a href="">
-															<img src="../assets/image/bot_cantay1.jpg " alt="Bột Cần Tây" />
+														<a href="/products/bot-can-tay-say-lanh-behena">
+															<img src=" //product.hstatic.net/200000313173/product/bot-can-tay_837bf891816e4ddfa1c5b77067992c86_small.png  " alt="Bột Cần Tây" />
 
 														</a>
 													</div>
 												</td>
 												<td class="item">
-													<a href="">
+													<a href="/products/bot-can-tay-say-lanh-behena">
 														<strong>Bột Cần Tây</strong>
 														
 													</a>
@@ -108,21 +106,21 @@
 												</td>
 												<td class="price">129,000₫</td>
 												<td class="remove">
-													<a href="" class="cart">Xóa</a>
+													<a href="/cart/change?line=2&quantity=0" class="cart">Xóa</a>
 												</td>
 											</tr>
 											
 											<tr>
 												<td class="image">
 													<div class="product_image">
-														<a href="">
-															<img src="../assets/image/bot_diepca1.jpg" alt="Bột Rau Diếp Cá" />
+														<a href="/products/bot-rau-diep-ca-behena">
+															<img src=" //product.hstatic.net/200000313173/product/bot-diep-ca_5d6b3fe7500749369006d5696b0ee080_small.png  " alt="Bột Rau Diếp Cá" />
 
 														</a>
 													</div>
 												</td>
 												<td class="item">
-													<a href="">
+													<a href="/products/bot-rau-diep-ca-behena">
 														<strong>Bột Rau Diếp Cá</strong>
 														
 													</a>
@@ -182,11 +180,11 @@
 										</div>
 										<div class="col-md-6 col-sm-6 col-xs-12 cart-buttons inner-right inner-left">
 											<div class="buttons clearfix">
-												<button class="button-default" onclick="mua()" >Thanh toán</button>
+												<input type="button" id="checkout" class="button-default" onclick="diachi()" value="Thanh toán" />
 											</div>
 										</div>
 										<div class="col-md-12 col-sm-12  col-xs-12 continue-shop">
-											<b><a  href="../html/Product.html">
+											<b><a  href="/collections/all">
 												<i class="ti-arrow-left"></i> Tiếp tục mua hàng</a></b>
 										</div>
 									</div>
