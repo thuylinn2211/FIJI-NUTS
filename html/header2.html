@@ -7,42 +7,136 @@
     <title>Header</title>
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../assets/fonts/themify-icons/themify-icons.css">
-   
+    <style>
+        #nav .subnav li:hover a{
+            color: #000;
+            background-color: #ccc;
+            width: 8em;
+        }
+        #nav{
+            display: inline-block;
+        }
+
+        #nav, .subnav{
+            list-style-type: none;
+            width: 1.4 rem;
+            /* bỏ dấu chấm ul */
+
+        }
+
+        #nav > li {
+            display: inline-block;
+        }
+
+        #nav li {
+            
+            position: relative;
+        }
+
+        #nav > li > a {
+            color: black;
+            /* viết in hoa thẻ header c1 */
+            text-transform: uppercase ;
+        }
+
+        #nav li a{
+            text-decoration: none;
+            line-height: 50px;
+            padding: 0 24px;
+            display: block;
+        }
+
+        /* di chuột vào sẽ hiện lên subnav */
+        #nav li:hover .subnav{
+            display: block;
+        }
+
+        /* di chuột hiện màu lên */
+        #nav .subnav li:hover a,
+        #nav > li:hover > a {
+            color: #444;
+            background-color: #ccc;
+        }
+
+
+
+        #nav .subnav {
+            /* ẩn sub nav */
+            display: none; 
+            position: absolute;
+            /* fix cứng vị trí subnav thay vì để nó tự set như mặc định */
+            top: 100%;
+            left: 0;
+
+            min-width: 160px;
+            background-color: #fff;
+            /* bóng đổ */
+            box-shadow: 0 0 10px rgba(0, 0,0,0.3);
+
+}
+
+            #nav .subnav a{
+                color: black;
+                padding: 0 30px;
+                
+                /* padding subnav nhỏ hơn header */
+
+            }
+
+            #nav .nav-arrow-down{
+                font-size: 13px;
+            }
+
+
+    </style>
 
 </head>
 <body>
     <!-- header -->
-    <div class="container">
-        <div class="row" >
-            <div class="img col-4 hinh">
+    <div style="width: 100%;
+    background-color: #E9EDE5;">
+        <div style="height: 120px;
+        padding-left: calc(100%/12);
+        padding-right: calc(100%/12);" >
+            <div style="
+                width: 120px;
+                display: inline-block;
+                float: left;
+                display: inline-block;
+                float: left;">
                 <img src="../assets/image/Logo.png" style="width: 100%" alt="logo" />
             </div>
 
             
-            <div class="hang">
-                <div class="col-4">
-                    <a href="../html/GioHang.html" style="height: 36px;">
-                        <img src="../assets/image/cart2.png" class="a" alt="giohang" style="height: 36px;"/>
+            <div  style="width: 100%;
+            line-height: 120px;">
+                <div style="display: inline-block;">
+                    <a href="../html/GioHang.html" style="height: 36px; margin-left: 30px;">
+                        <img src="../assets/image/cart2.png"  alt="giohang" style="height: 36px; margin-left: 30px;"/>
                     </a>
-                    <a href="../html/DangNhap.html" class="a" style="height: 36px;" >
-                        <img src="../assets/image/user.png" alt="user" style="height: 36px;" />
+                    <a href="../html/DangNhap.html" style="height: 36px; margin-left: 10px;" >
+                        <img src="../assets/image/user.png" alt="user" style="height: 36px; margin-left: 10px;" />
                     </a>
                         
                 </div>
-                <div class="col-4">
-                    <input type="text" class="timkiem" id="timkiem" class="a" value="Tìm kiếm" style="height: 36px; width: 200px;"/>
+                <div style="float: left; ">
+                    <input type="text" class="timkiem" id="timkiem" value="Tìm kiếm" style="height: 36px; width: 200px; margin-left: 500px;"/>
                 </div>
             </div>
 
         </div>
         
-        <div id="menu">
+        <div id="menu" style="
+        height: 50px;
+        width: 100%;
+        background-color: #E9EDE5;
+        float: left; padding-left: 30%;">
             <!-- begin: nav -->
             <ul id="nav">
-                <li class="ml-5">
+                <li >
                     <a href="../html/TrangChu.html">Trang chủ</a>
                 </li>
-                <li class="ml-5">
+                <li >
                     <a href="#">Sản phẩm
                         <i class="nav-arrow-down ti-angle-down" ></i>
                     </a>
@@ -53,10 +147,10 @@
                         <li id="trathaomoc" class="trathaomoc"><a href="../html/Product.html">Trà thảo mộc</a></li>
                     </ul>
                 </li>
-                <li class="ml-5">
+                <li >
                     <a href="../html/Blog1.html">Blog</a>
                 </li>
-                <li  class="ml-5">
+                <li  >
                     <a href="#">Giới thiệu
                         <i class="nav-arrow-down ti-angle-down" ></i>
                     </a>
