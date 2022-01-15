@@ -7,7 +7,7 @@ html{
     font-family:Arial, Helvetica, sans-serif;
   
 }
-body{
+section{
     margin: 0 calc(100%/12);
 }
 
