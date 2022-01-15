@@ -29,6 +29,9 @@
 
 <body>
     <div w3-include-html="./html/header2.html"></div>
+    <script>
+        w3.includeHTML();
+    </script>
 
     <div id="page_content">
         <div id="pageContainer" class="clearfix">
@@ -202,10 +205,32 @@
                                                 role="button">Xem thêm</a>
                                         </div>
                                     </div>
+
+                                    <div class="banner-bottom">
+                                        <div class="row">				
+                                            <div class="col-xs-12 col-sm-6 home-category-item-2">
+                                                <div class="banner-category"> 
+                                                    <a   href="../html/Product.html">
+                                                        <img class="banner" src="/assets/image/banner1.jpg"  alt="">
+                                                    </a>			
+                                                </div>
+                                            </div>
+                
+                                            <div class="col-xs-12 col-sm-6 home-category-item-3">
+                                                <div class="banner-category">
+                                                    <a   href="../html/Product.html">
+                                                        <img class="banner" src="/assets/image/banner2.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>	
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
         </section>
 
         <a href="#" class="scrollToTop ">
@@ -291,15 +316,16 @@
         
     </div>
     <div class="container mt-3" id="detail"></div>
+
+
+
     <div w3-include-html="./html/Footer.html"></div>
         <script>
             w3.includeHTML();
         </script>
 </body>
 
-<script>
-    w3.includeHTML();
-</script>
+
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
@@ -317,7 +343,6 @@
     fetch("/CSDL/tatca.json")
         .then((response) => response.json())
         .then((json) => render(json["BOTRAUCU"]["botraucu"]));
-
 
     fetch("/CSDL/SanPham_TrangChu.json")
         .then((response) => response.json())
