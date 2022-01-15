@@ -19,7 +19,8 @@ html{
     display: inline-block;
 }
 
-li:hover{
+
+.header > ul > li:hover{
     color: #000;
     /* background-color: #ccc; */
 }
@@ -64,7 +65,6 @@ li:hover{
 
 .footer_middle {
     background-color: var(--footer-color);
-    padding: 0 calc(100%/12);
 }
 
 .footer_middle-logo {
