@@ -22,7 +22,6 @@ html{
 
 .header > ul > li:hover{
     color: #000;
-    /* background-color: #ccc; */
 }
 
 /* Footer */
@@ -101,6 +100,7 @@ html{
     margin-right: 3px;
 }
 
+
 .footer_middle-sign-up > form > input {
     font-size: 1.4rem;
     padding: 8px;
@@ -152,7 +152,9 @@ html{
     color: var(--brown-color);
 }
 
-
+ul{
+    list-style: none;
+}
 
 
 /* grid */
