@@ -19,7 +19,7 @@
             }
     var formatMoney = '{{amount}}₫';
     </script>
-    <script src="https://www.w3schools.com/lib/w3.js"></script>
+   
 </head>
 <style>
     #category:hover {
@@ -41,12 +41,11 @@
     
     <div class="container-fluid">
         
-
         <!-- index -->
         <div class="container-fluid" id="index">
             <div class="row mt-2">
                 <div class="col-12">
-                    <h4 style="text-align: center; text-transform: uppercase" id="title"></h4>
+                    <h3 style="text-align: center; text-transform: uppercase; color: #AC8C69;" id="title"></h3>
                     <hr />
                 </div>
             </div>
@@ -56,7 +55,7 @@
                         <li style="text-transform: uppercase; font-weight: bold">
                             Danh mục
                         </li>
-                        <hr />
+                        <hr style="border-width: 2px;border-top-color: #AC8C69; width: 20%;size: 2px;"/>
                         <li style="text-transform: uppercase" onclick="category('all')" id="category">
                             Tất cả các sản phẩm
                         </li>
@@ -166,7 +165,7 @@
                 json["BOTRAUCU"]["botraucu"].forEach((element) => {
                     if (element["name"] == name) {
                         let str = `
-                        <div class="row">
+                        <div class="row" style="margin-bottom: 25px">
                 <div class="col-5">
                     <img src="${element["pic"]}" style="width: 70%; height: 400px" alt="" />
                     
@@ -179,6 +178,7 @@
                         <label style="color: rgb(35, 129, 35)">Số lượng: </label>
                         <input size:"20" id="quantity-quickview" name="quantity" type="number" min="1" value="1">
                     </h6>
+                    <br>
                     <input style="
                         border-radius: 2px;
                         background-color: #AC8C69;
@@ -206,9 +206,7 @@
                 <h6 style="font-weight:bold; font-size:26px">MÔ TẢ SẢN PHẨM</h6>
                 <div class="col-12" ><p style="font-size:16px;">${element["detail"]}</p> </div>
             
-            </div>
-                        
-                        
+            </div>  
                         `;
                         $("#detail").append(str);
                     }

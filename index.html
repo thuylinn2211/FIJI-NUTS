@@ -233,9 +233,22 @@
             </div>
         </section>
 
-        <a href="#" class="scrollToTop ">
-            <i class="fa fa-chevron-up"></i>
-        </a>
+        <!--cục kéo lên  -->
+	<a href="#" class="scrollToTop show " id="btnScrollToTop">
+		<i class="ti-angle-up"></i>
+	</a>
+	<script>
+		const btnScrollToTop = document.querySelector("#btnScrollToTop");
+		btnScrollToTop.addEventListener("click", function(){
+			// window.scrollTo({
+			// 	top:0,
+			// 	let:0,
+			// 	behavior: "smooth"
+			// })
+
+			S("html, body").animate({scrollTop:0}, "slow");
+		});
+	</script>
 
         <!--Popup thêm sản phẩm-->
         <div id="myCart" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog"
@@ -319,7 +332,7 @@
 
 
 
-    <div w3-include-html="./html/Footer.html"></div>
+    <div w3-include-html="./html/Footer copy.html"></div>
         <script>
             w3.includeHTML();
         </script>
@@ -385,12 +398,12 @@
 
                                     <div class="product-detail clearfix">
                                         <!-- sử dụng pull-left -->
-                                        <h3 class="pro-name"><a onclick="detail('${element["name"]}'")
-                                                title="${element["name"]} </a></h3>
+                                        
                                         <div class="pro-prices">
+                                            <p style="margin:16px 0 8px 0" class="pro-name">${element["name"]}</p>
                                             <p class="pro-price">${element["price"]}</p>
-                                           
                                         </div>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -424,7 +437,7 @@
                                             <a class="btn btn-light btn-rounded mr-1" data-toggle="tooltip" title="" data-original-title="Thêm vào giỏ hàng">
                                                 <i class="fa fa-shopping-cart" href="./html/GioHang" style="background-color: #7B8F5B"></i>
                                             </a>
-                                            <a href="./html/DiaChi.html" class="btn btn-primary btn-rounded" style="background-color: #7B8F5B">Mua ngay</a>
+                                            <a href="./html/DiaChi.html" class="btn  btn-rounded" style="background-color: #7B8F5B; color:#ffffff">Mua ngay</a>
                                         </div>
                                     </div>
                                 </div>
