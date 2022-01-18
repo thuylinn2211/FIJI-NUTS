@@ -2246,7 +2246,10 @@ text-align: center;
 width:auto;
 display: block;
 }
-
+.item span:hover,
+.breadcrumb a:hover{
+	color:#D69854
+}
 
 .quickview-slider .owl-prev ,.quickview-slider .owl-next {
 	width: 32px;
