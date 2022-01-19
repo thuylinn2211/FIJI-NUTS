@@ -8,9 +8,7 @@
     <title>Sản phẩm</title>
     <link rel="shortcut icon" href="../assets/image/Logo.png" type="image/png" />
     <script src="https://www.w3schools.com/lib/w3.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
     <script type="text/javascript">
         function giohang() {
             location.assign("GioHang.html");
@@ -21,6 +19,147 @@
         }
         var formatMoney = "{{amount}}₫";
     </script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            background: #E9EDE5;
+            color: #000;
+            z-index: 10;
+        }
+        .logo {
+            position: relative;
+            width: 120px;
+            margin-left: calc(100%/12);
+        }
+        .search{
+            width: 300px;
+            height: 40px;
+            position: relative;
+        }
+        .search input {
+            width: 100%;
+            height: 100%;
+            color: #aaa;
+            background: transparent;
+            outline: none;
+            border: 1px solid #2c3a47;
+            border-radius: 4px;
+            padding-left: 40px;
+        }
+        .search input::placeholder {
+            color: #2c3a47;
+            margin-left: 30px;
+        }
+        .search .ti-search {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #2c3a47;
+            padding-right: 8px;
+            margin-left: 10px;
+            border-right: 1px solid #2c3a47;
+        }
+        .cart {
+            border: 1px solid #2c3a47;
+            padding: 3px;
+            height: 40px;
+            width: 40px;
+            position: relative;
+            margin-right: 5px;
+            margin-left: 5px;
+        }
+        .user {
+            border: 1px solid #2c3a47;
+            padding: 3px;
+            height: 40px;
+            width: 40px;
+            margin-right: calc(100%/12);
+        }
+        
+        .nav{
+            display: inline-block;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 16px 0;
+        }
+        .nav, .subnav{
+            list-style-type: none;
+        }
+        .nav .subnav li:hover a{
+            color: #000;
+            background-color: rgb(240, 240, 240);
+        }
+        .nav > li {
+            display: inline-block;
+        }
+        .nav li {            
+            position: relative;
+            list-style: none;
+            margin: 0 12px;
+        }
+        .nav > li > a {
+            color: black;
+            text-transform: uppercase ;
+        }
+        .nav li a{
+            text-decoration: none;
+            font-size: 16px;
+            line-height: 30px;
+        }
+        .nav li:hover .subnav{
+            display: block;
+        }
+        .nav .subnav li:hover a,
+        .nav > li:hover > a {
+            color: #7B8F5B;
+            background-color: #ccc;
+            width: auto;  
+            border-bottom: 2px solid #E9EDE5;
+          
+        }
+        .nav .subnav {
+            display: none; 
+            position: absolute;
+            top: 100%;
+            left: 0;
+            min-width: 200px;
+            background-color: #fff;
+            font-size: 15px;
+            z-index: 1;
+        }
+        .nav .subnav a{
+            color: black;
+            padding: 0 30px;
+        }
+        .nav .nav-arrow-down{
+            font-size: 13px;
+        }
+        .search-cart-user {
+            display: flex;
+            margin-right: calc(100%/12);
+        }
+
+        /*RESPONSIVE*/
+        @media (max-width: 768px) {
+            header {
+                padding: 10px 20px;
+                flex-direction: column;
+            }
+            header .search-cart-user {
+                width: 100%;
+            }
+            
+        }
+    </style>
 </head>
 <style>
     .category:hover {
@@ -56,6 +195,51 @@
 </style>
 
 <body>
+    <header>
+        <img class="logo" src="../assets/image/Logo.png" alt="FỊINUTS">
+        <ul class="nav">
+            <li><a href="../index.html">Trang chủ</a></li>
+            <li>
+                <a href="../html/Product.html">Sản phẩm
+                    <i class="nav-arrow-down ti-angle-down" ></i>
+                </a>
+                <ul class="subnav">
+                    <li><a href="../html/Product.html">Bột rau củ</a></li>
+                    <li><a href="../html/Product.html">Hạt dinh dưỡng</a></li>
+                    <li><a href="../html/Product.html">Hoa quả sấy dẻo</a></li>
+                    <li><a href="../html/Product.html">Trà thảo mộc</a></li> 
+                </ul>
+            </li>
+            <li><a href="../html/Blog1.html">Blog</a></li>
+            <li>
+                <a href="../html/GioiThieu_LienHe.html">Giới thiệu
+                    <i class="nav-arrow-down ti-angle-down" ></i>
+                </a>
+                <ul class="subnav">
+                    <li><a href="../html/GioiThieu_LienHe.html">Liên hệ</a></li>
+                    <li><a href="../html/GioiThieu_ChinhSach.html">Chính sách</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="search-cart-user">
+            <div class="search">
+                <i class="ti-search" aria-hidden="true"></i>
+                <input type="text" placeholder="Search"/>
+            </div>
+            
+            <div class="cart">
+                <a href="../html/GioHang.html">
+                    <img src="../assets/image/cart2.png" alt="">
+                </a>
+            </div>
+    
+            <div class="user">
+                <a href="../html/DangNhap.html">
+                    <img src="../assets/image/user.png" alt="">
+                </a>
+            </div>
+        </div>   
+    </header>
     <div class="container-fluid">
         <!-- index -->
         <div class="container-fluid" id="index">
@@ -119,8 +303,6 @@
 </body>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script>
     $("#detail").hide();
     $("#title").text("Tất cả sản phẩm");

@@ -21,15 +21,13 @@
             list-style-type: none;
             width: 1.4 rem;
             /* bỏ dấu chấm ul */
-
         }
 
         #nav > li {
             display: inline-block;
         }
 
-        #nav li {
-            
+        #nav li {            
             position: relative;
         }
 
@@ -58,12 +56,8 @@
         #nav > li:hover > a {
             color: #7B8F5B;
             background-color: #ccc;
-            width: 15em;
-            
+            width: 15em;            
         }
-
-
-
         #nav .subnav {
             /* ẩn sub nav */
             display: none; 
@@ -76,21 +70,15 @@
             background-color: #fff;
             /* bóng đổ */
             box-shadow: 0 0 10px rgba(0, 0,0,0.3);
+        }
 
-}
-
-            #nav .subnav a{
-                color: black;
-                padding: 0 30px;
-                
-                /* padding subnav nhỏ hơn header */
-
-            }
-
-            #nav .nav-arrow-down{
-                font-size: 13px;
-}
-
+        #nav .subnav a{
+            color: black;
+            padding: 0 30px;
+        }
+        #nav .nav-arrow-down{
+            font-size: 13px;
+        }
     </style>
 
 </head>
@@ -107,14 +95,12 @@
         <div style="height: 120px;
         padding-left: calc(100%/12);
         padding-right: calc(100%/12); background-color: #E9EDE5;" >
-            <div style="
-                width: 120px;
-                display: inline-block;
-                float: left;
-                display: inline-block;
-                float: left;">
-                <img src="../assets/image/Logo.png" style="width: 100%" alt="logo" />
-            </div>
+        <div style="
+            width: 120px;
+            display: flex;
+            float: left;">
+            <img src="../assets/image/Logo.png" style="width: 100%" alt="logo" />
+        </div>
 
             
             <div  style="width: 100%;
