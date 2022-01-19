@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html style="font-family: Arial, Helvetica, sans-serif;" lang="en">
+<html style="font-family: Arial, Helvetica, sans-serif" lang="en">
 
 <head>
     <meta charset="UTF-8" />
@@ -8,39 +8,43 @@
     <title>Sản phẩm</title>
     <link rel="shortcut icon" href="../assets/image/Logo.png" type="image/png" />
     <script src="https://www.w3schools.com/lib/w3.js"></script>
-  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
     <script type="text/javascript">
         function giohang() {
-                location.assign('GioHang.html')
-            }
-            function mua() {
-                location.assign('DiaChi.html')
-            }
-    var formatMoney = '{{amount}}₫';
+            location.assign("GioHang.html");
+        }
+
+        function mua() {
+            location.assign("DiaChi.html");
+        }
+        var formatMoney = "{{amount}}₫";
     </script>
-   
 </head>
 <style>
-    #category:hover {
+    .category:hover {
         color: #d69854;
     }
-    *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    width: 100%;
-    }
-    html{
-        font-family: Arial, Helvetica, sans-serif;
+    
+    .active {
+        color: #d69854;
     }
     
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        width: 100%;
+    }
+    
+    html {
+        font-family: Arial, Helvetica, sans-serif;
+    }
 </style>
 
 <body>
-    
     <div class="container-fluid">
-        
         <!-- index -->
         <div class="container-fluid" id="index">
             <div class="row mt-2">
@@ -55,24 +59,29 @@
                         <li style="text-transform: uppercase; font-weight: bold">
                             Danh mục
                         </li>
-                        <hr style="border-width: 2px;border-top-color: #AC8C69; width: 20%;size: 2px;"/>
-                        <li style="text-transform: uppercase" onclick="category('all')" id="category">
+                        <hr style="
+                  border-width: 2px;
+                  border-top-color: #ac8c69;
+                  width: 20%;
+                  size: 2px;
+                " />
+                        <li style="text-transform: uppercase" class="category" onclick="category('all')" id="all">
                             Tất cả các sản phẩm
                         </li>
                         <hr />
-                        <li style="text-transform: uppercase" onclick="category('botraucu')" id="category">
+                        <li style="text-transform: uppercase" class="category" onclick="category('botraucu')" id="botraucu">
                             Bột rau củ
                         </li>
                         <hr />
-                        <li style="text-transform: uppercase" onclick="category('dinhduong')" id="category">
+                        <li style="text-transform: uppercase" class="category" onclick="category('dinhduong')" id="dinhduong">
                             Hạt dinh dưỡng
                         </li>
                         <hr />
-                        <li style="text-transform: uppercase" onclick="category('quaxay')" id="category">
+                        <li style="text-transform: uppercase" class="category" onclick="category('quaxay')" id="quaxay">
                             Hoa quả sấy
                         </li>
                         <hr />
-                        <li style="text-transform: uppercase" onclick="category('thaomoc')" id="category">
+                        <li style="text-transform: uppercase" class="category" onclick="category('thaomoc')" id="thaomoc">
                             Trà thảo mộc
                         </li>
                         <hr />
@@ -86,27 +95,26 @@
 
         <!-- detail -->
         <div class="container mt-3" id="detail"></div>
-
     </div>
     <div w3-include-html="Footer.html"></div>
-	<script>
-		w3.includeHTML();
-	</script>
+    <script>
+        w3.includeHTML();
+    </script>
 </body>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script>
-   
     $("#detail").hide();
-
     $("#title").text("Tất cả sản phẩm");
+    $("#all").addClass("active");
     fetch("./../CSDL/tatca.json")
         .then((response) => response.json())
         .then((json) => render(json["BOTRAUCU"]["botraucu"]));
 
     function category(category) {
+        active(category);
         if (category == "all") {
             $("#title").text("Tất cả sản phẩm");
             fetch("./../CSDL/tatca.json")
@@ -137,6 +145,23 @@
                 .then((response) => response.json())
                 .then((json) => render(json));
         }
+    }
+
+    function active(idClass) {
+        list = [
+            "all",
+            "dinhduong",
+            "quaxay",
+            "thaomoc",
+            "trathaomoc",
+            "botraucu",
+        ];
+        $(`#${idClass}`).addClass("active");
+        list.forEach((el) => {
+            if (el !== idClass) {
+                $(`#${el}`).removeClass("active");
+            }
+        });
     }
 
     function render(data) {
@@ -214,6 +239,5 @@
             });
     }
 </script>
-
 
 </html>
