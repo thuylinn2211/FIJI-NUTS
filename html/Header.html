@@ -11,12 +11,10 @@
             padding: 0;
             margin: 0;
             box-sizing: border-box;
-            font-family: 'Roboto';
+            font-family: Arial, Helvetica, sans-serif;
         }
         header {
             display: flex;
-            justify-content: space-between;
-            align-items: center;
             width: 100%;
             background: #E9EDE5;
             color: #000;
@@ -24,7 +22,7 @@
         }
         .logo {
             position: relative;
-            width: 8%;
+            width: 120px;
             margin-left: calc(100%/12);
         }
         .search{
@@ -62,6 +60,7 @@
             width: 40px;
             position: relative;
             margin-right: 5px;
+            margin-left: 5px;
         }
         .user {
             border: 1px solid #2c3a47;
@@ -73,8 +72,6 @@
         
         .nav{
             display: inline-block;
-            justify-content: center;
-            flex-wrap: wrap;
             margin: 16px 0;
         }
         .nav, .subnav{
@@ -90,7 +87,6 @@
         .nav li {            
             position: relative;
             list-style: none;
-            margin: 0 12px;
         }
         .nav > li > a {
             color: black;
@@ -99,7 +95,6 @@
         .nav li a{
             text-decoration: none;
             font-size: 16px;
-            line-height: 30px;
         }
         .nav li:hover .subnav{
             display: block;
@@ -107,27 +102,24 @@
         .nav .subnav li:hover a,
         .nav > li:hover > a {
             color: #7B8F5B;
-            background-color: #ccc;
-            width: auto;  
-            border-bottom: 2px solid #E9EDE5;
-          
+            background-color: #ccc;          
         }
         .nav .subnav {
             display: none; 
-            position: absolute;
-            top: 100%;
-            left: 0;
-            min-width: 200px;
+            position: relative;
             background-color: #fff;
             font-size: 15px;
             z-index: 1;
         }
         .nav .subnav a{
             color: black;
-            padding: 0 30px;
         }
         .nav .nav-arrow-down{
             font-size: 13px;
+        }
+        .search-cart-user {
+            display: flex;
+            margin-right: calc(100%/12);
         }
 
         /*RESPONSIVE*/
@@ -136,9 +128,10 @@
                 padding: 10px 20px;
                 flex-direction: column;
             }
-            header .search {
+            header .search-cart-user {
                 width: 100%;
             }
+            
         }
     </style>
 </head>
@@ -158,6 +151,7 @@
                     <li><a href="../html/Product.html">Trà thảo mộc</a></li> 
                 </ul>
             </li>
+            <li><a href="../html/Blog1.html">Blog</a></li>
             <li>
                 <a href="../html/GioiThieu_LienHe.html">Giới thiệu
                     <i class="nav-arrow-down ti-angle-down" ></i>
@@ -167,21 +161,30 @@
                     <li><a href="../html/GioiThieu_ChinhSach.html">Chính sách</a></li>
                 </ul>
             </li>
-            <li><a href="../html/Blog1.html">Blog</a></li>
         </ul>
 
-        <div class="search">
-            <i class="ti-search" aria-hidden="true"></i>
-            <input type="text" placeholder="Search"/>
+        
+
+        <div class="search-cart-user">
+            <div class="search">
+                <i class="ti-search" aria-hidden="true"></i>
+                <input type="text" placeholder="Search"/>
+            </div>
+            
+            <div class="cart">
+                <a href="../html/GioHang.html">
+                    <img src="../assets/image/cart2.png" alt="">
+                </a>
+            </div>
+    
+            <div class="user">
+                <a href="../html/DangNhap.html">
+                    <img src="../assets/image/user.png" alt="">
+                </a>
+            </div>
         </div>
 
-        <div class="cart">
-            <img src="../assets/image/cart2.png" alt="">
-        </div>
-
-        <div class="user">
-            <img src="../assets/image/user.png" alt="">
-        </div>
+        
 
         
     </header>
