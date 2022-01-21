@@ -7,27 +7,27 @@
 }
 .container{
     
-    margin: 200px calc(100%/12) 0 calc(100%/12);
+    margin: 50px calc(100%/12) 0 calc(100%/12);
 }
 .breadcrumb> li{
     display: inline-block;
     font-size: 20px;
 }
-.a{
+.container .a{
     color: black;
 }
-h2{
+.container h2{
     margin-top: 30px;
 }
-.a:hover{
+.container .a:hover{
     color: #D69854;
 }
-p{
+.container p{
     margin-bottom: 10px;
     font-size: 1.4rem;
 }
-.ho{
-    margin-bottom: 150px;
+.container.ho{
+    margin-bottom: 20px;
 }
 td{
     font-size: 1.4rem;
