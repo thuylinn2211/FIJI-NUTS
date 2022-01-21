@@ -34,13 +34,13 @@ html{
     overflow: hidden;
 }
 
-ul {
+.container .breadcrumb ul {
     list-style: none;
     padding-left: 0;
     margin: 0;
 }
 
-a {
+.container a {
     cursor: pointer;
     text-decoration: none;
     transition: all 0.25s ease;

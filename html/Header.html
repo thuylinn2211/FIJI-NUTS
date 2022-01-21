@@ -20,17 +20,17 @@
             color: #000;
             z-index: 10;
         }
-        .logo {
+        header .logo {
             position: relative;
             width: 120px;
             margin-left: calc(100%/12);
         }
-        .search{
+        header .search{
             width: 300px;
             height: 40px;
             position: relative;
         }
-        .search input {
+        header .search input {
             width: 100%;
             height: 100%;
             color: #aaa;
@@ -40,11 +40,11 @@
             border-radius: 4px;
             padding-left: 40px;
         }
-        .search input::placeholder {
+        header .search input::placeholder {
             color: #2c3a47;
             margin-left: 30px;
         }
-        .search .ti-search {
+        header .search .ti-search {
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
@@ -53,8 +53,13 @@
             margin-left: 10px;
             border-right: 1px solid #2c3a47;
         }
+<<<<<<< HEAD
+        header .cart {
+            border: 1px solid #2c3a47;
+=======
         .cart {
             border: 1px solid #944D00;
+>>>>>>> 0fa56f2a8d692e03b24754b8a9957777143ffa31
             padding: 3px;
             height: 40px;
             width: 40px;
@@ -62,64 +67,73 @@
             margin-right: 5px;
             margin-left: 5px;
         }
+<<<<<<< HEAD
+        header .user {
+            border: 1px solid #2c3a47;
+=======
         .user {
             border: 1px solid #944D00;
+>>>>>>> 0fa56f2a8d692e03b24754b8a9957777143ffa31
             padding: 3px;
             height: 40px;
             width: 40px;
             margin-right: calc(100%/12);
         }
         
-        .nav{
+        header .nav1{
             display: inline-block;
-            margin: 16px 0;
+            margin: 16px 100px;
+            padding: 16px;
         }
-        .nav, .subnav{
+        header .nav1, .subnav1{
             list-style-type: none;
         }
-        .nav .subnav li:hover a{
+        header .nav1 .subnav1 li:hover a{
             color: #000;
             background-color: rgb(240, 240, 240);
         }
-        .nav > li {
+        header .nav1 > li {
             display: inline-block;
         }
-        .nav li {            
+        header .nav1 li {            
             position: relative;
             list-style: none;
+            padding-left: 20px;
+            padding-right: 20px;
         }
-        .nav > li > a {
+        header .nav1 > li > a {
             color: black;
             text-transform: uppercase ;
         }
-        .nav li a{
+        header .nav1 li a{
             text-decoration: none;
             font-size: 16px;
         }
-        .nav li:hover .subnav{
+        header .nav1 li:hover .subnav1{
             display: block;
         }
-        .nav .subnav li:hover a,
-        .nav > li:hover > a {
+        header .nav1 .subnav1 li:hover a,
+        header.nav1 > li:hover > a {
             color: #7B8F5B;
             background-color: #ccc;          
         }
-        .nav .subnav {
+        header .nav1 .subnav1 {
             display: none; 
-            position: relative;
+            position: absolute;
             background-color: #fff;
             font-size: 15px;
             z-index: 1;
         }
-        .nav .subnav a{
+        header .nav1 .subnav1 a{
             color: black;
         }
-        .nav .nav-arrow-down{
+        header .nav1 .nav-arrow-down{
             font-size: 13px;
         }
-        .search-cart-user {
+        header .search-cart-user {
             display: flex;
-            margin-right: calc(100%/12);
+            /*margin-right: calc(100%/12);*/
+            margin-top: 20px;
         }
 
         /*RESPONSIVE*/
@@ -138,13 +152,13 @@
 <body>
     <header>
         <img class="logo" src="../assets/image/Logo.png" alt="FỊINUTS">
-        <ul class="nav">
+        <ul class="nav1">
             <li><a href="../index.html">Trang chủ</a></li>
             <li>
                 <a href="../html/Product.html">Sản phẩm
                     <i class="nav-arrow-down ti-angle-down" ></i>
                 </a>
-                <ul class="subnav">
+                <ul class="subnav1">
                     <li><a href="../html/Product.html">Bột rau củ</a></li>
                     <li><a href="../html/Product.html">Hạt dinh dưỡng</a></li>
                     <li><a href="../html/Product.html">Hoa quả sấy dẻo</a></li>
@@ -156,7 +170,7 @@
                 <a href="../html/GioiThieu_LienHe.html">Giới thiệu
                     <i class="nav-arrow-down ti-angle-down" ></i>
                 </a>
-                <ul class="subnav">
+                <ul class="subnav1">
                     <li><a href="../html/GioiThieu_LienHe.html">Liên hệ</a></li>
                     <li><a href="../html/GioiThieu_ChinhSach.html">Chính sách</a></li>
                 </ul>
@@ -182,12 +196,7 @@
                     <img src="../assets/image/user.png" alt="">
                 </a>
             </div>
-        </div>
-
-        
-
-        
+        </div>      
     </header>
-
 </body>
 </html>
